@@ -1,0 +1,5 @@
+data/pdfs/
+data/agenda_cache/
+data/scraped_materials.json
+__pycache__/
+*.pyc

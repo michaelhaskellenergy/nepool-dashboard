@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEPOOL Meeting Tracker</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Segoe UI", Arial, sans-serif; font-size: 14px; color: #222; background: #f4f6f9; }
+  header { background: #1a3a5c; color: #fff; padding: 18px 32px 14px; border-bottom: 4px solid #2e7bc4; }
+  header h1 { font-size: 1.45em; font-weight: 700; letter-spacing: 0.01em; }
+  header .meta { font-size: 0.82em; color: #e8f4ff; margin-top: 5px; }
+  .container { max-width: 1100px; margin: 0 auto; padding: 24px 24px 60px; }
+
+  /* ── Tab nav ─────────────────────────────────────────────────────────────── */
+  .tab-nav { display: flex; gap: 4px; border-bottom: 2px solid #2e7bc4; margin-bottom: 20px; flex-wrap: wrap; }
+  .tab-btn {
+    background: #dce8f5; border: 1px solid #b0c8e0; border-bottom: none;
+    border-radius: 4px 4px 0 0; padding: 9px 18px;
+    font-size: 0.88em; font-weight: 600; color: #1a3a5c; cursor: pointer; white-space: nowrap; transition: background 0.2s ease-in-out;
+  }
+  .tab-btn:hover { background: #c4daf0; }
+  .tab-btn.active { background: #fff; border-color: #2e7bc4; border-bottom-color: #fff; margin-bottom: -2px; color: #2e7bc4; }
+  .tab-pane { display: none; }
+  .tab-pane.active { display: block; }
+
+  /* ── Committee header ────────────────────────────────────────────────────── */
+  .committee-header { margin-bottom: 16px; }
+  .committee-header h2 { font-size: 1.1em; font-weight: 700; color: #1a3a5c; margin-bottom: 4px; }
+  .committee-header .desc { font-size: 0.85em; color: #555; }
+  .committee-divider { border: none; border-top: 2px solid #d0dce8; margin: 28px 0 24px; }
+
+  /* ── Upcoming meeting (compact) ──────────────────────────────────────────── */
+  .meeting-upcoming {
+    background: #fff; border: 1px solid #b8d4f0; border-left: 4px solid #2e7bc4;
+    border-radius: 4px; margin-bottom: 12px; padding: 11px 16px;
+  }
+  .meeting-upcoming-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .upcoming-chip {
+    font-size: 0.72em; font-weight: 700; background: #2e7bc4; color: #fff;
+    border-radius: 3px; padding: 2px 8px; letter-spacing: 0.04em; text-transform: uppercase; white-space: nowrap;
+  }
+  .upcoming-date { font-weight: 700; font-size: 0.95em; color: #1a3a5c; }
+  .upcoming-location { font-size: 0.82em; color: #777; }
+  .upcoming-callink { color: #2e7bc4; font-size: 0.82em; text-decoration: none; margin-left: auto; }
+  .upcoming-callink:hover { text-decoration: underline; }
+  .agenda-toggle-btn {
+    background: none; border: 1px solid #b8d4f0; border-radius: 3px;
+    padding: 3px 10px; font-size: 0.78em; color: #2e7bc4; cursor: pointer; font-weight: 600;
+  }
+  .agenda-toggle-btn:hover { background: #edf4fc; }
+  .upcoming-agenda { display: none; margin-top: 10px; border-top: 1px solid #e8eef5; padding-top: 4px; }
+  .upcoming-agenda.open { display: block; }
+
+  /* ── WebEx button ────────────────────────────────────────────────────────── */
+  .webex-btn {
+    display: inline-flex; align-items: center; gap: 5px;
+    background: #00897b; color: #fff !important; font-size: 0.78em; font-weight: 700;
+    border: none; border-radius: 3px; padding: 4px 11px;
+    text-decoration: none !important; white-space: nowrap; cursor: pointer;
+  }
+  .webex-btn:hover { background: #00796b; }
+  .webex-btn-archived {
+    background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.25);
+    color: #a8d5c8 !important;
+  }
+  .webex-btn-archived:hover { background: rgba(255,255,255,0.18); }
+  .webex-btn-upcoming {
+    background: #00897b; color: #fff; font-size: 0.82em; font-weight: 700;
+    border: none; border-radius: 3px; padding: 4px 12px;
+    text-decoration: none; white-space: nowrap; display: inline-block;
+  }
+  .webex-btn-upcoming:hover { background: #00796b; color: #fff; }
+  .agenda-doc-link {
+    font-size: 0.82em; font-weight: 600; color: #e0a030 !important;
+    text-decoration: none; white-space: nowrap;
+    border: 1px solid rgba(224,160,48,0.4); border-radius: 3px; padding: 2px 8px;
+  }
+  .agenda-doc-link:hover { background: rgba(224,160,48,0.15); text-decoration: none; }
+
+  /* ── Past meeting (full) ─────────────────────────────────────────────────── */
+  .meeting-block { background: #fff; border: 1px solid #d0dce8; border-radius: 4px; margin-bottom: 20px; }
+  .meeting-header {
+    background: #1a3a5c; color: #fff; padding: 10px 16px;
+    border-radius: 4px 4px 0 0; display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  }
+  .meeting-date { font-weight: 700; font-size: 0.95em; }
+  .meeting-location { font-size: 0.82em; color: #b8cfe0; }
+  .meeting-callink { color: #7ec8f5; font-size: 0.82em; text-decoration: none; margin-left: auto; }
+  .meeting-callink:hover { text-decoration: underline; }
+  .past-label {
+    font-size: 0.75em; background: #5a7a90; color: #fff;
+    border-radius: 3px; padding: 1px 7px; letter-spacing: 0.04em; font-weight: 600;
+  }
+  /* Materials button in header */
+  .mat-body-inner { padding: 12px 16px 14px; background: #f8fafc; }
+
+  /* ── Agenda items ────────────────────────────────────────────────────────── */
+  .agenda-list { padding: 0; }
+  .agenda-item { border-bottom: 1px solid #e8eef5; padding: 12px 16px; }
+  .agenda-item:last-child { border-bottom: none; }
+  .agenda-item-header { display: flex; align-items: flex-start; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
+  .time-chip {
+    font-size: 0.72em; font-weight: 600; background: #f0f0f0; color: #555;
+    border: 1px solid #ddd; border-radius: 3px; padding: 2px 6px;
+    white-space: nowrap; flex-shrink: 0; margin-top: 2px;
+  }
+  .item-order { color: #999; font-size: 0.82em; min-width: 20px; padding-top: 2px; flex-shrink: 0; }
+  .item-title { font-weight: 600; color: #1a3a5c; flex: 1; line-height: 1.4; min-width: 200px; }
+  .item-badges { display: flex; gap: 5px; align-items: center; flex-wrap: wrap; flex-shrink: 0; }
+
+  /* ── Badges ──────────────────────────────────────────────────────────────── */
+  .badge {
+    display: inline-block; border-radius: 3px; padding: 2px 8px;
+    font-size: 0.75em; font-weight: 600; letter-spacing: 0.03em; white-space: nowrap;
+  }
+  .badge-presentation { background: #ddeeff; color: #1a3a5c; border: 1px solid #aaccee; }
+  .badge-vote         { background: #fff3cd; color: #7a5800; border: 1px solid #ffd966; }
+  .badge-informational{ background: #e8f5e9; color: #2e7d32; border: 1px solid #a5d6a7; }
+  .badge-procedural   { background: #f0f0f0; color: #666;    border: 1px solid #ccc; }
+  .badge-project      { background: #fef3c7; color: #92400e; border: 1px solid #f59e0b; cursor: pointer; }
+  .badge-project:hover { background: #fde68a; }
+  .relevance-high   { background: #fde8e8; color: #b71c1c; border: 1px solid #ef9a9a; }
+  .relevance-medium { background: #fff3e0; color: #e65100; border: 1px solid #ffcc80; }
+  .relevance-low    { background: #f5f5f5; color: #757575; border: 1px solid #e0e0e0; }
+
+  /* ── Material links ──────────────────────────────────────────────────────── */
+  .materials-row { margin: 6px 0 0 28px; display: flex; gap: 6px; flex-wrap: wrap; }
+  .material-link {
+    display: inline-flex; align-items: center; gap: 4px; font-size: 0.78em;
+    color: #2e7bc4; text-decoration: none; background: #f0f6ff;
+    border: 1px solid #b8d4f0; border-radius: 3px; padding: 2px 8px;
+  }
+  .material-link:hover { background: #ddeeff; text-decoration: underline; }
+  .material-link::before { content: "->"; font-size: 0.85em; color: #7ec8f5; margin-right: 2px; }
+
+  /* Agenda item summary */
+  .item-summary {
+    margin: 8px 0 0 28px; font-size: 0.85em; color: #444; line-height: 1.5;
+    background: #f8fafc; border-left: 3px solid #2e7bc4; padding: 6px 10px; border-radius: 0 3px 3px 0;
+  }
+
+  /* ── Doc summary cards (in mat-body) ─────────────────────────────────────── */
+  .doc-summary {
+    margin-bottom: 10px; padding: 8px 10px; background: #fff;
+    border: 1px solid #d8e8f5; border-left: 3px solid #2e7bc4; border-radius: 0 3px 3px 0;
+  }
+  .doc-summary.relevance-high   { border-left-color: #c62828; }
+  .doc-summary.relevance-medium { border-left-color: #e65100; }
+  .doc-summary-title { font-size: 0.82em; font-weight: 600; color: #1a3a5c; margin-bottom: 4px; }
+  .doc-summary-title a { color: #2e7bc4; text-decoration: none; }
+  .doc-summary-title a:hover { text-decoration: underline; }
+  .doc-summary-text  { font-size: 0.82em; color: #444; line-height: 1.5; margin-bottom: 4px; }
+  .doc-summary-meta  { font-size: 0.75em; color: #888; display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  .tag { background: #e8f0fb; color: #1a3a5c; border-radius: 3px; padding: 1px 6px; }
+
+  /* ── Projects tab ────────────────────────────────────────────────────────── */
+  .project-card { background: #fff; border: 1px solid #d0dce8; border-radius: 4px; margin-bottom: 20px; }
+  .project-card-header {
+    background: #1a3a5c; color: #fff; padding: 12px 16px; border-radius: 4px 4px 0 0;
+    display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+  }
+  .project-card-title { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .project-name { font-weight: 700; font-size: 1em; }
+  .project-abbr {
+    font-size: 0.78em; background: rgba(255,255,255,0.15); border-radius: 3px; padding: 2px 7px; font-weight: 600;
+  }
+  .proj-committee-chip {
+    font-size: 0.72em; background: #2e7bc4; color: #fff;
+    border-radius: 3px; padding: 2px 7px; font-weight: 700; text-transform: uppercase;
+  }
+  .project-card-links a { color: #7ec8f5; font-size: 0.82em; text-decoration: none; }
+  .project-card-links a:hover { text-decoration: underline; }
+  .project-desc { padding: 10px 16px; font-size: 0.85em; color: #555; border-bottom: 1px solid #e8eef5; }
+  .proj-hist-toggle {
+    width: 100%; text-align: left; background: none; border: none; padding: 9px 16px;
+    font-size: 0.82em; font-weight: 600; color: #2e7bc4; cursor: pointer;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .proj-hist-toggle:hover { background: #edf4fc; }
+  .proj-hist-toggle .toggle-arrow { font-size: 0.75em; transition: transform 0.15s; }
+  .proj-hist-toggle.open .toggle-arrow { transform: rotate(90deg); }
+  .proj-hist-body { display: none; }
+  .proj-hist-body.open { display: block; }
+  .proj-session { border-top: 1px solid #e8eef5; padding: 10px 16px; }
+  .proj-session-meta {
+    display: flex; align-items: center; gap: 8px; margin-bottom: 4px; flex-wrap: wrap;
+  }
+  .proj-session-committee {
+    font-size: 0.72em; font-weight: 700; background: #1a3a5c; color: #fff;
+    border-radius: 3px; padding: 2px 7px; text-transform: uppercase;
+  }
+  .proj-session-date { font-size: 0.85em; font-weight: 600; color: #1a3a5c; }
+  .proj-session-num  { font-size: 0.78em; color: #777; }
+  .proj-session-title { font-size: 0.85em; color: #444; margin-bottom: 5px; }
+  .proj-no-history { padding: 14px 16px; font-size: 0.85em; color: #aaa; font-style: italic; }
+
+  /* ── Misc ────────────────────────────────────────────────────────────────── */
+  .no-meetings { padding: 28px 16px; text-align: center; color: #aaa; font-style: italic; font-size: 0.88em; }
+  .footer-note { margin-top: 40px; font-size: 0.8em; color: #999; border-top: 1px solid #d0dce8; padding-top: 14px; }
+
+  /* ── Summary tab / Calendar ──────────────────────────────────────────────── */
+  .summary-intro { margin-bottom: 20px; }
+  .summary-section-label {
+    font-size: 0.75em; font-weight: 700; color: #888; text-transform: uppercase;
+    letter-spacing: 0.08em; margin: 0 0 12px;
+    padding-bottom: 6px; border-bottom: 2px solid #d0dce8;
+  }
+  .summary-card {
+    background: #fff; border: 1px solid #d0dce8; border-radius: 4px; margin-bottom: 10px;
+  }
+  .summary-card-header {
+    display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+    padding: 10px 14px; background: #f8fafc;
+    border-bottom: 1px solid #e8eef5;
+    border-left-width: 4px; border-left-style: solid;
+  }
+  .summary-card-name { font-weight: 700; color: #1a3a5c; font-size: 0.92em; flex: 1; }
+  .summary-lookahead-link { font-size: 0.8em; color: #2e7bc4; text-decoration: none; white-space: nowrap; }
+  .summary-lookahead-link:hover { text-decoration: underline; }
+  .summary-card-body { padding: 11px 14px; font-size: 0.88em; color: #333; line-height: 1.6; }
+  .summary-no-data { color: #999; font-size: 0.88em; font-style: italic; margin: 8px 0 20px; }
+
+  .cal-header {
+    display: flex; align-items: center; justify-content: space-between;
+    margin: 24px 0 10px;
+  }
+  .cal-month-title { font-size: 1.05em; font-weight: 700; color: #1a3a5c; }
+  .cal-nav-btn {
+    background: #dce8f5; border: 1px solid #b0c8e0; border-radius: 4px;
+    padding: 5px 16px; font-weight: 700; color: #1a3a5c; cursor: pointer; font-size: 0.9em;
+  }
+  .cal-nav-btn:hover { background: #c4daf0; }
+  .cal-dow-row {
+    display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; margin-bottom: 2px;
+  }
+  .cal-dow { text-align: center; font-size: 0.75em; font-weight: 700; color: #666; padding: 4px 0; }
+  .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; margin-bottom: 8px; }
+  .cal-cell {
+    min-height: 78px; background: #fff; border: 1px solid #d0dce8;
+    border-radius: 3px; padding: 5px 6px;
+  }
+  .cal-cell-empty { background: #f4f6f9; border-color: #eef2f7; }
+  .cal-today { background: #fffde7; border-color: #fdd835; }
+  .cal-day-num { font-size: 0.8em; font-weight: 700; color: #1a3a5c; margin-bottom: 3px; }
+  .cal-today .cal-day-num { color: #2e7bc4; }
+  .cal-holiday-label {
+    font-size: 0.62em; color: #bbb; font-style: italic;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 2px;
+  }
+  .cal-chip {
+    display: inline-block; font-size: 0.68em; font-weight: 700; color: #fff;
+    border-radius: 3px; padding: 2px 5px; margin: 1px 1px 0 0;
+    text-transform: uppercase; text-decoration: none; white-space: nowrap; cursor: default;
+  }
+  a.cal-chip { cursor: pointer; }
+  a.cal-chip:hover { opacity: 0.82; }
+  .cal-legend { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 6px; }
+  .cal-legend-item { display: flex; align-items: center; gap: 4px; font-size: 0.75em; color: #555; }
+  .cal-legend-dot {
+    display: inline-block; width: 12px; height: 12px; border-radius: 2px;
+  }
+
+  /* ── Maine flags box ─────────────────────────────────────────────────────── */
+  .maine-flags-box {
+    background: #fff8f8; border: 1px solid #ef9a9a; border-left: 4px solid #b71c1c;
+    border-radius: 4px; padding: 12px 14px; margin-bottom: 18px;
+  }
+  .maine-flags-label {
+    font-size: 0.75em; font-weight: 700; color: #b71c1c; text-transform: uppercase;
+    letter-spacing: 0.08em; margin-bottom: 8px;
+  }
+  .maine-flag-item {
+    display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+    padding: 4px 0; border-top: 1px solid #f5d5d5; font-size: 0.86em;
+  }
+  .maine-flag-item:first-of-type { border-top: none; }
+  .maine-flag-title { flex: 1; color: #1a3a5c; font-weight: 500; min-width: 160px; }
+  .maine-flag-meta  { font-size: 0.82em; color: #999; white-space: nowrap; }
+  .summary-tab-link {
+    background: none; border: 1px solid #b0c8e0; border-radius: 3px;
+    padding: 2px 8px; font-size: 0.78em; color: #2e7bc4; cursor: pointer; font-weight: 600;
+    white-space: nowrap;
+  }
+  .summary-tab-link:hover { background: #edf4fc; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>NEPOOL Meeting Tracker</h1>
+  <div class="meta" id="header-meta">Maine PUC — ISO-NE Committee Monitor</div>
+</header>
+
+<div class="container">
+  <div class="tab-nav" id="tab-nav"></div>
+  <div id="tab-content"></div>
+  <div class="footer-note">
+    Meeting data: <code>data/meetings.js</code> (manual) &middot;
+    Materials scraped from <a href="https://www.iso-ne.com/calendar/" target="_blank" style="color:#2e7bc4;">iso-ne.com</a> &middot;
+    Summaries: <code>data/summaries.js</code> (Claude API)
+  </div>
+</div>
+
+<script src="data/meetings.js"></script>
+<script src="data/summaries.js"></script>
+<script src="data/scraped_materials.js"></script>
+<script src="data/projects.js"></script>
+<script src="data/monthly_summary.js"></script>
+<script>
+(function () {
+  const data = window.MEETINGS_DATA;
+
+  // ── Helpers ──────────────────────────────────────────────────────────────
+
+  function fmtDate(iso) {
+    if (!iso) return '';
+    return new Date(iso + 'T12:00:00').toLocaleDateString('en-US',
+      { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+  }
+
+  function isPast(dateStr) {
+    return new Date(dateStr + 'T23:59:59') < new Date();
+  }
+
+  function sortMeetings(meetings) {
+    if (!meetings || !meetings.length) return [];
+    const upcoming = meetings.filter(m => !isPast(m.date)).sort((a, b) => a.date.localeCompare(b.date));
+    const past     = meetings.filter(m =>  isPast(m.date)).sort((a, b) => b.date.localeCompare(a.date));
+    return [...upcoming, ...past];
+  }
+
+  function typeBadge(type) {
+    const labels = { presentation:'Presentation', vote:'Vote', informational:'Informational', procedural:'Procedural' };
+    const cls    = { presentation:'badge-presentation', vote:'badge-vote', informational:'badge-informational', procedural:'badge-procedural' };
+    const t = type || 'presentation';
+    return `<span class="badge ${cls[t] || 'badge-presentation'}">${labels[t] || type}</span>`;
+  }
+
+  function relevanceBadge(r) {
+    if (!r) return '';
+    const labels = { high:'ME: High', medium:'ME: Medium', low:'ME: Low' };
+    return `<span class="badge relevance-${r}">${labels[r]}</span>`;
+  }
+
+  function projectBadge(projectId) {
+    if (!projectId || !window.PROJECTS_DATA) return '';
+    const p = window.PROJECTS_DATA.find(p => p.id === projectId);
+    if (!p) return '';
+    return `<span class="badge badge-project" title="${p.name}" onclick="showProject('${projectId}')">${p.abbr}</span>`;
+  }
+
+  // ── Scraped materials lookup ───────────────────────────────────────────────
+
+  function getScrapedDocs(committeeId, meetingDate, agendaNumber) {
+    if (!window.SCRAPED_DATA || !agendaNumber) return [];
+    const mtgs = window.SCRAPED_DATA.committees[committeeId];
+    if (!mtgs) return [];
+    const docs = mtgs.meetings ? mtgs.meetings[meetingDate] : mtgs[meetingDate];
+    if (!Array.isArray(docs)) return [];
+    // Match docs whose title contains agendaNumber followed by space, dot, hyphen, (, or end
+    const esc = agendaNumber.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const re  = new RegExp('\\b' + esc + '([ .\\-\\(]|$)', 'i');
+    return docs.filter(d => re.test(d.title));
+  }
+
+  function getAgendaDoc(committeeId, meetingDate) {
+    if (!window.SCRAPED_DATA) return null;
+    const mtgs = window.SCRAPED_DATA.committees[committeeId];
+    if (!mtgs) return null;
+    const docs = mtgs.meetings ? mtgs.meetings[meetingDate] : mtgs[meetingDate];
+    if (!Array.isArray(docs)) return null;
+    return docs.find(d => /A00/i.test(d.title) && /agenda/i.test(d.title)) || null;
+  }
+
+  function getWebexUrl(meeting, committeeId) {
+    if (meeting.webex_url) return meeting.webex_url;
+    // Check scraped data
+    const mtgs = window.SCRAPED_DATA && window.SCRAPED_DATA.committees[committeeId];
+    if (!mtgs) return null;
+    const mtg = mtgs.meetings ? mtgs.meetings[meeting.date] : null;
+    return (mtg && mtg.webex_url) || null;
+  }
+
+  // ── Agenda item ───────────────────────────────────────────────────────────
+
+  function renderAgendaItem(item, committeeId, meetingDate, showTime, matchedSummaries) {
+    const timeHtml = showTime && item.time
+      ? `<span class="time-chip">${item.time}</span>`
+      : '';
+
+    const badges = [
+      typeBadge(item.type),
+      relevanceBadge(item.maine_relevance),
+      projectBadge(item.project_id)
+    ].join('');
+
+    // Manual materials from meetings.js
+    const manualLinks = (item.materials || []).map(m =>
+      `<a class="material-link" href="${m.url}" target="_blank" rel="noopener">${m.label}</a>`
+    );
+
+    // Auto-matched materials from scraped data
+    const scrapedDocs = getScrapedDocs(committeeId, meetingDate, item.agenda_number);
+    const scrapedLinks = scrapedDocs.map(d => {
+      const label = d.title.replace(/^\d{4}-\d{2}-\d{2}(-\d{2})?\s+\S+\s+/, '').trim();
+      return `<a class="material-link" href="${d.url}" target="_blank" rel="noopener">${label}</a>`;
+    });
+
+    // Deduplicate by URL
+    const allLinks = [...manualLinks];
+    const seenUrls = new Set((item.materials || []).map(m => m.url));
+    scrapedLinks.forEach((link, i) => {
+      if (!seenUrls.has(scrapedDocs[i].url)) allLinks.push(link);
+    });
+
+    const materialsHtml = allLinks.length
+      ? `<div class="materials-row">${allLinks.join('')}</div>`
+      : '';
+
+    const summaryHtml = item.summary && item.summary.trim()
+      ? `<div class="item-summary">${item.summary}</div>`
+      : '';
+
+    // Inline doc summaries matched to this item
+    const docSummariesHtml = (matchedSummaries || []).map(s => {
+      const relClass = s.maine_relevance ? `relevance-${s.maine_relevance}` : '';
+      const relBadge = s.maine_relevance
+        ? `<span class="badge relevance-${s.maine_relevance}">ME: ${s.maine_relevance.charAt(0).toUpperCase() + s.maine_relevance.slice(1)}</span>` : '';
+      const tags = (s.topic_tags || []).map(t => `<span class="tag">${t}</span>`).join('');
+      return `
+        <div class="doc-summary ${relClass}" style="margin:6px 0 0 28px;">
+          <div class="doc-summary-title"><a href="${s.url}" target="_blank" rel="noopener">${s.title}</a></div>
+          <div class="doc-summary-text">${s.summary}</div>
+          <div class="doc-summary-meta">${relBadge}${tags}</div>
+        </div>`;
+    }).join('');
+
+    return `
+      <div class="agenda-item">
+        <div class="agenda-item-header">
+          ${timeHtml}
+          <span class="item-order">${item.order}.</span>
+          <span class="item-title">${item.title}</span>
+          <span class="item-badges">${badges}</span>
+        </div>
+        ${materialsHtml}${summaryHtml}${docSummariesHtml}
+      </div>`;
+  }
+
+  // ── Summaries lookup ──────────────────────────────────────────────────────
+
+  function getMeetingSummaries(committeeId, meetingDate) {
+    return (window.SUMMARIES_DATA &&
+            window.SUMMARIES_DATA.committees &&
+            window.SUMMARIES_DATA.committees[committeeId] &&
+            window.SUMMARIES_DATA.committees[committeeId][meetingDate]) || [];
+  }
+
+  function matchSummaryToItem(summary, agendaNumber) {
+    if (!agendaNumber) return false;
+    const esc = agendaNumber.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    return new RegExp('\\b' + esc + '([ .\\-\\(]|$)', 'i').test(summary.title);
+  }
+
+  // ── Upcoming meeting ──────────────────────────────────────────────────────
+
+  function renderUpcomingMeeting(meeting, committeeId) {
+    const uid       = ('upcoming-' + committeeId + '-' + meeting.date).replace(/\W/g, '-');
+    const webexUrl  = getWebexUrl(meeting, committeeId);
+    const agendaDoc = getAgendaDoc(committeeId, meeting.date);
+    const calLink   = meeting.iso_ne_url
+      ? `<a class="upcoming-callink" href="${meeting.iso_ne_url}" target="_blank" rel="noopener">ISO-NE Calendar</a>`
+      : '';
+    const locHtml   = meeting.location ? `<span class="upcoming-location">${meeting.location}</span>` : '';
+    const webexBtn  = webexUrl
+      ? `<a class="webex-btn-upcoming" href="${webexUrl}" target="_blank" rel="noopener">Join WebEx</a>`
+      : '';
+    const agendaLink = agendaDoc
+      ? `<a class="agenda-doc-link" href="${agendaDoc.url}" target="_blank" rel="noopener">&#128196; Agenda</a>`
+      : '';
+    const hasItems = meeting.agenda_items && meeting.agenda_items.length;
+    const agendaBtn = hasItems
+      ? `<button class="agenda-toggle-btn" id="abtn-${uid}" data-count="${meeting.agenda_items.length}"
+           onclick="toggleAgenda('${uid}')">Agenda (${meeting.agenda_items.length} items)</button>`
+      : '';
+    const showTime = committeeId !== 'pc';
+    const agendaBody = hasItems
+      ? `<div class="upcoming-agenda" id="abody-${uid}">
+           <div class="agenda-list">${meeting.agenda_items.map(it => renderAgendaItem(it, committeeId, meeting.date, showTime)).join('')}</div>
+         </div>`
+      : '';
+    return `
+      <div class="meeting-upcoming">
+        <div class="meeting-upcoming-row">
+          <span class="upcoming-chip">Upcoming</span>
+          <span class="upcoming-date">${fmtDate(meeting.date)}</span>
+          ${locHtml}
+          ${webexBtn}
+          ${agendaLink}
+          ${calLink}
+          ${agendaBtn}
+        </div>
+        ${agendaBody}
+      </div>`;
+  }
+
+  // ── Past meeting ──────────────────────────────────────────────────────────
+
+  function renderPastMeeting(meeting, committeeId) {
+    const allSummaries = getMeetingSummaries(committeeId, meeting.date);
+    const webexUrl     = getWebexUrl(meeting, committeeId);
+    const agendaDoc    = getAgendaDoc(committeeId, meeting.date);
+    const showTime     = committeeId !== 'pc';
+    const calLink      = meeting.iso_ne_url
+      ? `<a class="meeting-callink" href="${meeting.iso_ne_url}" target="_blank" rel="noopener">ISO-NE Calendar</a>`
+      : '';
+    const locHtml  = meeting.location ? `<span class="meeting-location">${meeting.location}</span>` : '';
+    const webexBtn = webexUrl
+      ? `<a class="webex-btn webex-btn-archived" href="${webexUrl}" target="_blank" rel="noopener">WebEx (archived)</a>`
+      : '';
+    const agendaLink = agendaDoc
+      ? `<a class="agenda-doc-link" href="${agendaDoc.url}" target="_blank" rel="noopener">&#128196; Agenda</a>`
+      : '';
+
+    // Match each summary to an agenda item by agenda_number; track unmatched ones
+    const matched = new Set();
+    const itemsHtml = meeting.agenda_items && meeting.agenda_items.length
+      ? meeting.agenda_items.map(it => {
+          const itemSummaries = allSummaries.filter(s => {
+            if (matchSummaryToItem(s, it.agenda_number)) { matched.add(s); return true; }
+            return false;
+          });
+          return renderAgendaItem(it, committeeId, meeting.date, showTime, itemSummaries);
+        }).join('')
+      : '<div class="no-meetings">No agenda items entered yet.</div>';
+
+    // Unmatched summaries (e.g. Actions Letter, meeting minutes) shown at bottom
+    const unmatched = allSummaries.filter(s => !matched.has(s));
+    const unmatchedHtml = unmatched.length
+      ? `<div class="mat-body-inner" style="border-top:1px solid #e0eaf4;">${
+          unmatched.map(s => {
+            const relClass = s.maine_relevance ? `relevance-${s.maine_relevance}` : '';
+            const relBadge = s.maine_relevance
+              ? `<span class="badge relevance-${s.maine_relevance}">ME: ${s.maine_relevance.charAt(0).toUpperCase() + s.maine_relevance.slice(1)}</span>` : '';
+            const tags = (s.topic_tags || []).map(t => `<span class="tag">${t}</span>`).join('');
+            return `
+              <div class="doc-summary ${relClass}">
+                <div class="doc-summary-title"><a href="${s.url}" target="_blank" rel="noopener">${s.title}</a></div>
+                <div class="doc-summary-text">${s.summary}</div>
+                <div class="doc-summary-meta">${relBadge}${tags}</div>
+              </div>`;
+          }).join('')
+        }</div>`
+      : '';
+
+    return `
+      <div class="meeting-block">
+        <div class="meeting-header">
+          <span class="meeting-date">${fmtDate(meeting.date)}</span>
+          <span class="past-label">Completed</span>
+          ${locHtml}
+          ${webexBtn}
+          ${agendaLink}
+          ${calLink}
+        </div>
+        <div class="agenda-list">${itemsHtml}</div>
+        ${unmatchedHtml}
+      </div>`;
+  }
+
+  // ── Committee section ─────────────────────────────────────────────────────
+
+  function renderCommitteeSection(committee) {
+    const sorted   = sortMeetings(committee.meetings);
+    const meetings = sorted.length
+      ? sorted.map(m => isPast(m.date)
+          ? renderPastMeeting(m, committee.id)
+          : renderUpcomingMeeting(m, committee.id)
+        ).join('')
+      : '<div class="no-meetings" style="padding:28px 0;">No meetings entered yet.</div>';
+    return `
+      <div class="committee-header">
+        <h2>${committee.name}</h2>
+        <div class="desc">${committee.description}</div>
+      </div>
+      ${meetings}`;
+  }
+
+  // ── Projects tab ──────────────────────────────────────────────────────────
+
+  function renderProjectsCards() {
+    const projects = window.PROJECTS_DATA || [];
+
+    // Collect all agenda item references per project
+    const history = {};
+    projects.forEach(p => history[p.id] = []);
+
+    data.committees.forEach(committee => {
+      (committee.meetings || []).forEach(meeting => {
+        (meeting.agenda_items || []).forEach(item => {
+          if (item.project_id && history[item.project_id] !== undefined) {
+            history[item.project_id].push({ committee, meeting, item });
+          }
+        });
+      });
+    });
+
+    // Sort each project's history: most recent first
+    Object.values(history).forEach(h => h.sort((a, b) => b.meeting.date.localeCompare(a.meeting.date)));
+
+    // Sort projects by most recent discussion, then alphabetically
+    const sorted = [...projects].sort((a, b) => {
+      const ad = history[a.id][0]?.meeting.date || '';
+      const bd = history[b.id][0]?.meeting.date || '';
+      return bd.localeCompare(ad) || a.name.localeCompare(b.name);
+    });
+
+    return sorted.map(p => renderProjectCard(p, history[p.id])).join('');
+  }
+
+  function renderProjectCard(project, sessions) {
+    const committeeChips = project.committees.map(cid => {
+      const c = data.committees.find(c => c.id === cid);
+      return c ? `<span class="proj-committee-chip">${c.abbr}</span>` : '';
+    }).join('');
+
+    const highCount = sessions.filter(s => s.item.maine_relevance === 'high').length;
+    const relNote   = highCount
+      ? `<span style="color:#f87171;font-size:0.8em;font-weight:600;">${highCount} ME:High</span>`
+      : '';
+
+    const uid = 'proj-' + project.id;
+
+    const sessionsHtml = sessions.length
+      ? sessions.map(({ committee, meeting, item }) => {
+          const docs  = getScrapedDocs(committee.id, meeting.date, item.agenda_number);
+          const links = docs.map(d => {
+            const label = d.title.replace(/^\d{4}-\d{2}-\d{2}(-\d{2})?\s+\S+\s+/, '').trim();
+            return `<a class="material-link" href="${d.url}" target="_blank" rel="noopener">${label}</a>`;
+          });
+          const matRow = links.length ? `<div class="materials-row" style="margin-left:0;">${links.join('')}</div>` : '';
+          const numStr = item.agenda_number ? `&middot; ${item.agenda_number}` : '';
+          return `
+            <div class="proj-session">
+              <div class="proj-session-meta">
+                <span class="proj-session-committee">${committee.abbr}</span>
+                <span class="proj-session-date">${fmtDate(meeting.date)}</span>
+                <span class="proj-session-num">${numStr}</span>
+                ${relevanceBadge(item.maine_relevance)}
+              </div>
+              <div class="proj-session-title">${item.title}</div>
+              ${matRow}
+            </div>`;
+        }).join('')
+      : `<div class="proj-no-history">No discussions tagged for this project yet. Add <code>project_id: "${project.id}"</code> to agenda items in meetings.js.</div>`;
+
+    return `
+      <div class="project-card" id="${uid}">
+        <div class="project-card-header">
+          <div class="project-card-title">
+            <span class="project-name">${project.name}</span>
+            <span class="project-abbr">${project.abbr}</span>
+            ${committeeChips}
+            ${relNote}
+          </div>
+          <div class="project-card-links">
+            <a href="${project.iso_ne_url}" target="_blank" rel="noopener">View on ISO-NE &rarr;</a>
+          </div>
+        </div>
+        <div class="project-desc">${project.description}</div>
+        <button class="proj-hist-toggle" id="ptbtn-${uid}" onclick="toggleProjectHistory('${uid}')">
+          <span class="toggle-arrow">&#9658;</span>
+          Committee discussions (${sessions.length} session${sessions.length !== 1 ? 's' : ''})
+        </button>
+        <div class="proj-hist-body" id="ptbody-${uid}">${sessionsHtml}</div>
+      </div>`;
+  }
+
+  // ── Summary tab constants ──────────────────────────────────────────────────
+
+  const COMMITTEE_COLORS = {
+    mc:   '#2e7bc4',
+    pc:   '#1a5c3a',
+    rc:   '#7b3ab5',
+    tc:   '#c4622e',
+    pac:  '#2e9a8a',
+    lfwg: '#888888',
+    dgwg: '#9e9e9e',
+    clg:  '#b5813a',
+  };
+
+  const FEDERAL_HOLIDAYS = {
+    '2026-01-01': "New Year's Day",
+    '2026-01-19': 'MLK Day',
+    '2026-02-16': "Presidents' Day",
+    '2026-05-25': 'Memorial Day',
+    '2026-07-03': 'Independence Day (obs.)',
+    '2026-09-07': 'Labor Day',
+    '2026-10-12': 'Columbus Day',
+    '2026-11-11': 'Veterans Day',
+    '2026-11-26': 'Thanksgiving',
+    '2026-12-25': 'Christmas',
+    '2027-01-01': "New Year's Day",
+    '2027-01-18': 'MLK Day',
+    '2027-02-15': "Presidents' Day",
+    '2027-05-31': 'Memorial Day',
+    '2027-07-05': 'Independence Day (obs.)',
+    '2027-09-06': 'Labor Day',
+    '2027-11-11': 'Veterans Day',
+    '2027-11-25': 'Thanksgiving',
+    '2027-12-25': 'Christmas',
+  };
+
+  const MONTH_NAMES = [
+    'January','February','March','April','May','June',
+    'July','August','September','October','November','December'
+  ];
+
+  function renderSummaryTab(year, month) {
+    const monthKey = year + '-' + String(month).padStart(2, '0');
+    const todayStr = new Date().toISOString().slice(0, 10);
+
+    // Build meeting index for this month (multi-day meetings span their full range)
+    const meetingsByDate = {};
+    data.committees.forEach(c => {
+      (c.meetings || []).forEach(m => {
+        const start = m.date;
+        const end   = m.date_end || m.date;
+        // Enumerate each day of the meeting
+        let cur = new Date(start + 'T12:00:00');
+        const last = new Date(end + 'T12:00:00');
+        while (cur <= last) {
+          const ds = cur.toISOString().slice(0, 10);
+          if (ds.startsWith(monthKey)) {
+            if (!meetingsByDate[ds]) meetingsByDate[ds] = [];
+            // Avoid duplicate chips if a committee appears multiple times on same day
+            if (!meetingsByDate[ds].some(x => x.committee.id === c.id && x.meeting.date === m.date)) {
+              meetingsByDate[ds].push({ committee: c, meeting: m });
+            }
+          }
+          cur.setDate(cur.getDate() + 1);
+        }
+      });
+    });
+
+    // ── Maine flags — high-relevance items across all committees this month ──
+    const maineFlags = [];
+    data.committees.forEach(c => {
+      (c.meetings || []).forEach(m => {
+        if (!m.date.startsWith(monthKey)) return;
+        (m.agenda_items || []).forEach(item => {
+          if (item.maine_relevance === 'high') {
+            maineFlags.push({ committee: c, meeting: m, item });
+          }
+        });
+      });
+    });
+    // Sort by meeting date, then agenda order
+    maineFlags.sort((a, b) => a.meeting.date.localeCompare(b.meeting.date) || a.item.order - b.item.order);
+
+    let maineFlagsHtml = '';
+    if (maineFlags.length) {
+      const flagItems = maineFlags.map(({ committee, meeting, item }) => {
+        const color  = COMMITTEE_COLORS[committee.id] || '#888';
+        const badge  = `<span class="cal-chip" style="background:${color};cursor:default;">${committee.abbr}</span>`;
+        const date   = new Date(meeting.date + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+        const tabLink = `<button class="summary-tab-link" onclick="showCommitteeTab('${committee.id}')">${committee.abbr} tab &#8594;</button>`;
+        return `<div class="maine-flag-item">${badge} <span class="maine-flag-title">${item.title}</span> <span class="maine-flag-meta">${date}</span> ${tabLink}</div>`;
+      }).join('');
+      maineFlagsHtml = `
+        <div class="maine-flags-box">
+          <div class="maine-flags-label">Maine Flags This Month</div>
+          ${flagItems}
+        </div>`;
+    }
+
+    // ── Narrative cards ──────────────────────────────────────────────────────
+    const summaryData = window.MONTHLY_SUMMARY_DATA && window.MONTHLY_SUMMARY_DATA[monthKey];
+    let cardsHtml = '';
+    if (summaryData && summaryData.committees) {
+      const cardEntries = Object.entries(summaryData.committees);
+      cardsHtml = cardEntries.map(([cid, cardData]) => {
+        const committee = data.committees.find(c => c.id === cid);
+        if (!committee) return '';
+        const color   = COMMITTEE_COLORS[cid] || '#2e7bc4';
+        const chip    = `<span class="upcoming-chip" style="background:${color};">${committee.abbr}</span>`;
+        const tabLink = `<button class="summary-tab-link" onclick="showCommitteeTab('${cid}')">${committee.abbr} tab &#8594;</button>`;
+        const pdfLink = cardData.lookahead_url
+          ? `<a class="summary-lookahead-link" href="${cardData.lookahead_url}" target="_blank" rel="noopener">Look-Ahead &#8599;</a>`
+          : '';
+        const compositeLink = cardData.pc_composite_url
+          ? `<a class="summary-lookahead-link" href="${cardData.pc_composite_url}" target="_blank" rel="noopener">S&amp;O Report &#8599;</a>`
+          : '';
+        return `
+          <div class="summary-card">
+            <div class="summary-card-header" style="border-left-color:${color};">
+              ${chip}
+              <span class="summary-card-name">${committee.name}</span>
+              ${tabLink}
+              ${pdfLink}${compositeLink}
+            </div>
+            <div class="summary-card-body">${cardData.summary}</div>
+          </div>`;
+      }).join('');
+    } else {
+      cardsHtml = `<div class="summary-no-data">No committee summary available for ${MONTH_NAMES[month-1]} ${year}. Update <code>data/monthly_summary.js</code> to add one.</div>`;
+    }
+
+    // ── Calendar grid ────────────────────────────────────────────────────────
+    const firstDOW    = new Date(year, month - 1, 1).getDay(); // 0=Sun
+    const daysInMonth = new Date(year, month, 0).getDate();
+
+    // Day-of-week header
+    const dowHtml = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
+      .map(d => `<div class="cal-dow">${d}</div>`).join('');
+
+    // Build cells
+    const cells = [];
+    for (let i = 0; i < firstDOW; i++) cells.push({ type: 'empty' });
+    for (let day = 1; day <= daysInMonth; day++) {
+      const dateStr = monthKey + '-' + String(day).padStart(2, '0');
+      cells.push({
+        type:     'day',
+        day,
+        dateStr,
+        isToday:  dateStr === todayStr,
+        holiday:  FEDERAL_HOLIDAYS[dateStr] || null,
+        meetings: meetingsByDate[dateStr] || [],
+      });
+    }
+    // Pad to full rows
+    while (cells.length % 7 !== 0) cells.push({ type: 'empty' });
+
+    const cellsHtml = cells.map(cell => {
+      if (cell.type === 'empty') return '<div class="cal-cell cal-cell-empty"></div>';
+      const cls = ['cal-cell', cell.isToday ? 'cal-today' : ''].filter(Boolean).join(' ');
+      const holidayHtml = cell.holiday
+        ? `<div class="cal-holiday-label">${cell.holiday}</div>`
+        : '';
+      const chipsHtml = cell.meetings.map(({ committee, meeting }) => {
+        const color = COMMITTEE_COLORS[committee.id] || '#888';
+        if (meeting.iso_ne_url) {
+          return `<a class="cal-chip" style="background:${color};" href="${meeting.iso_ne_url}" target="_blank" rel="noopener" title="${committee.name}">${committee.abbr}</a>`;
+        }
+        return `<span class="cal-chip" style="background:${color};" title="${committee.name}">${committee.abbr}</span>`;
+      }).join('');
+      return `<div class="${cls}"><div class="cal-day-num">${cell.day}</div>${holidayHtml}${chipsHtml}</div>`;
+    }).join('');
+
+    // Committee legend — only committees that appear this month
+    const seenIds = new Set();
+    Object.values(meetingsByDate).forEach(arr => arr.forEach(({ committee }) => seenIds.add(committee.id)));
+    const legendHtml = seenIds.size
+      ? `<div class="cal-legend">${[...seenIds].map(cid => {
+          const c = data.committees.find(c => c.id === cid);
+          const color = COMMITTEE_COLORS[cid] || '#888';
+          return c ? `<div class="cal-legend-item"><span class="cal-legend-dot" style="background:${color};"></span>${c.abbr} — ${c.name}</div>` : '';
+        }).join('')}</div>`
+      : '';
+
+    return `
+      <div class="summary-intro">
+        <div class="summary-section-label">Committee Highlights — ${MONTH_NAMES[month-1]} ${year}</div>
+        ${cardsHtml}
+      </div>
+      <div class="cal-header">
+        <button class="cal-nav-btn" onclick="navMonth(-1)">&#8592; Prev</button>
+        <span class="cal-month-title">${MONTH_NAMES[month-1]} ${year}</span>
+        <button class="cal-nav-btn" onclick="navMonth(1)">Next &#8594;</button>
+      </div>
+      <div class="cal-dow-row">${dowHtml}</div>
+      <div class="cal-grid">${cellsHtml}</div>
+      ${legendHtml}
+      <div style="margin-top:22px;">${maineFlagsHtml}</div>`;
+  }
+
+  // Expose renderSummaryTab globally so navMonth (outside IIFE) can call it
+  window._renderSummaryTab = renderSummaryTab;
+
+  // ── Build page ────────────────────────────────────────────────────────────
+
+  const core      = data.committees.filter(c => c.tier === 'core');
+  const secondary = data.committees.filter(c => c.tier === 'secondary');
+
+  document.getElementById('header-meta').textContent =
+    `Maine PUC — ISO-NE Committee Monitor | Last updated: ${data.last_updated}`;
+
+  const tabNav     = document.getElementById('tab-nav');
+  const tabContent = document.getElementById('tab-content');
+
+  // Summary tab — first and default active
+  const _today = new Date();
+  window.CalState = { year: _today.getFullYear(), month: _today.getMonth() + 1 };
+  const summaryBtn = document.createElement('button');
+  summaryBtn.className   = 'tab-btn active';
+  summaryBtn.dataset.tab = 'summary';
+  summaryBtn.textContent = 'Summary';
+  summaryBtn.title       = 'Monthly Overview';
+  tabNav.appendChild(summaryBtn);
+  const summaryPane = document.createElement('div');
+  summaryPane.className = 'tab-pane active';
+  summaryPane.id = 'pane-summary';
+  summaryPane.innerHTML = renderSummaryTab(window.CalState.year, window.CalState.month);
+  tabContent.appendChild(summaryPane);
+
+  // Core committee tabs
+  core.forEach(c => {
+    const btn = document.createElement('button');
+    btn.className   = 'tab-btn';
+    btn.dataset.tab = c.id;
+    btn.textContent = c.abbr;
+    btn.title       = c.name;
+    tabNav.appendChild(btn);
+    const pane = document.createElement('div');
+    pane.className = 'tab-pane';
+    pane.id = 'pane-' + c.id;
+    pane.innerHTML = renderCommitteeSection(c);
+    tabContent.appendChild(pane);
+  });
+
+  // "Other Committees" tab (secondary)
+  if (secondary.length) {
+    const btn = document.createElement('button');
+    btn.className   = 'tab-btn';
+    btn.dataset.tab = 'other';
+    btn.textContent = 'Other';
+    btn.title       = 'Working Groups';
+    tabNav.appendChild(btn);
+    const pane = document.createElement('div');
+    pane.className = 'tab-pane';
+    pane.id = 'pane-other';
+    pane.innerHTML = secondary.map((c, i) =>
+      (i > 0 ? '<hr class="committee-divider">' : '') + renderCommitteeSection(c)
+    ).join('');
+    tabContent.appendChild(pane);
+  }
+
+  // Projects tab
+  if (window.PROJECTS_DATA && window.PROJECTS_DATA.length) {
+    const btn = document.createElement('button');
+    btn.className   = 'tab-btn';
+    btn.dataset.tab = 'projects';
+    btn.textContent = 'Projects';
+    btn.title       = 'ISO-NE Key Projects';
+    tabNav.appendChild(btn);
+    const pane = document.createElement('div');
+    pane.className = 'tab-pane';
+    pane.id = 'pane-projects';
+    pane.innerHTML = renderProjectsCards();
+    tabContent.appendChild(pane);
+  }
+
+  // Tab switching
+  tabNav.addEventListener('click', e => {
+    const btn = e.target.closest('.tab-btn');
+    if (!btn) return;
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    const pane = document.getElementById('pane-' + btn.dataset.tab);
+    if (pane) pane.classList.add('active');
+  });
+})();
+
+// ── Global toggle / navigation functions ─────────────────────────────────────
+
+function navMonth(delta) {
+  window.CalState.month += delta;
+  if (window.CalState.month > 12) { window.CalState.month = 1;  window.CalState.year++; }
+  if (window.CalState.month < 1)  { window.CalState.month = 12; window.CalState.year--; }
+  const pane = document.getElementById('pane-summary');
+  if (pane) pane.innerHTML = window._renderSummaryTab(window.CalState.year, window.CalState.month);
+}
+
+
+function toggleAgenda(uid) {
+  const body = document.getElementById('abody-' + uid);
+  const btn  = document.getElementById('abtn-' + uid);
+  if (!body) return;
+  const open = body.classList.toggle('open');
+  if (btn) btn.textContent = open ? 'Hide agenda' : `Agenda (${btn.dataset.count} items)`;
+}
+
+function toggleProjectHistory(uid) {
+  const body = document.getElementById('ptbody-' + uid);
+  const btn  = document.getElementById('ptbtn-' + uid);
+  if (!body) return;
+  const open = body.classList.toggle('open');
+  if (btn) btn.classList.toggle('open', open);
+}
+
+function showCommitteeTab(committeeId) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+  // Core committees have their own pane; secondary committees are in 'other'
+  const paneId = document.getElementById('pane-' + committeeId) ? committeeId : 'other';
+  const btn  = document.querySelector(`[data-tab="${paneId}"]`);
+  const pane = document.getElementById('pane-' + paneId);
+  if (btn)  btn.classList.add('active');
+  if (pane) { pane.classList.add('active'); pane.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+}
+
+function showProject(projectId) {
+  // Switch to Projects tab
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+  const btn  = document.querySelector('[data-tab="projects"]');
+  const pane = document.getElementById('pane-projects');
+  if (btn)  btn.classList.add('active');
+  if (pane) pane.classList.add('active');
+  // Scroll to and open that project card
+  const uid  = 'proj-' + projectId;
+  const card = document.getElementById(uid);
+  if (card) {
+    card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const body = document.getElementById('ptbody-' + uid);
+    const pbtn = document.getElementById('ptbtn-' + uid);
+    if (body && !body.classList.contains('open')) {
+      body.classList.add('open');
+      if (pbtn) pbtn.classList.add('open');
+    }
+  }
+}
+</script>
+</body>
+</html>

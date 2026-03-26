@@ -1,0 +1,681 @@
+// Auto-generated — do not edit manually.
+window.SCRAPED_DATA = {
+  "scraped_at": "2026-03-25T21:09:21",
+  "cutoff_date": "2025-11-25",
+  "committees": {
+    "pc": {
+      "name": "Participants Committee",
+      "meetings": {
+        "2026-03-05": [
+          {
+            "title": "2026-03-05 PC Composite Materials",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/npc-2026-03-05-composite4.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-03-05 PC Initial Notice",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/npc-2026-03-05-initial.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-03-05 PC Notice of Actions",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/npc-noa-20260305.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-03-05 PC Supplemental Notice",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/npc-2026-03-05-supplemental.pdf",
+            "ext": "pdf"
+          }
+        ],
+        "2026-02-05": [
+          {
+            "title": "2026-02-05 PC Composite Materials",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/npc-2026-02-05-composite5.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-02-05 PC Initial Notice",
+            "url": "https://www.iso-ne.com/static-assets/documents/100031/npc-2026-02-05-initial.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-02-05 PC Notice of Actions",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/npc-noa-20260205.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-02-05 PC Supplemental Notice",
+            "url": "https://www.iso-ne.com/static-assets/documents/100031/npc-2026-02-05-supplemental.pdf",
+            "ext": "pdf"
+          }
+        ],
+        "2026-01-08": [
+          {
+            "title": "2026-01-08 PC Initial Notice",
+            "url": "https://www.iso-ne.com/static-assets/documents/100030/npc-2026-01-08-initial.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-01-08 PC Notice of Actions",
+            "url": "https://www.iso-ne.com/static-assets/documents/100031/npc-noa-20260108.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-01-08 PC Supplemental Notice",
+            "url": "https://www.iso-ne.com/static-assets/documents/100031/npc-2026-01-08-supplemental.pdf",
+            "ext": "pdf"
+          }
+        ],
+        "2025-12-04": [
+          {
+            "title": "2025-12-04 PC Composite Materials",
+            "url": "https://www.iso-ne.com/static-assets/documents/100030/npc-2025-12-04-composite5.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2025-12-04 PC Initial Notice",
+            "url": "https://www.iso-ne.com/static-assets/documents/100029/npc-2025-12-04-initial.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2025-12-04 PC Notice of Actions",
+            "url": "https://www.iso-ne.com/static-assets/documents/100030/npc-noa-20251204.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2025-12-04 PC Supplemental Notice",
+            "url": "https://www.iso-ne.com/static-assets/documents/100029/npc-2025-12-04-supplemental.pdf",
+            "ext": "pdf"
+          }
+        ]
+      }
+    },
+    "mc": {
+      "name": "Markets Committee",
+      "meetings": {
+        "2026-03-10": [
+          {
+            "title": "2026-03-10-12 MC A00 - Actions Letter",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/a00_mc_2026_03-10-12_actions_letter.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-03-10-12 MC A00 - Agenda",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/a00_mc_2026_3_10-12_agenda.docx",
+            "ext": "docx"
+          },
+          {
+            "title": "2026-03-10-12 MC A00 - Meeting Materials Zip",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/a00_meeting_materials_zip.zip",
+            "ext": "zip"
+          },
+          {
+            "title": "2026-03-10-12 MC A00 - Motions - Minutes",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/a01a_mc_2026_03-10-12_motions_letter_minutes.docx",
+            "ext": "docx"
+          },
+          {
+            "title": "2026-03-10-12 MC A01.A.ii - Draft February 10-11, 2026 Joint Markets and Reliability Committee Meeting Minutes",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/a01.a.ii_mc_2026_2-10-11_meeting_minutes_joint_mc_rc_draft.docx",
+            "ext": "docx"
+          },
+          {
+            "title": "2026-03-10-12 MC A01.A.iii - Draft February 12, 2026 Joint Reliability and Markets Committee Meeting Minutes",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/a01.a.iii_mc_2026_2-12_meeting_minutes_rc_mc_draft.docx",
+            "ext": "docx"
+          },
+          {
+            "title": "2026-03-10-12 MC A01.a.i - Draft February 10-11, 2026 Markets Committee Meeting Minutes",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/a01.a.i_mc_2026_2-10-11_meeting_minutes_mc_draft.docx",
+            "ext": "docx"
+          },
+          {
+            "title": "2026-03-10-12 MC A02 - GIS Working Group Referral - ME Class III RECs",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/a02_mc_2026_03_10-12_giswg_referral_maine_class_iii_recs_memo.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-03-10-12 MC A03 - Pay-For-Performance Revisions: Performance Penalty Rate",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/a03_mc_2026_03_10-12_pfp_revisions_ppr.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-03-10-12 MC A04 - Pay-For-Performance Revisions: Balancing Ratio (FERC Order on the NEPGA Complaint 9EL25-106))",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/a04_mc_2026_03_10-12_pfp_revisions_balancing_ratio_ferc_order_nepga_complaint_el25-106.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-03-10-12 MC A05 - Pay-For-Performance Revisions: Treatment of External Transactions and Potential Clean-Up Changes",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/a05_mc_2026_3_10-12_pfp_revisions_treatment_external_transactions.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-03-10-12 MC A06 - Dynamic Operating Reserves",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/a06_mc_2026_3_10-12_dynamic_operating_reserves_memo.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-03-10-12 MC/RC 7.1.a - CAR-SA: IPR Modeling & Accreditation Follow Up - Presentation",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/a07.1.b_mc_rc_2026_03_10-12_ipr_modeling_accreditation_continued.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-03-10-12 MC/RC 7.1.b - CAR-SA: Hybrid Modeling & Accreditation Continued - Presentation",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/a07.1_mc_rc_2026_03_10-12_car-sa_hybrid_modeling_accreditation_continued.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-03-10-12 MC/RC 7.1.c - CAR-SA: Imports Modeling & Accreditation - Presentation",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/a07.1.c_mc_rc_2026_03_10-12_carsa_imports.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-03-10-12 MC/RC 7.1.d - CAR-SA: EFORd Values Update - Presentation",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/a07.1.d_mc_rc_2026_03_10-12_eford_values_update.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-03-10-12 MC/RC 7.1.e - CAR-SA: Capacity Market Cost Allocation - Presentation",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/a07.1.e_mc_rc_2026_03_10-12_capacity_market_cost_allocation.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-03-10-12 MC/RC 7.1.f - CAR-SA: Principles of Competitive Offer Construction, Self-Supply, and Seasonal Definition Impacts - Presentation",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/a07.1.f_mc_rc_2026_03_10-12_car-sa_principles_competitive_offer_construction_self_supply_and_seasonal_definition_impacts.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-03-10-12 MC/RC 7.1.g - CAR-SA: Impact Analysis - Market Clearing - Presentation",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/a07.1.g_mc_rc_2026_03_10-12_car-sa_market_clearing_ia_assumptions.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-03-10-12 MC/RC 7.1.h - CAR-SA: Impact Analysis - Resource Accreditation Modeling - Presentation",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/a07.1.h_mc_rc_2026_03_10-12_car-sa_ia_ram.pdf",
+            "ext": "pdf"
+          }
+        ],
+        "2026-02-10": [
+          {
+            "title": "2026-02-10-11 MC A00 - Actions Letter",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/a00_mc_2026_02_10-11_actions_letter.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-02-10-11 MC A00 - Agenda",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/a00_mc_2026_2_10-11_agenda.docx",
+            "ext": "docx"
+          },
+          {
+            "title": "2026-02-10-11 MC A00 - Motions - Minutes",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/a01a_mc_2026_01-13-14_motions_letter_minutes.docx",
+            "ext": "docx"
+          },
+          {
+            "title": "2026-02-10-11 MC A00 Meeting Materials Zip",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/a00_meeting_materials_zip.zip",
+            "ext": "zip"
+          },
+          {
+            "title": "2026-02-10-11 MC A01.A.i - Draft January 13-14, 2026 Markets Committee Meeting Minutes",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/a01.a.i_mc_2026_02_10-11_draft_meeting_minutes_mc_1-13-14.docx",
+            "ext": "docx"
+          },
+          {
+            "title": "2026-02-10-11 MC A01.A.ii - Draft January 13-14, 2026 Joint Markets and Reliability Committees Meeting Minutes",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/a01.a.ii_mc_2026_02_10-11_draft_joint_meeting_minutes_mc_rc_1-13-14.docx",
+            "ext": "docx"
+          },
+          {
+            "title": "2026-02-10-11 MC A01.A.iii - Draft January 22, 2026 Joint Reliability and Markets Committees Meeting Minutes",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/a01.a.iii_mc_2026_02_10-11_draft_joint_meeting_minutes_rc_mc_2026_01_22.docx",
+            "ext": "docx"
+          },
+          {
+            "title": "2026-02-10-11 MC A01.A.iv - Draft December 16, 2025 Joint Reliability and Markets Committees Meeting Minutes",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/a01.a.iv_mc_2026_02_10-11_draft_joint_meeting_minutes_rc_mc_2025_12_16.docx",
+            "ext": "docx"
+          },
+          {
+            "title": "2026-02-10-11 MC A03 - Internal Market Monitor Recommendations on Potential Day-Ahead Ancillary Services Improvements",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/a03_mc_2026_02_10-11_imm_recommendations_potential_daas_improvements.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-02-10-11 MC A04 - Fall Quarterly Markets Report",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/a04_mc_2026_02_10-11_imm_fall_2025_qmr_presentation.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-02-10-11 MC/RC A02.1.a - Intermittent Power Resource Modeling and Accreditation Presentation",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/a02.1.a_mc_rc_2026_02_10-11_ipr_modeling_and_accreditation_presentation.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-02-10-11 MC/RC A02.1.b - Hybrid Resource Modeling and Accreditation - Memo",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/a02.1.b_mc_rc_2026_02_10-11_hybrid_resource_modeling_and_accreditation_memo.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-02-10-11 MC/RC A02.1.b - Hybrid Resource Modeling and Accreditation - Presentation",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/a02.1.b_mc_rc_2026_02_10-11_hybrid_resource_modeling_and_accreditation_presentation.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-02-10-11 MC/RC A02.1.c.i - CAR-SA: Resource Accreditation Modeling Impact Analysis: Additional Assumption Detail and Interpretation of Survey Responses - Presentation",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/a02.1.c.i_mc_rc_2026_02_10-11_carsa_ia_assumption_detail_survey_presentation.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-02-10-11 MC/RC A02.1.c.ii - CAR-SA: Impact Analysis - Market Clearing Assumption Introduction - Presentation",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/a02.1.c.ii_mc_rc_2026_02_10-11_carsa_impact_analysis_market_clearing_assumption_introduction_presentation.pdf",
+            "ext": "pdf"
+          }
+        ],
+        "2026-01-13": [
+          {
+            "title": "2026-01-13-14 MC A00 - Actions Letter",
+            "url": "https://www.iso-ne.com/static-assets/documents/100031/a00_mc_2026_01_13-14_actions_letter.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-01-13-14 MC A00 - Materials Zip File",
+            "url": "https://www.iso-ne.com/static-assets/documents/100031/a00_meeting_materials_1st_set.zip",
+            "ext": "zip"
+          },
+          {
+            "title": "2026-01-13-14 MC A04.1.c - CAR-SA: Impact Analysis Assumptions - Presentation (MC/RC) - Rev. 1",
+            "url": "https://www.iso-ne.com/static-assets/documents/100031/a04.1.c_mc_rc_2026_01_13-14_impact_analysis.pdf",
+            "ext": "pdf"
+          }
+        ]
+      }
+    },
+    "rc": {
+      "name": "Reliability Committee",
+      "meetings": {
+        "2026-03-17": [
+          {
+            "title": "2026-03-17 RC A00 Agenda",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/a00_031726_rc_agenda.docx",
+            "ext": "docx"
+          },
+          {
+            "title": "2026-03-17 RC A02.03 Nextsun Energy, 1 Distribution Center Circle Solar – Level 0 – LELWD-26-G01",
+            "url": "https://markets.iso-ne.com/operations-services/ceii/rc/2026/03/a02_03_lewld_26_g01.zip",
+            "ext": "zip"
+          },
+          {
+            "title": "2026-03-17 RC A04.a Capacity Auction Reforms - Seasonal/Accreditation - Deliverability Modeling: Summary of All Resource Types - Revision 1",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/a04_car_sa_deliverability_march_2026_rc.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-03-17 RC A06 Regional Energy Shortfall Threshold (REST) Long-Term Assessments And Sensitivity Process - Revision 1",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/a06_2026_rest_long_term_assessments.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-03-17 RC Actions Letter",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/031726_rc_actions_letter.pdf",
+            "ext": "pdf"
+          }
+        ],
+        "2026-02-12": [
+          {
+            "title": "2026-02-12 MC/RC Meeting Minutes - Final",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/021226_mc_rc_meeting_minutes.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-02-12 RC Meeting Minutes - Final",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/021226_rc_meeting_minutes.pdf",
+            "ext": "pdf"
+          }
+        ],
+        "2026-02-10": [
+          {
+            "title": "2026-02-10-11 MC/RC Meeting Minutes - Final",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/02101126_mc_rc_meeting_minutes.pdf",
+            "ext": "pdf"
+          }
+        ]
+      }
+    },
+    "tc": {
+      "name": "Transmission Committee",
+      "meetings": {
+        "2026-03-18": [
+          {
+            "title": "2026-03-18 TC A00 Agenda",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/a00_2026_03_18_tc_agenda.docx",
+            "ext": "docx"
+          },
+          {
+            "title": "2026-03-18 TC A00 Motions Letter",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/a00_2026_03_18_tc_motions_letter.docx",
+            "ext": "docx"
+          },
+          {
+            "title": "2026-03-18 TC A01.1 February 24, 2026 TC Meeting Minutes",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/a01.1_2026_02_24_tc_meeting_minutes.docx",
+            "ext": "docx"
+          },
+          {
+            "title": "2026-03-18 TC A02 Asset Condition Reviewer Presentation",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/a02_tc_ac_reviewer_presentation.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-03-18 TC Actions Letter",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/2026_03_18_tc_actions_letter.pdf",
+            "ext": "pdf"
+          }
+        ],
+        "2026-02-24": [
+          {
+            "title": "2026-02-24 TC A00 Agenda",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/a00_2026_02_24_tc_agenda.docx",
+            "ext": "docx"
+          },
+          {
+            "title": "2026-02-24 TC A00 Motions Letter",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/a00_2026_02_24_tc_motions_letter.docx",
+            "ext": "docx"
+          },
+          {
+            "title": "2026-02-24 TC A01.1 January 21, 2026 TC Meeting Minutes",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/a01.1_tc_january_meeting_minutes.docx",
+            "ext": "docx"
+          },
+          {
+            "title": "2026-02-24 TC A02.1(a) RENEW Northeast's Feedback on Surplus Interconnection Service",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/a02.1a_renew_feedback_surplus_presentation.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-02-24 TC A02.1(b) Natural Resource Defense Council's Feedback on Surplus Interconnection Service",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/a01b_tc_nrdc_surplus_feedback.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-02-24 TC A02.1(c) Advanced Energy United's Feedback on Surplus Interconnection Service",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/a02.1c_tc_aeu_feedback_surplus.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-02-24 TC A02.1(d) Sigma Power Consultants Feedback on Surplus Interconnection Service",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/sigma_consultants_surplus_comments.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-02-24 TC A02.1(e) JERA America's Feedback on Surplus Interconnection Service",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/tc_jera_feedback_surplus.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-02-24 TC A02.1(f) Industrial Wind Action Corp's Feedback on Surplus Interconnection Service",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/a02.1f_tc_windaction_feedback.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-02-24 TC A02.2 Surplus Interconnection Service",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/a02.2_tc_surplus_interconnection_service.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-02-24 TC A03 Asset Condition (AC) Reviewer",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/a03__2026_02_24_tc_ac_reviewer_presentation.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-02-24 TC Actions Letter",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/2026_02_24_tc_actions_letter.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "February 24, 2026 TC Meeting Minutes - Final",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/2026_02_24_tc_meeting_minutes_final.pdf",
+            "ext": "pdf"
+          }
+        ],
+        "2026-01-21": [
+          {
+            "title": "2026-01-21 TC A00 Agenda",
+            "url": "https://www.iso-ne.com/static-assets/documents/100031/a00_2026_01_21_tc_agenda.docx",
+            "ext": "docx"
+          },
+          {
+            "title": "2026-01-21 TC A00 Motions Letter",
+            "url": "https://www.iso-ne.com/static-assets/documents/100031/a00_2026_01_21_tc_motions_letter.docx",
+            "ext": "docx"
+          },
+          {
+            "title": "2026-01-21 TC A01.1 December 18, 2025 TC Meeting Minutes",
+            "url": "https://www.iso-ne.com/static-assets/documents/100031/a01.1_2025_12_18_tc_meeting_minutes.docx",
+            "ext": "docx"
+          },
+          {
+            "title": "2026-01-21 TC A02 Order No. 2023 Related Changes - Presentation",
+            "url": "https://www.iso-ne.com/static-assets/documents/100031/a02_order2023_related_changes_presentation.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-01-21 TC A02 Order No. 2023 Related Changes - Section II.48.3 Redlines",
+            "url": "https://www.iso-ne.com/static-assets/documents/100031/a02_order2023_section_ii.48.3_redlines.docx",
+            "ext": "docx"
+          },
+          {
+            "title": "2026-01-21 TC A02 Order No. 2023 Related Changes - Section II.48.4 Redlines",
+            "url": "https://www.iso-ne.com/static-assets/documents/100031/a02_order2023_section_ii.48.4_redlines.docx",
+            "ext": "docx"
+          },
+          {
+            "title": "2026-01-21 TC A02 Order No. 2023 Related Changes - Section II.48.5 Redlines",
+            "url": "https://www.iso-ne.com/static-assets/documents/100031/a02_order2023_section_ii.48.5_redlines.docx",
+            "ext": "docx"
+          },
+          {
+            "title": "2026-01-21 TC A03 Surplus Interconnection Service",
+            "url": "https://www.iso-ne.com/static-assets/documents/100031/a03_tc_surplus_interconnection_service_presentation.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-01-21 TC A04 Asset Condition Reviewer",
+            "url": "https://www.iso-ne.com/static-assets/documents/100031/a04_tc_acr_presentation.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-01-21 TC Actions Letter",
+            "url": "https://www.iso-ne.com/static-assets/documents/100031/2026_01_21_tc_actions_letter.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "January 21, 2026 TC Meeting Minutes - Final",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/2026_02_21_tc_meeting_minutes_final.pdf",
+            "ext": "pdf"
+          }
+        ],
+        "2025-12-18": [
+          {
+            "title": "December 18, 2025 TC Meeting Minutes - Final",
+            "url": "https://www.iso-ne.com/static-assets/documents/100031/2025_12_18_tc_meeting_minutes_final.pdf",
+            "ext": "pdf"
+          }
+        ]
+      }
+    },
+    "pac": {
+      "name": "Planning Advisory Committee",
+      "meetings": {
+        "2026-03-24": [
+          {
+            "title": "2026-03-24 PAC A00 Agenda",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/a00_2026_03_24_pac_agenda.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-03-24 PAC A01 PAC Secretary Assignment",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/a1.0_2026_03_pac_secretary_assignment.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-03-24 PAC A02.1 Chester SVC Valves and Controls Upgrade",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/a2.1_pac_versant_chester_svc_upgrade.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-03-24 PAC A02.2 Long Mountain, 345kV Breaker Replacement and Cable Separation & Shielding Project",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/a2.2_pac_es_long_mountain_bps_separation.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-03-24 PAC A02.3 Stony Hill 48C 115kV Substation Relay Upgrades",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/a2.3_pac_es_stony_hill_mcru.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-03-24 PAC A03 RSP Project List & Asset Condition List Update - March 2025",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/draft_rsp_acl_update_mar2026.zip",
+            "ext": "zip"
+          },
+          {
+            "title": "2026-03-24 PAC A04 2025 LTTP RFP – Initial Review and RFP Objectives Results",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/a4.0_pac_2025_lttp_rfp_initial_review_and_rfp_objective_results_pac_2026_03_24.pdf",
+            "ext": "pdf"
+          }
+        ],
+        "2026-02-25": [
+          {
+            "title": "2026-02-25 PAC A00 Agenda",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/a00_2026_02_25_pac_agenda.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-02-25 PAC A02.1 Lines 325, 331, and 344 Rebuilds West Medway Substation to West Walpole Substation",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/a02.1_pac_line_325_331_presentation.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-02-25 PAC A02.2 F206 Upgrade",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/a02.2_pac_f206_presentation.pdf",
+            "ext": "pdf"
+          }
+        ],
+        "2026-01-27": [
+          {
+            "title": "2026-01-27 PAC A00 Agenda",
+            "url": "https://www.iso-ne.com/static-assets/documents/100031/a00_2026_01_27_pac_agenda.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-01-27 PAC A02.1 Belmont #98 Asset Replacements",
+            "url": "https://www.iso-ne.com/static-assets/documents/100031/a02.1_pac_belmont_98_asset_replacements.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-01-27 PAC A02.2 Connecticut River Crossing Projects – Project Update",
+            "url": "https://www.iso-ne.com/static-assets/documents/100031/a02.2_pac_connecticut_river_crossing_project_update.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-01-27 PAC A02.3 New Hampshire Asset Condition Structure Replacements – Lines 367, A126, A152, B143, K174, and M127",
+            "url": "https://www.iso-ne.com/static-assets/documents/100031/a02.3_pac_nh_asset_condition_structure_replacements.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-01-27 PAC A03 2026 Public Policy Announcement",
+            "url": "https://www.iso-ne.com/static-assets/documents/100031/2026_public_policy_announcement.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-01-27 PAC A03 2026 Public Policy Input Template",
+            "url": "https://www.iso-ne.com/static-assets/documents/100031/2026_public_policy_input_template.xlsx",
+            "ext": "xlsx"
+          },
+          {
+            "title": "2026-01-27 PAC A03 2026 Public Policy Transmission Update Process",
+            "url": "https://www.iso-ne.com/static-assets/documents/100031/2026_pptu_process.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-01-27 PAC A04 Initiation of the 2026 Economic Study & Economic Study Survey",
+            "url": "https://www.iso-ne.com/static-assets/documents/100031/a04_pac_2026_economic_study_presentation.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-01-27 PAC A05.1 Asset Condition Reviewer - List of Projects for Interim Review",
+            "url": "https://www.iso-ne.com/static-assets/documents/100031/a05.1_pac_acr_interim_update.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-01-27 PAC A05.2 Asset Condition Reviewer – Establishing ISO New England as the Region’s Asset Condition Reviewer",
+            "url": "https://www.iso-ne.com/static-assets/documents/100031/a05.2_pac_acr_intro_presentation.pdf",
+            "ext": "pdf"
+          }
+        ]
+      }
+    },
+    "lfwg": {
+      "name": "Load Forecasting Working Group",
+      "meetings": {
+        "2026-03-27": [
+          {
+            "title": "2026-03-27 LFC Final Draft 2026 Energy and Seasonal Peak Forecasts",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/energy_demand_fx2026_finaldraft.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-03-27 LFC Final Draft Large Load Forecast",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/fx2026_large_loads.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-03-27 LFC Meeting Agenda",
+            "url": "https://www.iso-ne.com/static-assets/documents/100033/lfc_agenda_27mar2026.pdf",
+            "ext": "pdf"
+          }
+        ],
+        "2026-02-20": [
+          {
+            "title": "2026-02-20 LFC Draft 2026 Energy and Seasonal Peak Forecasts",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/energy_demand_fx2026_draft_final.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-02-20 LFC Meeting Agenda",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/lfc_agenda_20feb2026.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2026-02-20 LFC Update on Large Loads in the 2026 Load Forecast",
+            "url": "https://www.iso-ne.com/static-assets/documents/100032/fx2026_large_loads_intro.pdf",
+            "ext": "pdf"
+          }
+        ],
+        "2025-12-12": [
+          {
+            "title": "2025-12-12 LFC Draft 2026 Electric Vehicle Forecast",
+            "url": "https://www.iso-ne.com/static-assets/documents/100030/ev_fx2026_draft.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2025-12-12 LFC Draft 2026 Heat Pump Forecast",
+            "url": "https://www.iso-ne.com/static-assets/documents/100030/heat_fx2026_draft.pdf",
+            "ext": "pdf"
+          },
+          {
+            "title": "2025-12-12 LFC Meeting Agenda",
+            "url": "https://www.iso-ne.com/static-assets/documents/100030/lfc_agenda_12dec2025.pdf",
+            "ext": "pdf"
+          }
+        ]
+      }
+    },
+    "dgwg": {
+      "name": "Distributed Generation Working Group",
+      "meetings": {}
+    }
+  }
+};
