@@ -894,7 +894,7 @@ window.MEETINGS_DATA = {
             },
             {
               order: 2,
-              time: "9:05 AM",
+              time: "9:35 AM",
               agenda_number: "A02.2",
               title: "Eversource — Connecticut River Crossing Projects Update",
               type: "presentation",
@@ -905,7 +905,7 @@ window.MEETINGS_DATA = {
             },
             {
               order: 3,
-              time: "9:05 AM",
+              time: "10:05 AM",
               agenda_number: "A02.3",
               title: "Eversource — NH Asset Condition Structure Replacements (Lines 367, A126, A152, B143, K174, M127)",
               type: "presentation",
