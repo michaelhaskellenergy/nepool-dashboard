@@ -194,7 +194,7 @@ window.MEETINGS_DATA = {
           agenda_items: [
             {
               order: 1,
-              title: "ADD AGENDA ITEMS WHEN POSTED",
+              title: "Agenda pending — check back closer to the meeting date.",
               type: "presentation",
               materials: [],
               summary: "",
@@ -470,7 +470,7 @@ window.MEETINGS_DATA = {
           agenda_items: [
             {
               order: 1,
-              title: "ADD AGENDA ITEMS WHEN POSTED",
+              title: "Agenda pending — check back closer to the meeting date.",
               type: "presentation",
               materials: [],
               summary: "",
@@ -489,7 +489,7 @@ window.MEETINGS_DATA = {
               order: 1,
               time: "9:35 AM",
               agenda_number: "A01.1",
-              title: "Approve Feb 10-11 Joint MC/RC Minutes; Feb 12 Joint RC/MC & RC Minutes",
+              title: "Approve Feb 10-11 Joint MC/RC Minutes and Feb 12 RC Minutes",
               type: "procedural",
               materials: [],
               summary: "",
@@ -656,7 +656,7 @@ window.MEETINGS_DATA = {
           agenda_items: [
             {
               order: 1,
-              title: "ADD AGENDA ITEMS WHEN POSTED",
+              title: "Agenda pending — check back closer to the meeting date.",
               type: "presentation",
               materials: [],
               summary: "",
@@ -756,7 +756,7 @@ window.MEETINGS_DATA = {
           agenda_items: [
             {
               order: 1,
-              title: "ADD AGENDA ITEMS WHEN POSTED",
+              title: "Agenda pending — check back closer to the meeting date.",
               type: "presentation",
               materials: [],
               summary: "",
@@ -795,7 +795,7 @@ window.MEETINGS_DATA = {
             },
             {
               order: 3,
-              time: "9:05 AM",
+              time: "9:30 AM",
               agenda_number: "A02.2",
               project_id: "asset-condition",
               title: "Eversource — Long Mountain 345 kV Breaker Replacement and Cable Separation & Shielding Project",
@@ -807,7 +807,7 @@ window.MEETINGS_DATA = {
             },
             {
               order: 4,
-              time: "9:05 AM",
+              time: "9:55 AM",
               agenda_number: "A02.3",
               project_id: "asset-condition",
               title: "Eversource — Stony Hill 48C 115 kV Substation Relay Upgrades",
@@ -952,7 +952,7 @@ window.MEETINGS_DATA = {
             },
             {
               order: 7,
-              time: "1:00 PM",
+              time: "1:35 PM",
               agenda_number: "A05.2",
               project_id: "asset-condition",
               title: "Asset Condition Reviewer — Conceptual Framework & Stakeholder Feedback",
