@@ -283,6 +283,30 @@
     white-space: nowrap;
   }
   .summary-tab-link:hover { background: #edf4fc; }
+
+  /* ── New materials notification ───────────────────────────────────────────── */
+  .notif-box {
+    background: #f0f7ff; border: 1px solid #b0d4f5; border-left: 4px solid #2e7bc4;
+    border-radius: 4px; padding: 10px 14px; margin-bottom: 18px;
+  }
+  .notif-header {
+    font-size: 0.78em; font-weight: 700; color: #1a3a5c; text-transform: uppercase;
+    letter-spacing: 0.06em; margin-bottom: 6px;
+  }
+  .notif-header .notif-meta { font-weight: 400; color: #777; font-size: 0.92em; text-transform: none; letter-spacing: 0; }
+  .notif-item {
+    display: flex; align-items: center; gap: 8px; padding: 3px 0;
+    border-top: 1px solid #d8eaf8; font-size: 0.84em;
+  }
+  .notif-item:first-of-type { border-top: none; }
+  .notif-item a { color: #1a3a5c; text-decoration: none; flex: 1; min-width: 0;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .notif-item a:hover { color: #2e7bc4; text-decoration: underline; }
+  .notif-show-more {
+    background: none; border: none; color: #2e7bc4; font-size: 0.8em; font-weight: 600;
+    cursor: pointer; padding: 5px 0 0; display: block;
+  }
+  .notif-show-more:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
@@ -305,6 +329,7 @@
 <script src="data/meetings.js"></script>
 <script src="data/summaries.js"></script>
 <script src="data/scraped_materials.js"></script>
+<script src="data/new_materials.js"></script>
 <script src="data/projects.js"></script>
 <script src="data/monthly_summary.js"></script>
 <script>
@@ -859,7 +884,42 @@
         }).join('')}</div>`
       : '';
 
+    // ── Recent materials notification ─────────────────────────────────────────
+    let notifHtml = '';
+    const nd = window.NEW_MATERIALS_DATA;
+    if (nd && nd.new_docs && nd.new_docs.length) {
+      const cutoff24h = new Date(Date.now() - 24 * 60 * 60 * 1000);
+      const recent = nd.new_docs.filter(d => new Date(d.found_at) >= cutoff24h);
+      if (recent.length) {
+        const NOTIF_LIMIT = 5;
+        const renderNotifItem = d => {
+          const c = data.committees.find(c => c.id === d.committee_id);
+          const abbr  = c ? c.abbr : d.committee_id.toUpperCase();
+          const color = COMMITTEE_COLORS[d.committee_id] || '#888';
+          const chip  = `<span class="cal-chip" style="background:${color};cursor:default;">${abbr}</span>`;
+          return `<div class="notif-item">${chip}<a href="${d.url}" target="_blank" rel="noopener" title="${d.title}">${d.title}</a></div>`;
+        };
+        const visibleItems = recent.slice(0, NOTIF_LIMIT).map(renderNotifItem).join('');
+        const overflow = recent.slice(NOTIF_LIMIT);
+        const overflowHtml = overflow.length
+          ? `<div id="notif-overflow" style="display:none;">${overflow.map(renderNotifItem).join('')}</div>
+             <button class="notif-show-more" onclick="document.getElementById('notif-overflow').style.display='';this.style.display='none';">Show ${overflow.length} more &darr;</button>`
+          : '';
+        const genTime = nd.generated_at
+          ? new Date(nd.generated_at).toLocaleString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })
+          : '';
+        const metaStr = genTime ? ` <span class="notif-meta">&mdash; scraped ${genTime}</span>` : '';
+        notifHtml = `
+          <div class="notif-box">
+            <div class="notif-header">&#128275; ${recent.length} New Material${recent.length !== 1 ? 's' : ''} &mdash; Last 24 Hours${metaStr}</div>
+            ${visibleItems}
+            ${overflowHtml}
+          </div>`;
+      }
+    }
+
     return `
+      ${notifHtml}
       <div class="summary-intro">
         <div class="summary-section-label">Committee Highlights — ${MONTH_NAMES[month-1]} ${year}</div>
         ${cardsHtml}

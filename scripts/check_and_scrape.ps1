@@ -1,14 +1,9 @@
 # scripts/check_and_scrape.ps1
 #
-# Run daily via Windows Task Scheduler (weekdays only).
-# Checks if today is a trigger day for any upcoming meeting:
-#   5 days before = 120 hours
-#   3 days before =  72 hours
-#   2 days before =  48 hours
-#   1 day  before =  24 hours
-# Runs scrape_materials.py if a trigger fires. Never runs on weekends.
-#
-# Setup: see README or run Set-ScheduledTask.ps1 to register with Task Scheduler.
+# Runs weekdays at 8 AM (via Windows Task Scheduler — see register_task.ps1).
+# Scrapes ISO-NE committee pages for new documents, then commits and pushes
+# the updated data/scraped_materials.js and data/new_materials.js files to
+# GitHub so the live site reflects new materials within 24 hours.
 
 $ScriptDir  = Split-Path -Parent $MyInvocation.MyCommand.Path
 $ProjectDir = Split-Path -Parent $ScriptDir
@@ -27,52 +22,46 @@ if ($today.DayOfWeek -eq 'Saturday' -or $today.DayOfWeek -eq 'Sunday') {
     exit 0
 }
 
-# ── Read upcoming meeting dates from meetings.js ──────────────────────────────
-$meetingsFile = Join-Path $ProjectDir "data\meetings.js"
-if (-not (Test-Path $meetingsFile)) {
-    Log "ERROR: $meetingsFile not found."
-    exit 1
-}
-
-$content = Get-Content $meetingsFile -Raw
-
-# Extract every "date": "YYYY-MM-DD" value, keep only future dates
-$upcomingDates = [regex]::Matches($content, '"date"\s*:\s*"(\d{4}-\d{2}-\d{2})"') |
-    ForEach-Object { [datetime]::ParseExact($_.Groups[1].Value, 'yyyy-MM-dd', $null) } |
-    Where-Object { $_ -gt $today } |
-    Sort-Object -Unique
-
-if ($upcomingDates.Count -eq 0) {
-    Log "No upcoming meetings found in meetings.js — nothing to do."
-    exit 0
-}
-
-# ── Check trigger days (hours / 24) ──────────────────────────────────────────
-$triggerDays = @(1, 2, 3, 5)   # 24h, 48h, 72h, 120h
-$triggered   = $false
-
-foreach ($meetingDate in $upcomingDates) {
-    $daysUntil = ($meetingDate - $today).Days
-    if ($triggerDays -contains $daysUntil) {
-        Log "TRIGGER: meeting on $($meetingDate.ToString('yyyy-MM-dd')) is $daysUntil day(s) away."
-        $triggered = $true
-    }
-}
-
-if (-not $triggered) {
-    Log "No trigger today ($($today.ToString('ddd yyyy-MM-dd')))."
-    exit 0
-}
+Log "=== NEPOOL Scraper run: $($today.ToString('ddd yyyy-MM-dd')) ==="
 
 # ── Run scraper ───────────────────────────────────────────────────────────────
 $scraper = Join-Path $ScriptDir "scrape_materials.py"
 Log "Running scraper..."
 
-python $scraper --months 2 2>&1 | ForEach-Object { Log "  $_" }
+python $scraper --months 6 2>&1 | ForEach-Object { Log "  $_" }
+
+if ($LASTEXITCODE -ne 0) {
+    Log "ERROR: scraper exited with code $LASTEXITCODE. Aborting git push."
+    exit $LASTEXITCODE
+}
+Log "Scraper completed successfully."
+
+# ── Commit and push updated data files to GitHub ─────────────────────────────
+Set-Location $ProjectDir
+
+# Stage only the auto-generated browser files (not the raw .json files)
+git add data/scraped_materials.js data/new_materials.js 2>&1 | ForEach-Object { Log "  git: $_" }
+
+# Check if there is anything to commit
+$status = git status --porcelain data/scraped_materials.js data/new_materials.js 2>&1
+if (-not $status) {
+    Log "No changes to commit — materials unchanged since last run."
+    exit 0
+}
+
+$commitMsg = "Auto-scrape: $($today.ToString('yyyy-MM-dd'))"
+git commit -m $commitMsg 2>&1 | ForEach-Object { Log "  git: $_" }
+
+if ($LASTEXITCODE -ne 0) {
+    Log "ERROR: git commit failed (exit $LASTEXITCODE)."
+    exit $LASTEXITCODE
+}
+
+git push 2>&1 | ForEach-Object { Log "  git: $_" }
 
 if ($LASTEXITCODE -eq 0) {
-    Log "Scraper completed successfully."
+    Log "Pushed to GitHub. Live site will update within ~60 seconds."
 } else {
-    Log "ERROR: scraper exited with code $LASTEXITCODE."
+    Log "ERROR: git push failed (exit $LASTEXITCODE). Check credentials."
     exit $LASTEXITCODE
 }

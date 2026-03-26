@@ -1,5 +1,6 @@
 data/pdfs/
 data/agenda_cache/
 data/scraped_materials.json
+data/new_materials.json
 __pycache__/
 *.pyc
