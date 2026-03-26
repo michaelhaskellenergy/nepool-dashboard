@@ -300,13 +300,14 @@
   }
   .notif-item:first-of-type { border-top: none; }
   .notif-item a { color: #1a3a5c; text-decoration: none; flex: 1; min-width: 0;
-    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    max-width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .notif-item a:hover { color: #2e7bc4; text-decoration: underline; }
   .notif-show-more {
     background: none; border: none; color: #2e7bc4; font-size: 0.8em; font-weight: 600;
-    cursor: pointer; padding: 5px 0 0; display: block;
+    cursor: pointer; padding: 5px 8px; margin-top: 2px; display: inline-block;
+    border-radius: 3px;
   }
-  .notif-show-more:hover { text-decoration: underline; }
+  .notif-show-more:hover { text-decoration: underline; background: #edf4fc; }
 </style>
 </head>
 <body>
