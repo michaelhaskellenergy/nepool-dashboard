@@ -78,6 +78,17 @@
   }
   .agenda-doc-link:hover { background: rgba(224,160,48,0.15); text-decoration: none; }
 
+  /* ── Older meetings collapse ────────────────────────────────────────────── */
+  .older-meetings-btn {
+    display: flex; align-items: center; gap: 7px; width: 100%;
+    background: #f0f5fa; border: 1px solid #c8daea; border-radius: 4px;
+    color: #1a3a5c; font-size: 0.85em; font-weight: 600; cursor: pointer;
+    padding: 8px 14px; margin-bottom: 12px; text-align: left;
+  }
+  .older-meetings-btn:hover { background: #ddeeff; }
+  .older-meetings-body { display: none; }
+  .older-meetings-body.open { display: block; }
+
   /* ── Past meeting (full) ─────────────────────────────────────────────────── */
   .meeting-block { background: #fff; border: 1px solid #d0dce8; border-radius: 4px; margin-bottom: 20px; }
   .meeting-header {
@@ -599,12 +610,32 @@
 
   function renderCommitteeSection(committee) {
     const sorted   = sortMeetings(committee.meetings);
-    const meetings = sorted.length
-      ? sorted.map(m => isPast(m.date)
-          ? renderPastMeeting(m, committee.id)
-          : renderUpcomingMeeting(m, committee.id)
-        ).join('')
+    const upcoming = sorted.filter(m => !isPast(m.date));
+    const past     = sorted.filter(m =>  isPast(m.date)); // most-recent first
+
+    const upcomingHtml = upcoming.map(m => renderUpcomingMeeting(m, committee.id)).join('');
+
+    let pastHtml = '';
+    if (past.length > 0) {
+      const mostRecentHtml = renderPastMeeting(past[0], committee.id);
+      if (past.length > 1) {
+        const olderHtml = past.slice(1).map(m => renderPastMeeting(m, committee.id)).join('');
+        const uid   = 'older-' + committee.id;
+        const count = past.length - 1;
+        pastHtml = mostRecentHtml + `
+          <button class="older-meetings-btn" id="obtn-${uid}" onclick="toggleOlderMeetings('${uid}')">
+            <span class="toggle-arrow">&#9658;</span> Show ${count} older meeting${count !== 1 ? 's' : ''}
+          </button>
+          <div class="older-meetings-body" id="${uid}">${olderHtml}</div>`;
+      } else {
+        pastHtml = mostRecentHtml;
+      }
+    }
+
+    const meetings = (upcomingHtml || pastHtml)
+      ? upcomingHtml + pastHtml
       : '<div class="no-meetings" style="padding:28px 0;">No meetings entered yet.</div>';
+
     return `
       <div class="committee-header">
         <h2>${committee.name}</h2>
@@ -1034,6 +1065,21 @@ function navMonth(delta) {
   if (pane) pane.innerHTML = window._renderSummaryTab(window.CalState.year, window.CalState.month);
 }
 
+
+function toggleOlderMeetings(uid) {
+  const body = document.getElementById(uid);
+  const btn  = document.getElementById('obtn-' + uid);
+  if (!body) return;
+  const open = body.classList.toggle('open');
+  if (btn) {
+    const arrow = btn.querySelector('.toggle-arrow');
+    if (arrow) arrow.innerHTML = open ? '&#9660;' : '&#9658;';
+    const countMatch = btn.textContent.match(/\d+/);
+    const count = countMatch ? countMatch[0] : '';
+    btn.childNodes[btn.childNodes.length - 1].textContent =
+      open ? ` Hide older meetings` : ` Show ${count} older meeting${count !== '1' ? 's' : ''}`;
+  }
+}
 
 function toggleAgenda(uid) {
   const body = document.getElementById('abody-' + uid);
