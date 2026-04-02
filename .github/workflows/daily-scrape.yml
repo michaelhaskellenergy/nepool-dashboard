@@ -1,0 +1,51 @@
+name: Daily NEPOOL Scrape
+
+on:
+  schedule:
+    - cron: '0 13 * * 1-5'   # 9 AM EDT (UTC-4) / 8 AM EST (UTC-5), Mon–Fri
+  workflow_dispatch:           # allow manual trigger from the GitHub Actions UI
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python dependencies
+        run: pip install playwright anthropic
+
+      - name: Install Playwright browser
+        run: playwright install --with-deps chromium
+
+      - name: Install poppler (pdftotext)
+        run: sudo apt-get install -y poppler-utils
+
+      - name: Run material scraper
+        run: python scripts/scrape_materials.py --months 6
+
+      - name: Run agenda detector
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/scrape_agendas.py
+
+      - name: Run summarizer (upcoming meetings only)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/summarize.py --upcoming-only
+
+      - name: Commit and push updated data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/scraped_materials.js data/new_materials.js data/summaries.js data/meetings.js
+          git diff --cached --quiet && echo "No changes to commit." || \
+            git commit -m "Auto-scrape: $(date -u +%Y-%m-%d)" && git push
