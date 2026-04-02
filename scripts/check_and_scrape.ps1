@@ -1,6 +1,6 @@
 # scripts/check_and_scrape.ps1
 #
-# Runs weekdays at 8 AM (via Windows Task Scheduler — see register_task.ps1).
+# Runs weekdays at 8 AM (via Windows Task Scheduler -- see register_task.ps1).
 # Scrapes ISO-NE committee pages for new documents, then commits and pushes
 # the updated data/scraped_materials.js and data/new_materials.js files to
 # GitHub so the live site reflects new materials within 24 hours.
@@ -15,16 +15,16 @@ function Log($msg) {
     Add-Content -Path $LogFile -Value $line
 }
 
-# ── Safety check: never run on weekends ──────────────────────────────────────
+# Safety check: never run on weekends
 $today = [datetime]::Today
 if ($today.DayOfWeek -eq 'Saturday' -or $today.DayOfWeek -eq 'Sunday') {
-    Log "Weekend — skipping."
+    Log "Weekend - skipping."
     exit 0
 }
 
 Log "=== NEPOOL Scraper run: $($today.ToString('ddd yyyy-MM-dd')) ==="
 
-# ── Run scraper ───────────────────────────────────────────────────────────────
+# Run scraper
 $scraper = Join-Path $ScriptDir "scrape_materials.py"
 Log "Running scraper..."
 
@@ -36,16 +36,26 @@ if ($LASTEXITCODE -ne 0) {
 }
 Log "Scraper completed successfully."
 
-# ── Commit and push updated data files to GitHub ─────────────────────────────
+# Step 2: Detect new agendas and update meetings.js
+$agendaScript = Join-Path $ScriptDir "scrape_agendas.py"
+Log "Running agenda detector..."
+python $agendaScript 2>&1 | ForEach-Object { Log "  $_" }
+
+# Step 3: Summarize new documents for upcoming meetings (skips already-summarized URLs)
+$summarizeScript = Join-Path $ScriptDir "summarize.py"
+Log "Running summarizer (upcoming meetings only)..."
+python $summarizeScript --upcoming-only 2>&1 | ForEach-Object { Log "  $_" }
+
+# Commit and push updated data files to GitHub
 Set-Location $ProjectDir
 
-# Stage only the auto-generated browser files (not the raw .json files)
-git add data/scraped_materials.js data/new_materials.js 2>&1 | ForEach-Object { Log "  git: $_" }
+# Stage auto-generated files plus meetings.js (may have been updated by agenda detector)
+git add data/scraped_materials.js data/new_materials.js data/summaries.js data/meetings.js 2>&1 | ForEach-Object { Log "  git: $_" }
 
 # Check if there is anything to commit
-$status = git status --porcelain data/scraped_materials.js data/new_materials.js 2>&1
+$status = git status --porcelain data/scraped_materials.js data/new_materials.js data/summaries.js data/meetings.js 2>&1
 if (-not $status) {
-    Log "No changes to commit — materials unchanged since last run."
+    Log "No changes to commit - materials unchanged since last run."
     exit 0
 }
 

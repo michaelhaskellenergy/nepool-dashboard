@@ -25,9 +25,7 @@ $action = New-ScheduledTaskAction `
 
 # Settings: run even if on battery, don't stop after 3 days
 $settings = New-ScheduledTaskSettingsSet `
-    -ExecutionTimeLimit (New-TimeSpan -Hours 1) `
-    -DisallowStartIfOnBatteries $false `
-    -StopIfGoingOnBatteries $false
+    -ExecutionTimeLimit (New-TimeSpan -Hours 1)
 
 # Register (or update if already exists)
 if (Get-ScheduledTask -TaskName $TaskName -ErrorAction SilentlyContinue) {

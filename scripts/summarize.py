@@ -1,5 +1,5 @@
 """
-NEPOOL Summarizer — scripts/summarize.py
+NEPOOL Summarizer -- scripts/summarize.py
 
 Reads scraped_materials.json, downloads PDFs, extracts text with pdftotext,
 calls Claude API to generate summaries, and outputs data/summaries.js.
@@ -9,8 +9,10 @@ Usage:
     python scripts/summarize.py --months 1          # just last month
     python scripts/summarize.py --committee mc      # one committee only
     python scripts/summarize.py --dry-run           # show what would run, no API calls
+    python scripts/summarize.py --upcoming-only     # only docs for upcoming meetings
+                                                    # that match a real agenda item
 
-Output: data/summaries.js  (window.SUMMARIES_DATA global — loaded by index.html)
+Output: data/summaries.js  (window.SUMMARIES_DATA global -- loaded by index.html)
 """
 
 import anthropic
@@ -23,6 +25,8 @@ import sys
 import urllib.request
 from datetime import date, timedelta
 from pathlib import Path
+
+MEETINGS_FILE = Path("data/meetings.js")
 
 SCRAPED_FILE  = Path("data/scraped_materials.json")
 SUMMARIES_FILE = Path("data/summaries.js")
@@ -189,9 +193,74 @@ def load_existing_summaries():
         return {}
 
 
+# ── Upcoming-only helpers ──────────────────────────────────────────────────────
+
+def load_upcoming_agenda_index():
+    """
+    Parse meetings.js and return a dict mapping (committee_id, meeting_date)
+    to the list of agenda_numbers for all UPCOMING meetings that have real
+    agenda items (i.e., at least one item has an agenda_number).
+
+    Used by --upcoming-only mode to restrict summarization to docs that
+    actually correspond to an agenda item in a future meeting.
+    """
+    if not MEETINGS_FILE.exists():
+        return {}
+
+    raw = MEETINGS_FILE.read_text(encoding="utf-8")
+    raw = re.sub(r'(?m)^\s*//[^\n]*\n?', '', raw)
+    m = re.search(r'window\.\w+\s*=\s*', raw)
+    if not m:
+        return {}
+    raw = raw[m.end():].rstrip().rstrip(';').rstrip()
+    raw = re.sub(r'(?m)^(\s*)([a-zA-Z_$][a-zA-Z0-9_$]*)(\s*):', r'\1"\2"\3:', raw)
+    raw = re.sub(r',(\s*[}\]])', r'\1', raw)
+
+    try:
+        data = json.loads(raw)
+    except json.JSONDecodeError:
+        return {}
+
+    today = date.today()
+    index = {}  # (cid, meeting_date) -> [agenda_number, ...]
+
+    for committee in data.get("committees", []):
+        cid = committee.get("id", "")
+        for meeting in committee.get("meetings", []):
+            mdate = meeting.get("date", "")
+            if not mdate:
+                continue
+            try:
+                if date.fromisoformat(mdate) < today:
+                    continue
+            except ValueError:
+                continue
+            numbers = [
+                item["agenda_number"]
+                for item in meeting.get("agenda_items", [])
+                if item.get("agenda_number")
+            ]
+            if numbers:
+                index[(cid, mdate)] = numbers
+
+    return index
+
+
+def matches_any_agenda_number(title, agenda_numbers):
+    """
+    Return True if the doc title matches at least one agenda_number using
+    the same word-boundary regex as index.html's getScrapedDocs().
+    """
+    for num in agenda_numbers:
+        esc = re.escape(num)
+        if re.search(r'\b' + esc + r'([ .\-(]|$)', title, re.IGNORECASE):
+            return True
+    return False
+
+
 # ── Main ──────────────────────────────────────────────────────────────────────
 
-def main(months_back, committee_filter, dry_run):
+def main(months_back, committee_filter, dry_run, upcoming_only=False):
     if not SCRAPED_FILE.exists():
         print(f"ERROR: {SCRAPED_FILE} not found.")
         print("Run 'python scripts/scrape_materials.py' first.")
@@ -211,7 +280,19 @@ def main(months_back, committee_filter, dry_run):
     print(f"Cutoff date:  {cutoff}  ({months_back} months back)")
     print(f"Committee:    {committee_filter or 'all'}")
     print(f"Dry run:      {dry_run}")
+    print(f"Upcoming only: {upcoming_only}")
     print(f"pdftotext:    {pdftotext_cmd}\n")
+
+    # Load agenda index for --upcoming-only filtering
+    agenda_index = load_upcoming_agenda_index() if upcoming_only else {}
+    if upcoming_only:
+        if agenda_index:
+            print(f"Upcoming meetings with real agendas: {len(agenda_index)}")
+            for (cid, mdate), nums in sorted(agenda_index.items()):
+                print(f"  {cid.upper()} {mdate}: {len(nums)} agenda item(s)")
+        else:
+            print("No upcoming meetings with real agenda items found. Nothing to summarize.")
+        print()
 
     # Set up Claude client (unless dry run)
     if not dry_run:
@@ -260,8 +341,24 @@ def main(months_back, committee_filter, dry_run):
             if date.fromisoformat(meeting_date) < cutoff:
                 continue
 
+            # --upcoming-only: skip past meetings and meetings without real agendas
+            if upcoming_only:
+                agenda_numbers = agenda_index.get((cid, meeting_date))
+                if not agenda_numbers:
+                    continue  # not an upcoming meeting with a real agenda
+            else:
+                agenda_numbers = None
+
             docs = meetings[meeting_date]
             to_process = [d for d in docs if not should_skip(d)]
+
+            # --upcoming-only: further filter to docs matching an agenda_number
+            if agenda_numbers is not None:
+                to_process = [
+                    d for d in to_process
+                    if matches_any_agenda_number(d["title"], agenda_numbers)
+                ]
+
             skipped_type = len(docs) - len(to_process)
 
             print(f"  {meeting_date}: {len(to_process)} PDFs  ({skipped_type} non-PDF skipped)")
@@ -345,6 +442,7 @@ if __name__ == "__main__":
     months = 2
     committee = None
     dry_run = False
+    upcoming_only = False
 
     args = sys.argv[1:]
     i = 0
@@ -360,7 +458,9 @@ if __name__ == "__main__":
             committee = arg.split("=", 1)[1].lower(); i += 1
         elif arg == "--dry-run":
             dry_run = True; i += 1
+        elif arg == "--upcoming-only":
+            upcoming_only = True; i += 1
         else:
             i += 1
 
-    main(months, committee, dry_run)
+    main(months, committee, dry_run, upcoming_only)

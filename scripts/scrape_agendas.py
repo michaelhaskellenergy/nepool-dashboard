@@ -84,7 +84,8 @@ def find_detection_targets(data):
 def find_agenda_pdf(scraped, committee_id, meeting_date):
     """
     Search scraped_materials.json for an agenda PDF for this committee+date.
-    ISO-NE names agenda docs with "A00" and "Agenda" in the title.
+    Most committees post a separate A00 agenda doc. The PC is an exception:
+    its Initial Notice contains the full agenda.
     Returns the doc dict or None.
     """
     cdata = scraped.get("committees", {}).get(committee_id, {})
@@ -94,6 +95,9 @@ def find_agenda_pdf(scraped, committee_id, meeting_date):
             continue
         title_lower = doc["title"].lower()
         if "a00" in title_lower and "agenda" in title_lower:
+            return doc
+        # PC embeds its agenda in the Initial Notice rather than a separate A00 doc
+        if committee_id == "pc" and "initial" in title_lower and "notice" in title_lower:
             return doc
     return None
 
