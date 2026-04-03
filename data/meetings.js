@@ -28,8 +28,9 @@ window.MEETINGS_DATA = {
           agenda_items: [
             {
               order: 1,
-              title: "Approve March 5, 2026 minutes",
-              type: "procedural",
+              agenda_number: "1",
+              title: "Approve the draft minutes of the March 5, 2026 Participants Committee meeting",
+              type: "vote",
               materials: [],
               summary: "",
               maine_relevance: "",
@@ -37,7 +38,8 @@ window.MEETINGS_DATA = {
             },
             {
               order: 2,
-              title: "Consent Agenda — RC recommended actions",
+              agenda_number: "2",
+              title: "Adopt and approve the action recommended by the Reliability Committee set forth on the Consent Agenda",
               type: "vote",
               materials: [],
               summary: "",
@@ -46,44 +48,89 @@ window.MEETINGS_DATA = {
             },
             {
               order: 3,
-              title: "ISO CEO Report",
+              agenda_number: "3",
+              title: "ISO Chief Executive Officer Report",
               type: "informational",
               materials: [],
               summary: "",
-              maine_relevance: "high",
-              topic_tags: ["daas", "pfp"]
+              maine_relevance: "",
+              topic_tags: []
             },
             {
               order: 4,
-              title: "Systems & Market Operations Report",
+              agenda_number: "4",
+              title: "Systems and Market Operations Report",
               type: "informational",
               materials: [],
               summary: "",
-              maine_relevance: "medium",
+              maine_relevance: "",
               topic_tags: []
             },
             {
               order: 5,
-              title: "New England Winter 2025/26 Review",
+              agenda_number: "5",
+              title: "ISO update on the 2026 Annual Work Plan",
               type: "presentation",
               materials: [],
               summary: "",
-              maine_relevance: "high",
-              topic_tags: ["winter-review", "daas", "fuel-security"]
+              maine_relevance: "",
+              topic_tags: []
             },
             {
               order: 6,
-              title: "Litigation Report",
+              agenda_number: "6",
+              title: "ISO Information Technology (IT) and Cybersecurity Report from Rudy Pawul, ISO Vice President of Information and Cybersecurity Services",
               type: "informational",
               materials: [],
               summary: "",
-              maine_relevance: "high",
-              topic_tags: ["offshore-wind", "car-pd"]
+              maine_relevance: "",
+              topic_tags: []
             },
             {
               order: 7,
-              title: "Committee Reports",
+              agenda_number: "7",
+              title: "Consider, and take action, as appropriate, on changes to the NEPOOL Generation Information System (GIS) to allow a NEPOOL GIS login to be linked and have access to multiple GIS Accounts",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 8,
+              agenda_number: "8",
+              title: "Report on current contested matters before the FERC and the Federal Courts",
               type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 9,
+              agenda_number: "9",
+              title: "Reports from Committees, Subcommittees and other working groups",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 10,
+              agenda_number: "10",
+              title: "Administrative matters",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 11,
+              agenda_number: "11",
+              title: "Transact such other business as may properly come before the meeting",
+              type: "procedural",
               materials: [],
               summary: "",
               maine_relevance: "",
