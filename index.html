@@ -975,8 +975,11 @@
   const core      = data.committees.filter(c => c.tier === 'core');
   const secondary = data.committees.filter(c => c.tier === 'secondary');
 
+  const _scrapedAt = window.SCRAPED_DATA?.scraped_at
+    ? new Date(window.SCRAPED_DATA.scraped_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
+    : data.last_updated;
   document.getElementById('header-meta').textContent =
-    `Maine PUC — ISO-NE Committee Monitor | Last updated: ${data.last_updated}`;
+    `Maine PUC — ISO-NE Committee Monitor | Last updated: ${_scrapedAt}`;
 
   const tabNav     = document.getElementById('tab-nav');
   const tabContent = document.getElementById('tab-content');
