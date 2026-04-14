@@ -103,6 +103,10 @@
     font-size: 0.75em; background: #5a7a90; color: #fff;
     border-radius: 3px; padding: 1px 7px; letter-spacing: 0.04em; font-weight: 600;
   }
+  .current-label {
+    font-size: 0.75em; background: #00897b; color: #fff;
+    border-radius: 3px; padding: 1px 7px; letter-spacing: 0.04em; font-weight: 600;
+  }
   /* Materials button in header */
   .mat-body-inner { padding: 12px 16px 14px; background: #f8fafc; }
 
@@ -356,14 +360,15 @@
       { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
   }
 
-  function isPast(dateStr) {
-    return new Date(dateStr + 'T23:59:59') < new Date();
+  function isMeetingPast(m) {
+    const d = m.date_end || m.date;
+    return new Date(d + 'T23:59:59') < new Date();
   }
 
   function sortMeetings(meetings) {
     if (!meetings || !meetings.length) return [];
-    const upcoming = meetings.filter(m => !isPast(m.date)).sort((a, b) => a.date.localeCompare(b.date));
-    const past     = meetings.filter(m =>  isPast(m.date)).sort((a, b) => b.date.localeCompare(a.date));
+    const upcoming = meetings.filter(m => !isMeetingPast(m)).sort((a, b) => a.date.localeCompare(b.date));
+    const past     = meetings.filter(m =>  isMeetingPast(m)).sort((a, b) => b.date.localeCompare(a.date));
     return [...upcoming, ...past];
   }
 
@@ -408,6 +413,18 @@
     const docs = mtgs.meetings ? mtgs.meetings[meetingDate] : mtgs[meetingDate];
     if (!Array.isArray(docs)) return null;
     return docs.find(d => /A00/i.test(d.title) && /agenda/i.test(d.title)) || null;
+  }
+
+  function getAllScrapedDocs(committeeId, dateStr) {
+    if (!window.SCRAPED_DATA) return [];
+    const mtgs = window.SCRAPED_DATA.committees?.[committeeId];
+    if (!mtgs) return [];
+    const docs = mtgs.meetings ? mtgs.meetings[dateStr] : null;
+    return Array.isArray(docs) ? docs : [];
+  }
+
+  function hasMeetingMaterials(committeeId, dateStr) {
+    return getAllScrapedDocs(committeeId, dateStr).length > 0;
   }
 
   function getWebexUrl(meeting, committeeId) {
@@ -544,7 +561,7 @@
 
   // ── Past meeting ──────────────────────────────────────────────────────────
 
-  function renderPastMeeting(meeting, committeeId) {
+  function renderPastMeeting(meeting, committeeId, isCurrent) {
     const allSummaries = getMeetingSummaries(committeeId, meeting.date);
     const webexUrl     = getWebexUrl(meeting, committeeId);
     const agendaDoc    = getAgendaDoc(committeeId, meeting.date);
@@ -554,11 +571,16 @@
       : '';
     const locHtml  = meeting.location ? `<span class="meeting-location">${meeting.location}</span>` : '';
     const webexBtn = webexUrl
-      ? `<a class="webex-btn webex-btn-archived" href="${webexUrl}" target="_blank" rel="noopener">WebEx (archived)</a>`
+      ? isCurrent
+        ? `<a class="webex-btn" href="${webexUrl}" target="_blank" rel="noopener">Join WebEx</a>`
+        : `<a class="webex-btn webex-btn-archived" href="${webexUrl}" target="_blank" rel="noopener">WebEx (archived)</a>`
       : '';
     const agendaLink = agendaDoc
       ? `<a class="agenda-doc-link" href="${agendaDoc.url}" target="_blank" rel="noopener">&#128196; Agenda</a>`
       : '';
+    const statusChip = isCurrent
+      ? `<span class="current-label">In Progress</span>`
+      : `<span class="past-label">Completed</span>`;
 
     // Match each summary to an agenda item by agenda_number; track unmatched ones
     const matched = new Set();
@@ -591,49 +613,80 @@
         }</div>`
       : '';
 
+    // Scraped docs not linked to any agenda item — shown as fallback materials section
+    const matchedDocUrls = new Set();
+    (meeting.agenda_items || []).forEach(it => {
+      (it.materials || []).forEach(mat => matchedDocUrls.add(mat.url));
+      if (it.agenda_number) {
+        getScrapedDocs(committeeId, meeting.date, it.agenda_number)
+          .forEach(d => matchedDocUrls.add(d.url));
+      }
+    });
+    const unmatchedDocs = getAllScrapedDocs(committeeId, meeting.date)
+      .filter(d => !matchedDocUrls.has(d.url));
+    const unmatchedDocsHtml = unmatchedDocs.length
+      ? `<div class="mat-body-inner" style="border-top:1px solid #e0eaf4;">
+           <div style="font-size:0.78em;color:#777;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:8px;">All posted materials</div>
+           <div class="materials-row">${
+             unmatchedDocs.map(d => {
+               const label = d.title.replace(/^\d{4}-\d{2}-\d{2}(-\d{2})?\s+[A-Z][A-Z/]*\s+/, '').trim() || d.title;
+               return `<a class="material-link" href="${d.url}" target="_blank" rel="noopener">${label}</a>`;
+             }).join('')
+           }</div>
+         </div>`
+      : '';
+
     return `
       <div class="meeting-block">
         <div class="meeting-header">
           <span class="meeting-date">${fmtDate(meeting.date)}</span>
-          <span class="past-label">Completed</span>
+          ${statusChip}
           ${locHtml}
           ${webexBtn}
           ${agendaLink}
           ${calLink}
         </div>
         <div class="agenda-list">${itemsHtml}</div>
-        ${unmatchedHtml}
+        ${unmatchedHtml}${unmatchedDocsHtml}
       </div>`;
   }
 
   // ── Committee section ─────────────────────────────────────────────────────
 
   function renderCommitteeSection(committee) {
-    const sorted   = sortMeetings(committee.meetings);
-    const upcoming = sorted.filter(m => !isPast(m.date));
-    const past     = sorted.filter(m =>  isPast(m.date)); // most-recent first
+    const sorted = sortMeetings(committee.meetings);
+
+    // upcoming: future meetings with no scraped materials yet → simple banner
+    const upcoming    = sorted.filter(m => !isMeetingPast(m) && !hasMeetingMaterials(committee.id, m.date));
+    // nonUpcoming: has scraped materials (future or past) OR is past
+    // Sorted order: future-with-materials first (asc), then past-meetings (desc)
+    // nonUpcoming[0] = the "current" meeting (most relevant right now)
+    const nonUpcoming = sorted.filter(m =>  isMeetingPast(m) || hasMeetingMaterials(committee.id, m.date));
 
     const upcomingHtml = upcoming.map(m => renderUpcomingMeeting(m, committee.id)).join('');
 
-    let pastHtml = '';
-    if (past.length > 0) {
-      const mostRecentHtml = renderPastMeeting(past[0], committee.id);
-      if (past.length > 1) {
-        const olderHtml = past.slice(1).map(m => renderPastMeeting(m, committee.id)).join('');
+    let mainHtml = '';
+    if (nonUpcoming.length > 0) {
+      const currentMeeting = nonUpcoming[0];
+      // isCurrent = true when the meeting hasn't ended yet (future with agenda posted)
+      const isCurrent     = !isMeetingPast(currentMeeting);
+      const currentHtml   = renderPastMeeting(currentMeeting, committee.id, isCurrent);
+      if (nonUpcoming.length > 1) {
+        const olderHtml = nonUpcoming.slice(1).map(m => renderPastMeeting(m, committee.id, false)).join('');
         const uid   = 'older-' + committee.id;
-        const count = past.length - 1;
-        pastHtml = mostRecentHtml + `
+        const count = nonUpcoming.length - 1;
+        mainHtml = currentHtml + `
           <button class="older-meetings-btn" id="obtn-${uid}" onclick="toggleOlderMeetings('${uid}')">
             <span class="toggle-arrow">&#9658;</span> Show ${count} older meeting${count !== 1 ? 's' : ''}
           </button>
           <div class="older-meetings-body" id="${uid}">${olderHtml}</div>`;
       } else {
-        pastHtml = mostRecentHtml;
+        mainHtml = currentHtml;
       }
     }
 
-    const meetings = (upcomingHtml || pastHtml)
-      ? upcomingHtml + pastHtml
+    const meetings = (upcomingHtml || mainHtml)
+      ? upcomingHtml + mainHtml
       : '<div class="no-meetings" style="padding:28px 0;">No meetings entered yet.</div>';
 
     return `
