@@ -27,6 +27,30 @@ MAX_AGENDA_CHARS = 8_000
 today = date.today()
 
 
+# ── Scraped-data loader (json preferred; js fallback) ─────────────────────────
+
+def load_scraped_data():
+    """
+    Load scraped_materials into a dict.
+    Prefers the .json file (written by scrape_materials.py at runtime).
+    Falls back to the committed .js file so the script can run locally
+    without needing to re-scrape first.
+    """
+    if SCRAPED_FILE.exists():
+        with open(SCRAPED_FILE, encoding="utf-8") as f:
+            return json.load(f)
+    js_path = SCRAPED_FILE.with_suffix(".js")
+    if js_path.exists():
+        raw = js_path.read_text(encoding="utf-8")
+        m = re.search(r'window\.\w+\s*=\s*', raw)
+        if m:
+            return json.loads(raw[m.end():].rstrip().rstrip(';').rstrip())
+    raise FileNotFoundError(
+        f"Neither {SCRAPED_FILE} nor {SCRAPED_FILE.with_suffix('.js')} found. "
+        "Run scrape_materials.py first."
+    )
+
+
 # ── Logging ───────────────────────────────────────────────────────────────────
 
 def log(msg):
@@ -81,28 +105,32 @@ def find_detection_targets(data):
 
 # ── Agenda PDF detection ──────────────────────────────────────────────────────
 
-def find_agenda_pdf(scraped, committee_id, meeting_date):
+def find_agenda_doc(scraped, committee_id, meeting_date):
     """
-    Search scraped_materials.json for an agenda PDF for this committee+date.
-    Most committees post a separate A00 agenda doc. The PC is an exception:
-    its Initial Notice contains the full agenda.
+    Search scraped_materials for an agenda document for this committee+date.
+    Accepts PDF or DOCX. Prefers PDF; falls back to DOCX.
+    PC exception: uses the Initial Notice as its agenda source.
     Returns the doc dict or None.
     """
     cdata = scraped.get("committees", {}).get(committee_id, {})
     docs = cdata.get("meetings", {}).get(meeting_date, [])
+    best = None
     for doc in docs:
-        if doc.get("ext") != "pdf":
+        ext = doc.get("ext", "")
+        if ext not in ("pdf", "docx"):
             continue
         title_lower = doc["title"].lower()
-        if "a00" in title_lower and "agenda" in title_lower:
-            return doc
-        # PC embeds its agenda in the Initial Notice rather than a separate A00 doc
-        if committee_id == "pc" and "initial" in title_lower and "notice" in title_lower:
-            return doc
-    return None
+        is_agenda = "a00" in title_lower and "agenda" in title_lower
+        is_pc_notice = committee_id == "pc" and "initial" in title_lower and "notice" in title_lower
+        if not (is_agenda or is_pc_notice):
+            continue
+        # Prefer PDF over DOCX; keep the first match of each preference
+        if best is None or (best.get("ext") == "docx" and ext == "pdf"):
+            best = doc
+    return best
 
 
-# ── PDF utilities ─────────────────────────────────────────────────────────────
+# ── File utilities ────────────────────────────────────────────────────────────
 
 def find_pdftotext():
     known = Path(
@@ -117,10 +145,10 @@ def find_pdftotext():
 
 def safe_filename(url):
     name = url.split("/")[-1].split("?")[0]
-    return re.sub(r'[<>:"|?*\\]', "_", name) or "agenda.pdf"
+    return re.sub(r'[<>:"|?*\\]', "_", name) or "agenda_doc"
 
 
-def download_pdf(url, dest_path):
+def download_file(url, dest_path):
     if dest_path.exists():
         return True
     try:
@@ -135,7 +163,15 @@ def download_pdf(url, dest_path):
         return False
 
 
-def extract_text(pdf_path, pdftotext_cmd):
+def extract_text(file_path, pdftotext_cmd):
+    """Extract plain text from a PDF or DOCX file."""
+    suffix = file_path.suffix.lower()
+    if suffix == ".docx":
+        return extract_text_docx(file_path)
+    return extract_text_pdf(file_path, pdftotext_cmd)
+
+
+def extract_text_pdf(pdf_path, pdftotext_cmd):
     try:
         result = subprocess.run(
             [pdftotext_cmd, "-layout", str(pdf_path), "-"],
@@ -148,6 +184,50 @@ def extract_text(pdf_path, pdftotext_cmd):
     except Exception as e:
         log(f"Text extraction failed: {e}")
         return None
+
+
+def extract_text_docx(docx_path):
+    """
+    Extract text from a DOCX, including both paragraphs and table cells.
+    Many ISO-NE agendas are formatted as tables, so table extraction is critical.
+    Merged cells repeat their text across columns — we deduplicate within each row.
+    """
+    try:
+        import docx as docx_lib
+        doc = docx_lib.Document(str(docx_path))
+        lines = [p.text for p in doc.paragraphs if p.text.strip()]
+        for table in doc.tables:
+            for row in table.rows:
+                seen, unique = set(), []
+                for cell in row.cells:
+                    t = cell.text.strip()
+                    if t and t not in seen:
+                        seen.add(t)
+                        unique.append(t)
+                if unique:
+                    lines.append(" | ".join(unique))
+        return sanitize_text("\n".join(lines))
+    except Exception as e:
+        log(f"DOCX text extraction failed: {e}")
+        return None
+
+
+def sanitize_text(text):
+    """Replace Windows/Word special characters with ASCII equivalents."""
+    replacements = {
+        "\u2013": "-",   # en dash
+        "\u2014": "--",  # em dash
+        "\u2018": "'",   # left single quote
+        "\u2019": "'",   # right single quote / apostrophe
+        "\u201c": '"',   # left double quote
+        "\u201d": '"',   # right double quote
+        "\u2026": "...", # ellipsis
+        "\u00e2\u0080\u0093": "-",  # UTF-8 mis-decoded en dash
+        "\ufffd": "-",   # Unicode replacement character
+    }
+    for char, replacement in replacements.items():
+        text = text.replace(char, replacement)
+    return text
 
 
 # ── Claude agenda parsing ─────────────────────────────────────────────────────
@@ -200,7 +280,7 @@ def parse_agenda_with_claude(client, committee_name, meeting_date, pdf_text):
     try:
         response = client.messages.create(
             model="claude-sonnet-4-6",
-            max_tokens=1500,
+            max_tokens=4000,
             system=AGENDA_SYSTEM_PROMPT,
             messages=[{"role": "user", "content": user_msg}],
         )
@@ -344,9 +424,6 @@ def main():
     if not MEETINGS_FILE.exists():
         log(f"ERROR: {MEETINGS_FILE} not found.")
         return
-    if not SCRAPED_FILE.exists():
-        log(f"ERROR: {SCRAPED_FILE} not found. Run scrape_materials.py first.")
-        return
 
     try:
         meetings_data = load_meetings_data()
@@ -354,8 +431,11 @@ def main():
         log(f"ERROR: Could not parse meetings.js: {e}")
         return
 
-    with open(SCRAPED_FILE, encoding="utf-8") as f:
-        scraped = json.load(f)
+    try:
+        scraped = load_scraped_data()
+    except FileNotFoundError as e:
+        log(f"ERROR: {e}")
+        return
 
     cid_to_name = {c["id"]: c["name"] for c in meetings_data.get("committees", [])}
 
@@ -388,22 +468,22 @@ def main():
 
         log(f"Checking {cid.upper()} {meeting_date} ...")
 
-        agenda_doc = find_agenda_pdf(scraped, cid, meeting_date)
+        agenda_doc = find_agenda_doc(scraped, cid, meeting_date)
         if not agenda_doc:
-            log(f"  No agenda PDF posted yet -- will check again tomorrow.")
+            log(f"  No agenda document posted yet -- will check again tomorrow.")
             continue
 
-        log(f"  Agenda PDF found: {agenda_doc['title'][:70]}")
+        log(f"  Agenda document found ({agenda_doc['ext'].upper()}): {agenda_doc['title'][:70]}")
 
-        pdf_dir  = PDF_CACHE_DIR / cid / meeting_date
-        pdf_dir.mkdir(parents=True, exist_ok=True)
-        pdf_path = pdf_dir / safe_filename(agenda_doc["url"])
+        doc_dir  = PDF_CACHE_DIR / cid / meeting_date
+        doc_dir.mkdir(parents=True, exist_ok=True)
+        doc_path = doc_dir / safe_filename(agenda_doc["url"])
 
-        if not download_pdf(agenda_doc["url"], pdf_path):
+        if not download_file(agenda_doc["url"], doc_path):
             log("  Download failed -- skipping.")
             continue
 
-        pdf_text = extract_text(pdf_path, pdftotext_cmd)
+        pdf_text = extract_text(doc_path, pdftotext_cmd)
         if not pdf_text or len(pdf_text.strip()) < 50:
             log("  Could not extract usable text -- skipping.")
             continue

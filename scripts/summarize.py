@@ -30,13 +30,37 @@ MEETINGS_FILE = Path("data/meetings.js")
 
 SCRAPED_FILE  = Path("data/scraped_materials.json")
 SUMMARIES_FILE = Path("data/summaries.js")
+
+
+# ── Scraped-data loader (json preferred; js fallback) ─────────────────────────
+
+def load_scraped_data():
+    """
+    Load scraped_materials into a dict.
+    Prefers the .json file (written by scrape_materials.py at runtime).
+    Falls back to the committed .js file so the script can run locally
+    without needing to re-scrape first.
+    """
+    if SCRAPED_FILE.exists():
+        with open(SCRAPED_FILE, encoding="utf-8") as f:
+            return json.load(f)
+    js_path = SCRAPED_FILE.with_suffix(".js")
+    if js_path.exists():
+        raw = js_path.read_text(encoding="utf-8")
+        m = re.search(r'window\.\w+\s*=\s*', raw)
+        if m:
+            return json.loads(raw[m.end():].rstrip().rstrip(';').rstrip())
+    raise FileNotFoundError(
+        f"Neither {SCRAPED_FILE} nor {SCRAPED_FILE.with_suffix('.js')} found. "
+        "Run scrape_materials.py first."
+    )
 PDF_CACHE_DIR  = Path("data/pdfs")
 
 # Max characters sent to Claude per document (controls cost and avoids token limits)
 MAX_TEXT_CHARS = 12_000
 
 # File types we cannot summarize — skip them
-SKIP_EXTENSIONS = {"xlsx", "xls", "docx", "doc", "zip"}
+SKIP_EXTENSIONS = {"xlsx", "xls", "doc", "zip"}
 
 # Skip documents whose titles match these patterns (procedural boilerplate)
 SKIP_TITLE_PATTERNS = [
@@ -117,8 +141,14 @@ def download_pdf(url, dest_path):
         return False
 
 
-def extract_text(pdf_path, pdftotext_cmd):
-    """Extract plain text from a PDF. Returns string or None."""
+def extract_text(file_path, pdftotext_cmd):
+    """Extract plain text from a PDF or DOCX. Returns string or None."""
+    if str(file_path).lower().endswith(".docx"):
+        return extract_text_docx(file_path)
+    return extract_text_pdf(file_path, pdftotext_cmd)
+
+
+def extract_text_pdf(pdf_path, pdftotext_cmd):
     try:
         result = subprocess.run(
             [pdftotext_cmd, "-layout", str(pdf_path), "-"],
@@ -133,6 +163,32 @@ def extract_text(pdf_path, pdftotext_cmd):
         return None
     except Exception as e:
         print(f"      Text extraction failed: {e}")
+        return None
+
+
+def extract_text_docx(docx_path):
+    """
+    Extract text from a DOCX, including both paragraphs and table cells.
+    Many ISO-NE agendas are formatted as tables, so table extraction is critical.
+    Merged cells repeat their text across columns — we deduplicate within each row.
+    """
+    try:
+        import docx as docx_lib
+        doc = docx_lib.Document(str(docx_path))
+        lines = [p.text for p in doc.paragraphs if p.text.strip()]
+        for table in doc.tables:
+            for row in table.rows:
+                seen, unique = set(), []
+                for cell in row.cells:
+                    t = cell.text.strip()
+                    if t and t not in seen:
+                        seen.add(t)
+                        unique.append(t)
+                if unique:
+                    lines.append(" | ".join(unique))
+        return "\n".join(lines)
+    except Exception as e:
+        print(f"      DOCX text extraction failed: {e}")
         return None
 
 
@@ -198,11 +254,12 @@ def load_existing_summaries():
 def load_upcoming_agenda_index():
     """
     Parse meetings.js and return a dict mapping (committee_id, meeting_date)
-    to the list of agenda_numbers for all UPCOMING meetings that have real
+    to the list of agenda_numbers for all ACTIVE meetings that have real
     agenda items (i.e., at least one item has an agenda_number).
 
-    Used by --upcoming-only mode to restrict summarization to docs that
-    actually correspond to an agenda item in a future meeting.
+    'Active' means: upcoming OR occurred within the last 14 days. The 14-day
+    lookback lets post-meeting materials (Composite, NOA, Actions Letter) get
+    summarized after the meeting without needing a separate pipeline step.
     """
     if not MEETINGS_FILE.exists():
         return {}
@@ -222,6 +279,7 @@ def load_upcoming_agenda_index():
         return {}
 
     today = date.today()
+    lookback = today - timedelta(days=14)
     index = {}  # (cid, meeting_date) -> [agenda_number, ...]
 
     for committee in data.get("committees", []):
@@ -231,7 +289,7 @@ def load_upcoming_agenda_index():
             if not mdate:
                 continue
             try:
-                if date.fromisoformat(mdate) < today:
+                if date.fromisoformat(mdate) < lookback:
                     continue
             except ValueError:
                 continue
@@ -261,13 +319,11 @@ def matches_any_agenda_number(title, agenda_numbers):
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main(months_back, committee_filter, dry_run, upcoming_only=False):
-    if not SCRAPED_FILE.exists():
-        print(f"ERROR: {SCRAPED_FILE} not found.")
-        print("Run 'python scripts/scrape_materials.py' first.")
+    try:
+        scraped = load_scraped_data()
+    except FileNotFoundError as e:
+        print(f"ERROR: {e}")
         sys.exit(1)
-
-    with open(SCRAPED_FILE, encoding="utf-8") as f:
-        scraped = json.load(f)
 
     pdftotext_cmd = find_pdftotext()
     if not pdftotext_cmd:
@@ -287,11 +343,11 @@ def main(months_back, committee_filter, dry_run, upcoming_only=False):
     agenda_index = load_upcoming_agenda_index() if upcoming_only else {}
     if upcoming_only:
         if agenda_index:
-            print(f"Upcoming meetings with real agendas: {len(agenda_index)}")
+            print(f"Active meetings with real agendas (upcoming + last 14 days): {len(agenda_index)}")
             for (cid, mdate), nums in sorted(agenda_index.items()):
                 print(f"  {cid.upper()} {mdate}: {len(nums)} agenda item(s)")
         else:
-            print("No upcoming meetings with real agenda items found. Nothing to summarize.")
+            print("No active meetings with real agenda items found. Nothing to summarize.")
         print()
 
     # Set up Claude client (unless dry run)

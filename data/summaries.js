@@ -452,6 +452,672 @@ window.SUMMARIES_DATA = {
             "tariff"
           ]
         }
+      ],
+      "2026-04-14": [
+        {
+          "title": "2026-04-14-16 MC A00 - Agenda - Rev. 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100034/a00_mc_2026_4_14-16_agenda.docx",
+          "ext": "docx",
+          "summary": "This is the agenda for the April 14-16, 2026 NEPOOL Markets Committee meeting, held as a joint meeting with the Reliability Committee in Framingham, MA and virtually. Key topics include Day-Ahead Ancillary Services post-implementation adjustments, multiple Pay-for-Performance revisions (Performance Payment Rate, Balancing Ratio, External Transactions), and extensive discussion of Capacity Auction Reforms – Seasonal/Accreditation (CAR-SA), covering imports modeling, gas resource contract requirements, resource accreditation, offer construction, mitigation, and cost allocation. A vote on GIS Working Group items including CES-E updates is also scheduled.",
+          "item_type": "Procedural",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "CAR-SA capacity market reforms, PFP revisions, and capacity cost allocation discussions will directly affect Maine load-serving entities and generators, including CMP and Versant customers, though no Maine-specific items are explicitly listed on the agenda.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "ancillary-services",
+            "pay-for-performance",
+            "cost-allocation",
+            "clean-energy",
+            "interconnection",
+            "regional-planning",
+            "transmission-planning",
+            "tariff",
+            "compliance"
+          ]
+        },
+        {
+          "title": "2026-04-14-16 MC A00 - Motions - Minutes",
+          "url": "https://www.iso-ne.com/static-assets/documents/100034/a01a_mc_2026_04-12-14_motions_letter_minutes.docx",
+          "ext": "docx",
+          "summary": "The Markets Committee is asked to approve minutes from three prior meetings: the March 10-12, 2026 Markets Committee meeting, the March 10-12, 2026 Joint Markets and Reliability Committees meeting, and the March 17, 2026 Joint Reliability and Markets Committees meeting. This is a standard procedural motion requiring a 66.67% vote threshold. No substantive policy matters are decided.",
+          "item_type": "Minutes",
+          "maine_relevance": "low",
+          "maine_relevance_reason": "This is a routine procedural vote to approve prior meeting minutes with no Maine-specific content or policy implications.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "procedural",
+            "minutes"
+          ]
+        },
+        {
+          "title": "2026-04-14-16 MC A01.a.i - Draft March 10-12, 2026 Markets Committee Meeting Minutes",
+          "url": "https://www.iso-ne.com/static-assets/documents/100034/a01.a.i_mc_2026_04_10-12_mc_meeting_minutes_draft.docx",
+          "ext": "docx",
+          "summary": "These are the draft minutes from the March 10-12, 2026 NEPOOL Markets Committee meeting, covering approval of prior minutes, a referral request from the Maine PUC regarding GIS Maine Class III Certificates, and substantive discussions on Pay-For-Performance revisions (Performance Payment Rate reduction, Balancing Ratio cap, treatment of external transactions), and an update on Dynamic Operating Reserves development. Central Maine Power's Jamie St. Pierre served as GIS Working Group Chair and presented the Maine PUC referral request. No final votes on the substantive market rule changes appear to have been taken at this meeting.",
+          "item_type": "Minutes",
+          "maine_relevance": "high",
+          "maine_relevance_reason": "The minutes document a direct referral request from the Maine Public Utilities Commission regarding Maine Class III Certificates operating rule changes in the GIS, and CMP's Jamie St. Pierre is named as the GIS Working Group Chair who presented the item.",
+          "maine_mentions": [
+            "Maine Class III Certificates Operating Rule Changes",
+            "Maine Public Utilities Commission referral request",
+            "Central Maine Power Company | Transmission | Jamie St. Pierre*",
+            "Ms. Jamie St. Pierre (GIS Working Group Chair) discussed the request for referral on Maine Class III Certificates requested by the Maine Public Utilities Commission"
+          ],
+          "topic_tags": [
+            "clean-energy",
+            "capacity-markets",
+            "ancillary-services",
+            "settlement",
+            "tariff",
+            "maine-specific",
+            "compliance",
+            "energy-markets"
+          ]
+        },
+        {
+          "title": "2026-04-14-16 MC A01.a.ii - Draft March 10-12, 2026 Joint Markets and Reliability Committee Meeting Minutes",
+          "url": "https://www.iso-ne.com/static-assets/documents/100034/a01.a.ii_mc_2026_04_10-12_mc_rc_meeting_minutes_draft.docx",
+          "ext": "docx",
+          "summary": "These are draft minutes from the March 10-12, 2026 Joint NEPOOL Markets and Reliability Committee meeting, covering detailed presentations on Capacity Auction Reforms Seasonal Accreditation (CAR-SA) topics including intermittent power resource modeling, hybrid resource accreditation, imports modeling, EFORd methodology updates, and capacity market cost allocation. Stakeholders raised numerous technical questions and concerns about look-back periods, hybrid configurations, import treatment, and how costs will be allocated under the new seasonal design.",
+          "item_type": "Minutes",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "The capacity market cost allocation discussion directly affects Maine load zones and ratepayers through seasonal coincident peak contributions and zonal capacity obligations, and NECEC (a Maine transmission project) was specifically referenced in the imports modeling discussion.",
+          "maine_mentions": [
+            "NECEC referenced as an example of an energy-only import that is not currently reflected in capacity modeling because it lacks required capacity interconnection service"
+          ],
+          "topic_tags": [
+            "capacity-markets",
+            "cost-allocation",
+            "clean-energy",
+            "interconnection",
+            "ancillary-services",
+            "regional-planning",
+            "transmission-planning",
+            "load-forecasting",
+            "settlement"
+          ]
+        },
+        {
+          "title": "2026-04-14-16 MC A01.a.iii - Draft March 17, 2026 Joint Reliability and Markets Committee Meeting Minutes",
+          "url": "https://www.iso-ne.com/static-assets/documents/100034/a01.a.iii_mc_2026_03_17_rc_mc_draft.docx",
+          "ext": "docx",
+          "summary": "The Joint NEPOOL Markets and Reliability Committee meeting on March 17, 2026 focused on a single technical presentation by ISO-NE staff on Deliverability Modeling for capacity auction reforms, covering how a scaling factor approach would be applied to accredit resource capacity values across different resource types, seasons, and configurations. Key points included that scaling (rather than capping) will be used to reflect deliverability, winter scaling is deferred because New England is a summer-peaking system, and storage MWh capability will not be scaled. No vote was taken; one is expected at a future meeting.",
+          "item_type": "Minutes",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "Central Maine Power (Jamie Pierre) and Versant Power (Jeffrey Fenn) both participated as Transmission sector members, and the capacity accreditation and deliverability modeling reforms being discussed will directly affect how Maine resources are valued and compensated in future capacity auctions.",
+          "maine_mentions": [
+            "Central Maine Power Company | Transmission | Jamie Pierre* (MC), Bruce Jagolinzer (RC)",
+            "Versant Power | Transmission | Jeffrey Fenn (RC)"
+          ],
+          "topic_tags": [
+            "capacity-markets",
+            "capacity-accreditation",
+            "deliverability",
+            "seasonal-capacity",
+            "transmission-planning",
+            "clean-energy",
+            "interconnection"
+          ]
+        },
+        {
+          "title": "2026-04-14-16 MC A02 - Day-Ahead Ancillary Services Post-Implementation Adjustments",
+          "url": "https://www.iso-ne.com/static-assets/documents/100034/a02_mc_2026_04_14-16_daas_post_implementation_adjustment.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE presented proposed post-implementation adjustments to the Day-Ahead Ancillary Services (DA A/S) market design, based on IMM recommendations, targeting three inputs: the Forecast Energy Requirement Demand Quantity (FER DQ), the Non-Performance Factor (NPF), and the Strike Price (K), plus a DA NCPC clean-up item. The FER DQ adjustment would reduce the load forecast input by the expected uncleared front-of-meter wind/solar generation (~422 MW on average) to better align with the RAA reliability process and reduce over-procurement inefficiencies. Cost impact simulations are planned for the May Markets Committee meeting, with a targeted implementation date of October 22, 2026.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "Changes to DA A/S market design affect costs for all New England load-serving entities including CMP and Versant, with the proposed FER DQ and Strike Price adjustments potentially reducing or redistributing ancillary services costs borne by Maine ratepayers.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "ancillary-services",
+            "energy-markets",
+            "day-ahead-market",
+            "clean-energy",
+            "cost-allocation",
+            "market-design",
+            "tariff",
+            "forecast"
+          ]
+        },
+        {
+          "title": "2026-04-14-16 MC A03.a - GISWG - VT RES Referral Memo",
+          "url": "https://www.iso-ne.com/static-assets/documents/100034/a03a_mc_2026_04_14-16_giswg_referral_vt_res_memo.pdf",
+          "ext": "pdf",
+          "summary": "The NEPOOL Markets Committee is asked to refer potential GIS Operating Rules changes to the GIS Working Group to accommodate Vermont's Renewable Energy Standard (RES) tiering requirements, specifically to handle facilities whose output qualifies for multiple Vermont RES tiers. No vote on rule changes is being requested at this time; the committee is only asked to direct the Working Group to study and develop necessary rule revisions. The change was requested by the Vermont Public Utility Commission.",
+          "item_type": "Procedural",
+          "maine_relevance": "low",
+          "maine_relevance_reason": "This referral pertains solely to Vermont's RES compliance requirements and GIS rule changes specific to Vermont tiers, with no direct impact on Maine ratepayers, CMP, or Versant.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "clean-energy",
+            "gis",
+            "renewable-energy-standard",
+            "tariff",
+            "compliance",
+            "vermont-specific"
+          ]
+        },
+        {
+          "title": "2026-04-14-16 MC A03.b - GISWG - CES-E Vote Request Memo",
+          "url": "https://www.iso-ne.com/static-assets/documents/100034/a03b_mc_2026_04_14-16_giswg_vote_request_cese_updates_memo.pdf",
+          "ext": "pdf",
+          "summary": "The Markets Committee is asked to vote on recommending changes to the NEPOOL GIS Operating Rules to implement Massachusetts Department of Environmental Protection requirements for the Clean Energy Standard (CES and CES-E), limiting eligibility for imported energy certificates to specific transmission ties. For CES-E, only the two Hydro-Quebec interconnections (HQPHI/HQPHII and HQHGATE) qualify, while future new transmission ties not on the existing list would qualify for CES. The changes require Participants Committee approval due to estimated implementation costs exceeding thresholds, and no Working Group member objected to the proposal.",
+          "item_type": "Vote",
+          "maine_relevance": "low",
+          "maine_relevance_reason": "While Maine is listed as a GIS certificate location field and the New Brunswick tie affects imports through northern New England, this rule change is driven entirely by Massachusetts clean energy policy and does not directly affect Maine ratepayers, CMP, or Versant.",
+          "maine_mentions": [
+            "Maine (excluding portions of Maine in the Control Area administered by the Northern Maine ISA)",
+            "Maritime Provinces (including portions of Maine not in New England Control Area)"
+          ],
+          "topic_tags": [
+            "clean-energy",
+            "tariff",
+            "gis",
+            "energy-markets",
+            "compliance",
+            "interconnection",
+            "regional-planning"
+          ]
+        },
+        {
+          "title": "2026-04-14-16 MC A04a - Pay-For-Performance Revisions: Performance Payment Rate",
+          "url": "https://www.iso-ne.com/static-assets/documents/100034/a04a_mc_04_14-16_pfp_ppr_presentation.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE proposes reducing the Pay-for-Performance (PFP) Performance Payment Rate (PPR) from $9,337/MWh to $3,500/MWh, effective September 1, 2026, citing stakeholder concerns that the current rate creates excessive financial risk for capacity sellers and may drive resource retirements without corresponding reliability benefits. The proposal returns the PPR to its 2021–2024 level, at which ISO analysis showed PFP objectives were being achieved. Tariff redlines were reviewed at the April MC meeting, with a vote scheduled for May 2026 and a Participants Committee vote in June 2026.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "Changes to the PPR affect capacity market cost structures and supplier incentives across all of ISO-NE, which can influence capacity clearing prices and ultimately ratepayer costs including those of CMP and Versant customers in Maine.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "pay-for-performance",
+            "tariff",
+            "cost-allocation",
+            "ancillary-services",
+            "energy-markets"
+          ]
+        },
+        {
+          "title": "2026-04-14-16 MC A04a - Pay-For-Performance Revisions: Performance Payment Rate - Redlines (III.13.7.2.5)",
+          "url": "https://www.iso-ne.com/static-assets/documents/100034/a04a_mc_2026_04_14-16_pfp_ppr_redlines_iii.13.7.2.5.docx",
+          "ext": "docx",
+          "summary": "This document presents proposed redline revisions to Section III.13.7.2.5 of the NEPOOL Tariff governing the Pay-For-Performance (PFP) framework in the Forward Capacity Market, specifically addressing how the Performance Payment Rate is calculated during Capacity Scarcity Conditions. The revisions modify the formula and associated provisions for how capacity resources are compensated or penalized based on their actual performance relative to their Capacity Supply Obligations during scarcity events. These changes are before the Markets Committee for review and potential action.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "PFP payment rate changes affect all capacity market participants including Maine utilities CMP and Versant, which have Capacity Load Obligations that determine charges to Maine ratepayers during scarcity conditions.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "pay-for-performance",
+            "tariff",
+            "energy-markets",
+            "ancillary-services",
+            "settlement"
+          ]
+        },
+        {
+          "title": "2026-04-14-16 MC A04a - Pay-For-Performance Revisions: Performance Payment Rate - Redlines (III.15)",
+          "url": "https://www.iso-ne.com/static-assets/documents/100034/a04a_mc_2026_04_14-16_pfp_ppr_redlines_iii.15.docx",
+          "ext": "docx",
+          "summary": "This document presents redlined tariff language for Section III.15 of Market Rule 1, establishing the framework for a new Annual Capacity Market that will replace the Forward Capacity Market beginning with the June 1, 2028–May 31, 2029 Capacity Commitment Period, including Pay-For-Performance provisions and performance payment rate revisions. It covers auction administration, qualification processes, critical path schedule monitoring for non-commercial capacity resources, and the transition rules bridging the FCM to the new annual market structure. The document appears to be part of a broader NEPOOL tariff filing effort to restructure ISO-NE's capacity market.",
+          "item_type": "Presentation",
+          "maine_relevance": "high",
+          "maine_relevance_reason": "The Annual Capacity Market restructuring and Pay-For-Performance performance payment rate changes directly affect capacity revenues and costs for all New England load and generators, including CMP and Versant ratepayers who pay capacity costs through retail rates.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "pay-for-performance",
+            "tariff",
+            "annual-capacity-market",
+            "forward-capacity-market",
+            "market-rule-1",
+            "cost-allocation",
+            "clean-energy",
+            "interconnection"
+          ]
+        },
+        {
+          "title": "2026-04-14-16 MC A04b - Pay-For-Performance Revisions: Performance Payment Rate - FirstLight Power Amendment",
+          "url": "https://www.iso-ne.com/static-assets/documents/100034/a04b_mc_04_14-16_pfp_ppr_firstlight_amendment_presentation.pdf",
+          "ext": "pdf",
+          "summary": "FirstLight Power proposes an amendment to ISO-NE's Pay-for-Performance (PFP) Performance Payment Rate (PPR) revision, arguing that the PPR reduction from $9,337/MWh to $3,500/MWh should not take effect until CCP 19 (June 1, 2028) rather than ISO-NE's proposed September 1, 2026 start date. FirstLight contends that changing the PPR after Forward Capacity Auctions have already cleared for CCP 17 and 18 undermines the two-settlement design of the FCM, creates a 'money-for-nothing' problem for zero- or low-performing resources, and unfairly alters the financial terms that all CSO holders agreed to at the time of auction.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "The PPR directly affects capacity market settlement payments received or charged to all capacity resources in ISO-NE, including Maine generators and the costs ultimately borne by Maine ratepayers through capacity market charges.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "pay-for-performance",
+            "tariff",
+            "settlement",
+            "energy-markets",
+            "ancillary-services"
+          ]
+        },
+        {
+          "title": "2026-04-14-16 MC A05 - Pay-For-Performance Revisions: Balancing Ratio - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100034/a05_mc_04_14-16_pfp_revisions_balancing_ratio_presentation.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE presented proposed tariff revisions to comply with a FERC order (Docket EL25-106) requiring the Capacity Balancing Ratio (BR) to be capped at 1.0, ensuring capacity resources are not charged obligations exceeding their Capacity Supply Obligation MW. The presentation detailed the balancing fund allocation process, stop-loss mechanics, treatment of zonal Capacity Scarcity Condition events, and initial proposed tariff language, with a compliance filing due July 21, 2026 and a refund effective date of July 25, 2025.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "Changes to Pay-for-Performance settlement mechanics and Capacity Balancing Ratio directly affect cost recovery and charges for all capacity resources in ISO-NE, including those serving Maine load through CMP and Versant.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "pay-for-performance",
+            "tariff",
+            "compliance",
+            "ancillary-services",
+            "settlement",
+            "cost-allocation"
+          ]
+        },
+        {
+          "title": "2026-04-14-16 MC A05 - Pay-For-Performance Revisions: Balancing Ratio - Redlines - III.13.5",
+          "url": "https://www.iso-ne.com/static-assets/documents/100034/a05_mc_04_14-16_pfp_revisions_balancing_ratio_redlines_iii.13.5.docx",
+          "ext": "docx",
+          "summary": "This document presents redlined tariff language for Section III.13.5 of the ISO-NE tariff, covering bilateral contracts in the Forward Capacity Market including Capacity Supply Obligation Bilaterals and Capacity Load Obligation Bilaterals. The revisions appear to be part of the Pay-For-Performance Balancing Ratio proposal being considered by the Markets Committee. The text details procedures for how market participants can transfer capacity obligations between resources, including submission, review, and approval processes.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "FCM bilateral contract rules affect all capacity market participants including Maine utilities CMP and Versant, which hold Capacity Load Obligations, and any Maine generators holding Capacity Supply Obligations, but there are no Maine-specific provisions in this text.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "pay-for-performance",
+            "bilateral-contracts",
+            "tariff",
+            "forward-capacity-market",
+            "capacity-supply-obligation",
+            "capacity-load-obligation",
+            "compliance"
+          ]
+        },
+        {
+          "title": "2026-04-14-16 MC A05 - Pay-For-Performance Revisions: Balancing Ratio - Redlines - III.13.7",
+          "url": "https://www.iso-ne.com/static-assets/documents/100034/a05_mc_04_14-16_pfp_revisions_balancing_ratio_redlines_iii.13.7.docx",
+          "ext": "docx",
+          "summary": "This document presents redlined tariff language for Section III.13.7 of the ISO-NE tariff, covering Pay-For-Performance revisions to the Forward Capacity Market, specifically related to the Balancing Ratio used in capacity performance payments and charges. The revisions detail how Actual Capacity Provided is calculated during Capacity Scarcity Conditions for various resource types, and how performance payments and charges are computed and allocated among capacity resources and load. The changes appear to modify the formula or parameters governing the Balancing Ratio that determines the magnitude of PFP incentive payments and penalties.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "FCM Pay-For-Performance rules directly affect capacity costs borne by Maine load-serving entities CMP and Versant, as Capacity Load Obligations determine how performance charges are allocated to ratepayers.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "pay-for-performance",
+            "tariff",
+            "energy-markets",
+            "ancillary-services",
+            "cost-allocation",
+            "settlement"
+          ]
+        },
+        {
+          "title": "2026-04-14-16 MC A05 - Pay-For-Performance Revisions: Balancing Ratio - Redlines - III.15.6",
+          "url": "https://www.iso-ne.com/static-assets/documents/100034/a05_mc_04_14-16_pfp_revisions_balancing_ratio_redlines_iii.15.6.docx",
+          "ext": "docx",
+          "summary": "This document presents redlined tariff language for Section III.15.6 of the NEPOOL tariff, covering Bilateral Capacity Contracts as part of the Pay-For-Performance Revisions related to the Balancing Ratio. The redlines address both Capacity Supply Obligation Bilaterals and Capacity Load Obligation Bilaterals, detailing terms of participation, submission timing, ISO review procedures, and approval mechanics. The changes appear to be conforming edits updating terminology and references consistent with broader PFP Balancing Ratio revisions.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "Capacity Load Obligation Bilateral rules directly affect how Maine LSEs like CMP and Versant manage their capacity obligations and costs passed to Maine ratepayers, though no Maine-specific changes are made in this section.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "pay-for-performance",
+            "tariff",
+            "bilateral-contracts",
+            "cost-allocation"
+          ]
+        },
+        {
+          "title": "2026-04-14-16 MC A05 - Pay-For-Performance Revisions: Balancing Ratio - Redlines - III.15.8",
+          "url": "https://www.iso-ne.com/static-assets/documents/100034/a05_mc_04_14-16_pfp_revisions_balancing_ratio_redlines_iii.15.8.docx",
+          "ext": "docx",
+          "summary": "This document presents redlined tariff language for Section III.15.8 of the NEPOOL tariff, covering Pay-For-Performance revisions related to the Balancing Ratio used in capacity performance payments and charges. It details how Capacity Base Payments, Capacity Performance Payments, Capacity Scarcity Conditions, and associated charges to load are calculated, including proposed modifications to the Balancing Ratio methodology. The revisions affect how resources are rewarded or penalized during scarcity events and how those costs flow through to load-serving entities.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "Pay-For-Performance capacity payment and charge rules directly affect what CMP and Versant customers pay through Capacity Load Obligations, and changes to the Balancing Ratio methodology alter cost allocation to all LSEs including Maine's.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "pay-for-performance",
+            "cost-allocation",
+            "tariff",
+            "ancillary-services",
+            "energy-markets",
+            "demand-response"
+          ]
+        },
+        {
+          "title": "2026-04-14-16 MC A06 - Pay-For-Performance Revisions: Treatment of External Transactions - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100034/a06_mc_04_14-16_pfp_revisions_treatment_of_external_transactions_presentation.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE presented proposed revisions to the Pay-for-Performance (PFP) treatment of external transactions, specifically creating a new charge for 'system-backed exports' (SBE) during Capacity Scarcity Conditions and removing SBE from the numerator of the Capacity Balancing Ratio. The presentation addressed follow-up questions from March, including treatment of emergency assistance exports and generator-backed flows to other regions. Proposed effective date is October 1, 2026.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "Changes to PFP settlement mechanics and capacity balancing ratio affect all capacity market participants including Maine utilities and generators, and the NECEC transmission interface (which delivers Maine/Quebec clean energy) is explicitly listed among affected external transaction interfaces.",
+          "maine_mentions": [
+            "New England Clean Energy Connect (NECEC) listed as one of the Non-CTS interfaces subject to the scheduling process described"
+          ],
+          "topic_tags": [
+            "capacity-markets",
+            "pay-for-performance",
+            "energy-markets",
+            "external-transactions",
+            "tariff",
+            "settlement",
+            "ancillary-services",
+            "clean-energy",
+            "interconnection"
+          ]
+        },
+        {
+          "title": "2026-04-14-16 MC A06 - Pay-For-Performance Revisions: Treatment of External Transactions - Redlines I.2",
+          "url": "https://www.iso-ne.com/static-assets/documents/100034/a06_mc_04_14-16_pfp_revisions_treatment_of_external_transactions_redlines_i.2_definitions.docx",
+          "ext": "docx",
+          "summary": "This document presents redlined tariff language for Section I.2 (Rules of Construction and Definitions) of Market Rule 1, as part of proposed Pay-For-Performance revisions addressing the treatment of external transactions. The redlines appear to add or modify definitions related to capacity market participation, external transactions, and related settlement terms. This is a technical tariff amendment filing before the Markets Committee.",
+          "item_type": "Presentation",
+          "maine_relevance": "low",
+          "maine_relevance_reason": "This is a definitions and rules-of-construction section with broad applicability across all ISO-NE market participants; no Maine-specific provisions or entities are referenced.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "pay-for-performance",
+            "tariff",
+            "external-transactions",
+            "ancillary-services",
+            "settlement",
+            "compliance"
+          ]
+        },
+        {
+          "title": "2026-04-14-16 MC A06 - Pay-For-Performance Revisions: Treatment of External Transactions - Redlines III.13.7",
+          "url": "https://www.iso-ne.com/static-assets/documents/100034/a06_mc_04_14-16_pfp_revisions_treatment_of_external_transactions_redlines_iii.13.7.docx",
+          "ext": "docx",
+          "summary": "This document presents redlined tariff language (Section III.13.7) proposing revisions to the Pay-For-Performance framework in the Forward Capacity Market, specifically addressing how External Transactions are treated in the calculation of Actual Capacity Provided during Capacity Scarcity Conditions. The revisions clarify performance payment and charge mechanics for various resource types including generating resources, import capacity resources, demand resources, and external transactions. These changes affect how capacity obligations are settled and how performance incentives apply across resource categories.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "FCM Pay-For-Performance rules directly affect capacity costs borne by all New England load-serving entities including CMP and Versant, as capacity charges flow through to Maine ratepayers.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "pay-for-performance",
+            "tariff",
+            "external-transactions",
+            "ancillary-services",
+            "settlement",
+            "fcm"
+          ]
+        },
+        {
+          "title": "2026-04-14-16 MC A06 - Pay-For-Performance Revisions: Treatment of External Transactions - Redlines III.15.8",
+          "url": "https://www.iso-ne.com/static-assets/documents/100034/a06_mc_04_14-16_pfp_revisions_treatment_of_external_transactions_redlines_iii.15.8.docx",
+          "ext": "docx",
+          "summary": "This document contains redlined tariff language for Section III.15.8 of the ISO-NE tariff, covering Pay-For-Performance revisions related to the treatment of External Transactions in capacity payment and charge calculations. The revisions clarify how Actual Capacity Provided is calculated for various resource types—including generating resources, import capacity resources, demand response, and external transactions—during Capacity Scarcity Conditions. Key changes appear to address how External Transaction sales interact with a generating resource's Actual Capacity Provided during scarcity events.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "Capacity market payment and performance rules directly affect Maine generators and load-serving entities (CMP, Versant) that participate in ISO-NE's Forward Capacity Market, and changes to External Transaction treatment could affect how Maine imports/exports are settled during scarcity events.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "pay-for-performance",
+            "tariff",
+            "energy-markets",
+            "ancillary-services",
+            "demand-response",
+            "interconnection",
+            "settlement"
+          ]
+        },
+        {
+          "title": "2026-04-14-16 MC/RC 7.a - CAR-SA: Imports Modeling and Accreditation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100034/a07.a_mc_rc_2026_04_14-16_carsa_imports_modeling_accreditation_presentation.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE presented continued details on the Capacity Auction Reforms: Seasonal/Accreditation (CAR-SA) proposal focused on import modeling and accreditation, covering the Resource Adequacy Assessment (RAA) methodology for modeling external interface tie benefits and assumed imports as equivalent thermal resources, and the qualification/accreditation framework for Control Area-backed import resources using forecasted excess supply and a historical performance factor. The proposal targets a Q2 2027 effective date and introduces new MRIC-domain calculations for interface capability, capacity transfer limits, and tie benefits. Stakeholder input was solicited on these methodologies.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "Import accreditation and capacity transfer limits affect how external capacity resources serving Maine load are credited in ISO-NE auctions, influencing capacity prices paid by CMP and Versant customers, though Maine is not explicitly mentioned.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "capacity-auction-reforms",
+            "imports",
+            "accreditation",
+            "resource-adequacy",
+            "ancillary-services",
+            "transmission-planning",
+            "tariff",
+            "clean-energy",
+            "regional-planning"
+          ]
+        },
+        {
+          "title": "2026-04-14-16 MC/RC 7.b - CAR-SA: Non-Firm Gas Capacity Demand Curve - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100034/a07.b_mc_rc_2026_04_14-16_nonfirm_gas_capacity_demand_curve.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE presented additional design details for the Non-Firm Gas Capacity Demand Curve, a component of the Capacity Auction Reforms (CAR-SA) proposal targeting a Q2 2027 effective date. The presentation uses numerical examples to illustrate how a gas-specific demand curve would limit capacity auction awards to gas resources based on the regional winter gas supply constraint, preventing consumers from paying for gas capacity that cannot perform during tight system conditions. Topics covered include demand curve mechanics, firm/non-firm gas designation timelines, and offer structures for resources with mixed firm and non-firm capacity.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "This CAR-SA gas demand curve reform would affect how gas-fired capacity in New England is compensated in the capacity market, with potential cost allocation and capacity price impacts for Maine utilities and ratepayers, though Maine is not specifically mentioned.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "clean-energy",
+            "ancillary-services",
+            "tariff",
+            "cost-allocation",
+            "regional-planning",
+            "energy-markets"
+          ]
+        },
+        {
+          "title": "2026-04-14-16 MC/RC 7.c - CAR-SA: Gas-Only Resource Contract Requirements - Memo",
+          "url": "https://www.iso-ne.com/static-assets/documents/100034/a07.c_mc_rc_2026_04_14-16_gas_only_resource_contract_requirements_memo.pdf",
+          "ext": "pdf",
+          "summary": "Analysis Group presents proposed specifications and requirements for gas-only natural gas resources in ISO-NE seeking to designate as 'Firm Capacity' under the Capacity Auction Reform (CAR) process. Resources must maintain firm pipeline transportation or LNG terminal peaking contracts covering the full three-month winter period (December–February), with receipt points at liquid hubs outside New England. The memo details product specifications for pipeline gas and LNG arrangements, ongoing reporting requirements, and includes an appendix analyzing winter gas price basis by pipeline, including PNGTS.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "The memo explicitly analyzes PNGTS (Portland Natural Gas Transmission System), which is a key pipeline serving Maine, and references Saint John LNG as an eligible LNG terminal option, both of which are directly relevant to Maine gas-fired generators and resource adequacy.",
+          "maine_mentions": [
+            "Portland Natural Gas Transmission System, LP (PNGTS)",
+            "Saint John LNG (listed as an eligible LNG terminal for Firm Capacity)"
+          ],
+          "topic_tags": [
+            "capacity-markets",
+            "clean-energy",
+            "tariff",
+            "regional-planning",
+            "ancillary-services",
+            "compliance",
+            "interconnection"
+          ]
+        },
+        {
+          "title": "2026-04-14-16 MC/RC 7.c - CAR-SA: Gas-Only Resource Contract Requirements - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100034/a07.c_mc_rc_2026_04_14-16_gas_only_resource_contract_requirements_presentation.pdf",
+          "ext": "pdf",
+          "summary": "This presentation from Analysis Group details proposed specifications and requirements for gas-only natural gas resources in ISO-NE that wish to designate as 'Firm Capacity' under the Capacity Auction Reform (CAR) process, exempting them from the gas capacity constraint. It covers requirements for pipeline gas and LNG terminal firm service contracts over a December–February winter period, including product specifications, contract quantities, and criteria for eligibility. The presentation also responds to a stakeholder question about whether years with Mystic 8 & 9 RMR-era LNG data should be excluded from the gas availability model.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "Gas supply adequacy and firm capacity requirements directly affect winter resource adequacy and capacity market costs in New England, which flow through to Maine ratepayers via CMP and Versant, though Maine is not specifically mentioned.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "gas-supply",
+            "firm-capacity",
+            "ancillary-services",
+            "energy-markets",
+            "regional-planning",
+            "tariff",
+            "compliance"
+          ]
+        },
+        {
+          "title": "2026-04-14-16 MC/RC 7.d - CAR-SA: Impact Analysis: Resource Accreditation Modeling",
+          "url": "https://www.iso-ne.com/static-assets/documents/100034/a07.d_mc_rc_2026_04_14-16_carsa_ia_ram.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE presented follow-up analysis on the Capacity Auction Reforms: Seasonal/Accreditation (CAR-SA) proposal, focusing on resource accreditation modeling impact analysis including near-term base case supply/demand conditions, a preliminary gas MRI curve for the winter gas constraint, storage charging/discharging order sensitivities, and an 80/20 risk split sensitivity. The presentation builds on earlier discussions and is intended to give stakeholders directional information—not forecasts—about how CAR-SA would change accreditation values, demand parameters, and ultimately capacity auction outcomes ahead of a proposed Q2 2027 effective date.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "CAR-SA will restructure how all resources across ISO-NE are accredited and compensated in the capacity market, directly affecting capacity revenues for Maine generators and capacity costs paid by Maine utilities CMP and Versant, though Maine is not specifically called out in the document.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "resource-accreditation",
+            "clean-energy",
+            "ancillary-services",
+            "regional-planning",
+            "cost-allocation",
+            "energy-markets",
+            "forecast"
+          ]
+        },
+        {
+          "title": "2026-04-14-16 MC/RC 7.e - CAR-SA: Impact Analysis: Market Clearing Assumptions and Methodology",
+          "url": "https://www.iso-ne.com/static-assets/documents/100034/a07.e_mc_rc_2026_04_14-16_ia_market_clearing.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE presented detailed methodology and assumptions for the Market Clearing Impact Analysis component of the Capacity Auction Reforms: Seasonal/Accreditation (CAR-SA) proposal, targeted for Q2 2027 implementation. The presentation covers how supply offers will be constructed under CAR-SA using Net Going Forward Costs, Opportunity Costs, and Risk Premium across resource types, with sensitivity scenarios around seasonal risk splits and gas availability. The analysis is intended to provide directional comparisons between current rules and CAR-SA designs rather than predict actual market outcomes.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "CAR-SA reforms will reshape how capacity is priced and procured across ISO-NE, directly affecting capacity costs borne by Maine ratepayers through CMP and Versant, though no Maine-specific data or entities are mentioned in this document.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "capacity-auction-reforms",
+            "seasonal-accreditation",
+            "market-clearing",
+            "supply-offers",
+            "cost-allocation",
+            "ancillary-services",
+            "tariff",
+            "compliance"
+          ]
+        },
+        {
+          "title": "2026-04-14-16 MC/RC 7.f - CAR-SA: Resource Qualification Process",
+          "url": "https://www.iso-ne.com/static-assets/documents/100034/a07.f_mc_rc_2026_04_14-16_carsa_resource_qualification_process.pdf",
+          "ext": "pdf",
+          "summary": "This presentation outlines the resource qualification process for CAR-SA (the proposed prompt seasonal capacity market replacing FCM), covering the lifecycle of capacity resources including creation, maintenance, seasonal auction preparation, and monthly CSO trading. Key changes from FCM include a continuous rolling qualification process instead of batch submission windows, and elimination of FCM's resource split/merge mechanisms. The proposed effective date is Q2 2027.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "CAR-SA is the replacement for the Forward Capacity Market and will govern how all New England capacity resources—including Maine generators and load serving entities like CMP and Versant—qualify and participate in capacity auctions, affecting Maine ratepayer capacity costs.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "car-sa",
+            "resource-qualification",
+            "interconnection",
+            "tariff",
+            "ancillary-services",
+            "regional-planning"
+          ]
+        },
+        {
+          "title": "2026-04-14-16 MC/RC 7.g - CAR-SA: Seasonal Offer Construction and Mitigation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100034/a07.g_mc_rc_2026_04_14-16_carsa_seasonal_offer_construction_mitigation.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE presented continued guidance on Capacity Auction Reforms – Seasonal/Accreditation (CAR-SA) offer construction principles, covering how the capped Balancing Ratio affects offer formulation, why sunk costs must be excluded from competitive offers, and how resources should transition annual costs into seasonal capacity offers with illustrative examples. The discussion also previewed upcoming slides on gas-related costs and opportunity costs in the seasonal framework, with a proposed effective date of Q2 2027.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "CAR-SA's shift to seasonal capacity auctions and associated offer construction rules will directly affect how generators serving Maine load are compensated and how capacity costs flow to Maine ratepayers through CMP and Versant.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "seasonal-accreditation",
+            "offer-construction",
+            "capacity-performance",
+            "market-design",
+            "cost-allocation",
+            "tariff",
+            "compliance"
+          ]
+        },
+        {
+          "title": "2026-04-14-16 MC/RC 7.h - CAR-SA: Capacity Market Cost Allocation - Memo",
+          "url": "https://www.iso-ne.com/static-assets/documents/100034/a07.h_mc_rc_2026_04_14-16_carsa_capacity_market_cost_allocation_memo.pdf",
+          "ext": "pdf",
+          "summary": "This ISO-NE memo details conforming changes to capacity market cost allocation methods under the Capacity Auction Reforms (CAR), transitioning from forward-annual to prompt-seasonal capacity markets. Three of the ten existing capacity market charges are eliminated under CAR (IPR seasonal variance, ARA, and FTC charges), while the seven remaining charges are updated to reflect seasonal rather than annual coincident peak load contributions as the allocation basis. The core principle is preserved: wholesale energy consumers with higher peak load contributions bear larger shares of capacity costs.",
+          "item_type": "Presentation",
+          "maine_relevance": "high",
+          "maine_relevance_reason": "Changes to capacity market cost allocation methods directly affect what Maine's wholesale energy consumers (including CMP and Versant load) pay for capacity, and the shift to seasonal coincident peak contributions as the allocation driver could alter Maine's share of regional capacity costs.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "cost-allocation",
+            "tariff",
+            "clean-energy",
+            "ancillary-services",
+            "regional-planning",
+            "settlement"
+          ]
+        },
+        {
+          "title": "2026-04-14-16 MC/RC 7.h - CAR-SA: Capacity Market Cost Allocation - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100034/a07.h_mc_rc_2026_04_14-16_carsa_capacity_market_cost_allocation_presentation.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE presented conforming changes to capacity market cost allocation under the CAR-SA (Capacity Auction Reform - Seasonal Auction) design, proposing that capacity costs be allocated seasonally based on coincident seasonal peak loads rather than annually, effective Q2 2027. The presentation covered follow-up stakeholder questions on historical winter peak contributions by capacity zone, the seasonal peak contribution process, and detailed conforming changes to seven remaining capacity market charges (eliminating three: IPR seasonal variance, ARA, and FTC). A Meter Reader Working Group meeting is scheduled for April 24, 2026 to discuss feasibility of the seasonal peak contribution process.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "The shift to seasonal capacity cost allocation based on coincident peak loads directly affects how costs are distributed across capacity zones including Northern New England, which encompasses Maine load served by CMP and Versant, with historical winter peak contribution data shown by zone.",
+          "maine_mentions": [
+            "Northern N/E capacity zone listed in historical winter seasonal peak contribution table with MW values for winters 2020/21 through 2025/26"
+          ],
+          "topic_tags": [
+            "capacity-markets",
+            "cost-allocation",
+            "CAR-SA",
+            "seasonal-markets",
+            "peak-contribution",
+            "capacity-zones",
+            "northern-new-england",
+            "transmission-planning",
+            "ancillary-services",
+            "tariff"
+          ]
+        },
+        {
+          "title": "2026-04-14-16 MC/RC 7.i - CAR-SA: IPR Suite",
+          "url": "https://www.iso-ne.com/static-assets/documents/100034/a07.i_mc_rc_2026_04_14-16_carsa_ipr_suite.pdf",
+          "ext": "pdf",
+          "summary": "This document summarizes ISO-NE's completed proposal for modeling and accrediting Intermittent Power Resources (IPRs) under the Capacity Auction Reform (CAR) project, synthesizing material from January–March 2026 joint MC/RC meetings. It details how wind, solar, run-of-river hydro, and other IPRs will be modeled using hourly profiles and accredited based on Marginal Reliability Impact Capacity (MRIC) within the GE-MARS reliability assessment framework. No new proposed changes are introduced in this deck, though the ISO notes a forthcoming discussion on replacing seasonal MCap with a 'Global MCap' concept.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "Maine has significant wind, solar, and run-of-river hydro resources whose capacity accreditation values under the new CAR framework will directly affect revenues for Maine generators and potentially capacity costs for Maine utilities CMP and Versant.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "clean-energy",
+            "interconnection",
+            "regional-planning",
+            "accreditation",
+            "intermittent-resources",
+            "wind",
+            "solar",
+            "run-of-river-hydro",
+            "tariff"
+          ]
+        },
+        {
+          "title": "2026-04-14-16 MC/RC 7.i - CAR-SA: Q2 Follow Up Medley",
+          "url": "https://www.iso-ne.com/static-assets/documents/100034/a07.i_mc_rc_2026_04_14-16_carsa_follow_up_medley.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE staff presented follow-up responses to stakeholder questions on the Capacity Auction Reforms – Seasonal/Accreditation (CAR-SA) project, covering IPR outage modeling methodology, hybrid resource participation options, and how Massachusetts Clean Peak Standard reductions are reflected in capacity accreditation. A key update is that the ISO reversed its earlier proposal and will allow hybrid resources to continue participating as separate capacity market resources, with new rules for splitting MRIC between component resources.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "CAR-SA reforms will reshape how all capacity resources are accredited and how seasonal auctions are structured, directly affecting the capacity costs paid by Maine utilities CMP and Versant and the revenues received by Maine generators, though no Maine-specific data or entities are mentioned in this document.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "accreditation",
+            "seasonal-auctions",
+            "clean-energy",
+            "hybrid-resources",
+            "intermittent-resources",
+            "tariff",
+            "market-design"
+          ]
+        }
       ]
     },
     "pc": {

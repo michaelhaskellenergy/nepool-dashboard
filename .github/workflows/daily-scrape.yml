@@ -24,7 +24,7 @@ jobs:
           python-version: '3.12'
 
       - name: Install Python dependencies
-        run: pip install playwright anthropic
+        run: pip install playwright anthropic python-docx
 
       - name: Install Playwright browser
         run: playwright install --with-deps chromium
@@ -40,10 +40,10 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python scripts/scrape_agendas.py
 
-      - name: Run summarizer (upcoming meetings only)
+      - name: Run summarizer (last 30 days, all committees)
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python scripts/summarize.py --upcoming-only
+        run: python scripts/summarize.py --months 1
 
       - name: Commit and push updated data
         run: |
