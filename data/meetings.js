@@ -1003,8 +1003,75 @@ window.MEETINGS_DATA = {
           agenda_items: [
             {
               order: 1,
-              title: "Agenda pending — check back closer to the meeting date.",
+              time: "9:00 – 9:05",
+              agenda_number: "1.0",
+              title: "Chair's Opening Remarks",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 2,
+              time: "9:05 – 9:35",
+              agenda_number: "2.0",
+              title: "Transmission Owner Asset Management",
               type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 3,
+              agenda_number: "2.1",
+              title: "Line 1785, OPGW Installation",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 4,
+              time: "9:35 – 9:45",
+              agenda_number: "3.0",
+              title: "2026 Public Policy Transmission Upgrade Process",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 5,
+              time: "9:45 – 10:30",
+              agenda_number: "4.0",
+              title: "Final Draft 2026 Energy and Seasonal Peak Forecasts",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 6,
+              time: "10:30 – 12:00",
+              agenda_number: "5.0",
+              title: "2024 Economic Studies Lessons Learned",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 7,
+              time: "12:00",
+              agenda_number: "6.0",
+              title: "Closing Remarks/Adjourn",
+              type: "procedural",
               materials: [],
               summary: "",
               maine_relevance: "",
