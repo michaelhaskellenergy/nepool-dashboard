@@ -18,7 +18,12 @@ Run manually any time:  python scripts/check_health.py
 import sys
 from datetime import date, datetime, timedelta, timezone
 
-from scrape_agendas import load_meetings_data, load_scraped_data
+from scrape_agendas import (
+    find_agenda_doc,
+    is_placeholder,
+    load_meetings_data,
+    load_scraped_data,
+)
 
 STALE_SCRAPE_DAYS = 5
 STALE_MEETING_DAYS = 21
@@ -85,6 +90,28 @@ def main():
             check(gap <= STALE_MEETING_DAYS, "meeting recency",
                   f"newest meeting {newest.isoformat()} "
                   f"({gap} day(s) ago)" if gap > 0 else f"newest meeting {newest.isoformat()} (upcoming)")
+
+    # -- 3. Agenda pipeline effectiveness --
+    # If ISO-NE has posted the agenda document for an upcoming meeting but the
+    # meeting is still a placeholder after the pipeline ran, agenda parsing is
+    # broken (e.g. the Claude API key is out of credits -- July 2026 incident).
+    if scraped and meetings_data:
+        stuck = []
+        for committee in meetings_data.get("committees", []):
+            cid = committee.get("id", "")
+            for meeting in committee.get("meetings", []):
+                try:
+                    if date.fromisoformat(meeting.get("date", "")) < today:
+                        continue
+                except ValueError:
+                    continue
+                if not is_placeholder(meeting):
+                    continue
+                if find_agenda_doc(scraped, cid, meeting["date"]):
+                    stuck.append(f"{cid}/{meeting['date']}")
+        check(not stuck, "agenda pipeline",
+              "all posted agendas parsed" if not stuck
+              else f"agenda posted but not parsed for: {', '.join(stuck)}")
 
     if failures:
         print(f"[health] UNHEALTHY: {len(failures)} check(s) failed: {', '.join(failures)}")
