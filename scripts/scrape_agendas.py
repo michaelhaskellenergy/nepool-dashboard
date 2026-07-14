@@ -8,6 +8,7 @@ Runs automatically as part of the daily check_and_scrape.ps1 job (step 2).
 Always exits 0 -- errors are logged but do not block other pipeline steps.
 """
 import anthropic
+import argparse
 import json
 import os
 import re
@@ -15,7 +16,7 @@ import shutil
 import subprocess
 import sys
 import urllib.request
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 
 # Anchor all paths to the repo root (parent of scripts/) so the script works
@@ -84,11 +85,14 @@ def is_placeholder(meeting):
     return bool(items) and not any(item.get("agenda_number") for item in items)
 
 
-def find_detection_targets(data):
+def find_detection_targets(data, days_back=0):
     """
-    Return list of (committee_id, meeting) for upcoming meetings whose
-    agenda is still a placeholder (no agenda_number on any item).
+    Return list of (committee_id, meeting) for meetings whose agenda is still
+    a placeholder (no agenda_number on any item). By default only meetings
+    today or later are considered; days_back > 0 widens the window so
+    recently backfilled past meetings can get their agendas too.
     """
+    cutoff = today - timedelta(days=days_back)
     targets = []
     for committee in data.get("committees", []):
         cid = committee.get("id", "")
@@ -97,7 +101,7 @@ def find_detection_targets(data):
             if not meeting_date:
                 continue
             try:
-                if date.fromisoformat(meeting_date) < today:
+                if date.fromisoformat(meeting_date) < cutoff:
                     continue
             except ValueError:
                 continue
@@ -385,7 +389,7 @@ def validate_meetings_js():
     """Run validate_meetings.py. Return True if exit code 0."""
     result = subprocess.run(
         [sys.executable, str(VALIDATOR_SCRIPT)],
-        capture_output=True, encoding="utf-8"
+        capture_output=True, encoding="utf-8", errors="replace"
     )
     if result.returncode != 0:
         log("Validator output:")
@@ -422,6 +426,11 @@ def patch_meetings_js(meeting_id, new_items):
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
+    parser = argparse.ArgumentParser(description="Detect and parse newly posted agendas")
+    parser.add_argument("--days-back", type=int, default=0,
+                        help="also check placeholder meetings up to N days in the past (default 0)")
+    args = parser.parse_args()
+
     log("Starting agenda detection...")
 
     if not MEETINGS_FILE.exists():
@@ -442,9 +451,9 @@ def main():
 
     cid_to_name = {c["id"]: c["name"] for c in meetings_data.get("committees", [])}
 
-    targets = find_detection_targets(meetings_data)
+    targets = find_detection_targets(meetings_data, days_back=args.days_back)
     if not targets:
-        log("No upcoming meetings with placeholder agendas. Nothing to do.")
+        log("No meetings with placeholder agendas in window. Nothing to do.")
         return
 
     log(f"Checking {len(targets)} upcoming placeholder meeting(s): " +

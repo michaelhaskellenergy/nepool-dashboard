@@ -35,10 +35,13 @@ jobs:
       - name: Run material scraper
         run: python scripts/scrape_materials.py --months 6
 
+      - name: Discover new meetings from scraped materials
+        run: python scripts/discover_meetings.py --days-back 90
+
       - name: Run agenda detector
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python scripts/scrape_agendas.py
+        run: python scripts/scrape_agendas.py --days-back 90
 
       - name: Run summarizer (last 30 days, all committees)
         env:
@@ -52,3 +55,9 @@ jobs:
           git add data/scraped_materials.js data/new_materials.js data/summaries.js data/meetings.js
           git diff --cached --quiet && echo "No changes to commit." || \
             git commit -m "Auto-scrape: $(date -u +%Y-%m-%d)" && git push
+
+      # Runs AFTER the push so fresh data still publishes even on a bad day.
+      # A failure here fails the workflow, which triggers a GitHub email --
+      # the site froze silently for 3 months once; never again.
+      - name: Health check (fail loudly if the tracker is going stale)
+        run: python scripts/check_health.py

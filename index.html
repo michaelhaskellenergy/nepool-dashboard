@@ -333,10 +333,11 @@
 </header>
 
 <div class="container">
+  <div id="stale-banner" style="display:none; background:#fff3cd; border:1px solid #e0c25a; border-radius:6px; padding:10px 14px; margin-bottom:14px; color:#7a5d00; font-size:0.9em;"></div>
   <div class="tab-nav" id="tab-nav"></div>
   <div id="tab-content"></div>
   <div class="footer-note">
-    Meeting data: <code>data/meetings.js</code> (manual) &middot;
+    Meetings &amp; agendas auto-discovered daily &middot;
     Materials scraped from <a href="https://www.iso-ne.com/calendar/" target="_blank" style="color:#2e7bc4;">iso-ne.com</a> &middot;
     Summaries: <code>data/summaries.js</code> (Claude API)
   </div>
@@ -1033,6 +1034,39 @@
     : data.last_updated;
   document.getElementById('header-meta').textContent =
     `Maine PUC — ISO-NE Committee Monitor | Last updated: ${_scrapedAt}`;
+
+  // ── Staleness banner ───────────────────────────────────────────────────────
+  // The site once froze for 3 months while looking healthy. If the data ever
+  // goes quiet again, say so instead of silently showing an empty calendar.
+  (function checkStaleness() {
+    const DAY = 24 * 60 * 60 * 1000;
+    const now = new Date();
+    const problems = [];
+
+    const scrapedAtRaw = window.SCRAPED_DATA?.scraped_at;
+    if (!scrapedAtRaw) {
+      problems.push('No scraped materials data is loaded.');
+    } else if (now - new Date(scrapedAtRaw) > 5 * DAY) {
+      problems.push(`Materials were last scraped ${new Date(scrapedAtRaw).toLocaleDateString()} — the daily scrape may have stopped.`);
+    }
+
+    let newest = null;
+    data.committees.forEach(c => (c.meetings || []).forEach(m => {
+      const d = new Date((m.date_end || m.date) + 'T23:59:59');
+      if (!newest || d > newest) newest = d;
+    }));
+    if (!newest) {
+      problems.push('No meetings are loaded.');
+    } else if (now - newest > 21 * DAY) {
+      problems.push(`The most recent meeting on record is ${newest.toLocaleDateString()} — meeting discovery may have stopped.`);
+    }
+
+    if (problems.length) {
+      const banner = document.getElementById('stale-banner');
+      banner.innerHTML = '<strong>&#9888; Tracker data may be stale.</strong> ' + problems.join(' ');
+      banner.style.display = 'block';
+    }
+  })();
 
   const tabNav     = document.getElementById('tab-nav');
   const tabContent = document.getElementById('tab-content');
