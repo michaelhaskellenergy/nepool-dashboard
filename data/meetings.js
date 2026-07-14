@@ -29,8 +29,90 @@ window.MEETINGS_DATA = {
           agenda_items: [
             {
               order: 1,
-              title: "Agenda pending — check back closer to the meeting date.",
+              time: "9:30 AM",
+              title: "Approve Draft Minutes of Participants Committee Meetings (April 30 and May 7, 2026)",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 2,
+              title: "Adopt and Approve All Actions Recommended by Technical Committees on the Consent Agenda",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 3,
+              title: "Remarks from Vamsi Chadalavada, Chief Executive Officer, ISO New England; Summary of ISO Board and Board Committee Meetings",
               type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 4,
+              title: "Systems and Market Operations Report (June Report Reflecting May Data)",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 5,
+              title: "Report on the ISO's Preliminary 2027 and 2028 Operating and Capital Budgets by Kelly Reyngold, Chief Financial Officer, ISO New England",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 6,
+              title: "Consider and Take Action on Changes to Tariff Sections IV.A and IV.B Regarding Administration of Calendar Year Rates If Not Authorized by FERC by January 1",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 7,
+              title: "Consider and Take Action on Changes to Pay-For-Performance Treatment of External Transactions During Capacity Scarcity Conditions and Settlement Calculations, and Related Revisions to Tariff Sections I, III, the Billing Policy, and the Financial Assurance Policy",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 8,
+              title: "Consider and Take Action on Changes to Cap the PFP Capacity Balancing Ratio at 1.0 and Related Revisions to Tariff Sections I, III, and the FAP",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 9,
+              title: "Consider and Take Action on the ISO's Proposed Downward Adjustment to the Performance Payment Rate and Related Revisions to Sections III.13.7 and III.15",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 10,
+              title: "Consider and Take Action on Day-Ahead Ancillary Services Post-Implementation Market Adjustments in Response to Recommendations by the Internal Market Monitor",
+              type: "vote",
               materials: [],
               summary: "",
               maine_relevance: "",
@@ -63,8 +145,91 @@ window.MEETINGS_DATA = {
           agenda_items: [
             {
               order: 1,
-              title: "Agenda pending — check back closer to the meeting date.",
-              type: "presentation",
+              time: "10:00 AM",
+              agenda_number: "1",
+              title: "Consider a slate of candidates for election to the ISO Board, as recommended by the Joint Nominating Committee (Executive Session)",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 2,
+              time: "10:30 AM",
+              agenda_number: "2",
+              title: "Approve the draft minutes of the April 9, 2026 Participants Committee meeting",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 3,
+              agenda_number: "3",
+              title: "Adopt and approve the actions recommended by the Technical Committees set forth on the Consent Agenda",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 4,
+              agenda_number: "4",
+              title: "ISO Board and Board Committee meeting summaries (none; no meetings since April 9 Participants Committee meeting)",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 5,
+              agenda_number: "5",
+              title: "Systems and Market Operations Report",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 6,
+              agenda_number: "6",
+              title: "Report on current contested matters before the FERC and the Federal Courts",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 7,
+              agenda_number: "7",
+              title: "Reports from Committees, Subcommittees and other working groups: Markets Committee, Reliability Committee, Transmission Committee, Budget & Finance Subcommittee, Membership Subcommittee",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 8,
+              agenda_number: "8",
+              title: "Administrative matters",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 9,
+              agenda_number: "9",
+              title: "Transact such other business as may properly come before the meeting",
+              type: "procedural",
               materials: [],
               summary: "",
               maine_relevance: "",
@@ -1269,8 +1434,97 @@ window.MEETINGS_DATA = {
           agenda_items: [
             {
               order: 1,
-              title: "Agenda pending — check back closer to the meeting date.",
+              time: "9:30 - 9:35",
+              agenda_number: "1.0",
+              title: "Chair's Opening Remarks",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 2,
+              agenda_number: "1.1",
+              title: "Meeting Minutes - May 28, 2026 TC Meeting Minutes",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 3,
+              time: "9:35 - 10:30",
+              agenda_number: "2.0",
+              title: "Capacity Auction Reforms - Seasonal/Accreditation (2nd TC/MC/RC Mtg) (Future Vote) - Initial review of Tariff redlines aligning deactivations in a seasonal framework",
               type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 4,
+              time: "10:30 - 11:00",
+              agenda_number: "3.0",
+              title: "PTO AC Notification of Schedule 9 & Schedule 1 Rates (1st TC Mtg) - Introductory update on Schedule 9 Regional Network Service rates effective January 1, 2027, Schedule 1 Service rates effective June 1, 2026, and revised Schedule 9 RNS rate effective January 1, 2026",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 5,
+              time: "11:00 - 12:25",
+              agenda_number: "4.0",
+              title: "Asset Condition Reviewer (6th TC Mtg) - Continued review and vote on incremental proposal adjustments and redline changes to the Transmission Operating Agreement (TOA) and Tariff",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 6,
+              time: "12:45 - 1:25",
+              agenda_number: "4.2",
+              title: "Maine Office of Public Advocate (ME OPA) Amendment (2nd TC Mtg) - Discussion and vote on ME OPA's proposed amendment to the TOA and Tariff related to the ISO's AC Reviewer proposal",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 7,
+              time: "12:45 - 1:55",
+              agenda_number: "5.0",
+              title: "FERC Show Cause Order to ISO-NE & PTOs (1st TC Meeting) - Review of NEPOOL Counsel's summary on FERC's June 18, 2026 show-cause order (Docket No. EL26-72) to the ISO and the Participating Transmission Owners",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 8,
+              time: "1:55 - 2:00",
+              agenda_number: "6.0",
+              title: "Other Business",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 9,
+              time: "2:00",
+              agenda_number: "7.0",
+              title: "Closing Remarks/Adjourn for the Day",
+              type: "procedural",
               materials: [],
               summary: "",
               maine_relevance: "",
@@ -1338,8 +1592,97 @@ window.MEETINGS_DATA = {
           agenda_items: [
             {
               order: 1,
-              title: "Agenda pending — check back closer to the meeting date.",
-              type: "presentation",
+              time: "9:30 - 9:35",
+              agenda_number: "1.0",
+              title: "Chair's Opening Remarks",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 2,
+              agenda_number: "1.1",
+              title: "Meeting Minutes (66.67% Vote) - June 24, 2026 TC/MC/RC Meeting Minutes and June 24, 2026 TC Meeting Minutes",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 3,
+              time: "9:35 - 10:00",
+              agenda_number: "2.1",
+              title: "PTO AC Notification of Schedule 9 & Schedule 1 Rates",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 4,
+              time: "10:00 - 10:30",
+              agenda_number: "2.2",
+              title: "Five-Year Forecast of RNS Rates",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 5,
+              time: "10:30 - 12:30",
+              agenda_number: "3.0",
+              title: "Surplus Interconnection Service",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 6,
+              time: "1:15 - 1:45",
+              agenda_number: "4.1",
+              title: "Abeyance Request and Section 205 Filing",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 7,
+              time: "1:45 - 2:55",
+              agenda_number: "4.2",
+              title: "Informational Report on Resource Adequacy",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 8,
+              time: "2:55 - 3:00",
+              agenda_number: "5.0",
+              title: "Other Business",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 9,
+              time: "3:00",
+              agenda_number: "6.0",
+              title: "Closing Remarks/Adjourn for the Day",
+              type: "procedural",
               materials: [],
               summary: "",
               maine_relevance: "",
@@ -1455,8 +1798,104 @@ window.MEETINGS_DATA = {
           agenda_items: [
             {
               order: 1,
-              title: "Agenda pending — check back closer to the meeting date.",
+              time: "9:00 – 9:05",
+              agenda_number: "1.0",
+              title: "Chair's Opening Remarks",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 2,
+              time: "9:05 – 11:30",
+              agenda_number: "2.0",
+              title: "Transmission Owner Asset Management",
               type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 3,
+              agenda_number: "2.1",
+              title: "W-23 69 kV Line Asset Condition Refurbishment (Rafael Panos, National Grid)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 4,
+              agenda_number: "2.2",
+              title: "Canal Station 345 kV Autotransformer Replacements (Paul Melzan, Eversource)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 5,
+              agenda_number: "2.3",
+              title: "North Cambridge Substation – Cable System Partial Replacement (Paul Melzan, Eversource)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 6,
+              agenda_number: "2.4",
+              title: "Montville Substation – New 115/69 kV Control Enclosure and Cable Separation (George Wegh, Eversource)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 7,
+              agenda_number: "2.5",
+              title: "NH Asset Condition Structure Replacements – Lines B172 and C129 (Chris Soderman, Eversource)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 8,
+              time: "11:30 – 11:45",
+              agenda_number: "3.0",
+              title: "2026 Economic Study - Stakeholder-Requested Scenario Submission (Kim Quach, ISO New England)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 9,
+              time: "11:45 – 12:00",
+              agenda_number: "4.0",
+              title: "RSP Project List and Asset Condition List June 2026 Update (Daniel Schwarting, ISO New England)",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 10,
+              time: "12:00",
+              agenda_number: "5.0",
+              title: "Closing Remarks/Adjourn",
+              type: "procedural",
               materials: [],
               summary: "",
               maine_relevance: "",
@@ -1472,8 +1911,115 @@ window.MEETINGS_DATA = {
           agenda_items: [
             {
               order: 1,
-              title: "Agenda pending — check back closer to the meeting date.",
+              time: "9:00 – 9:05",
+              agenda_number: "1.0",
+              title: "Chair's Opening Remarks",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 2,
+              time: "9:05 – 10:45",
+              agenda_number: "2.0",
+              title: "Transmission Owner Asset Management",
               type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 3,
+              agenda_number: "2.1",
+              title: "Low-Pressure Fluid Filled Cable Replacement (Joshua Cefaratti, United Illuminating)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 4,
+              agenda_number: "2.2",
+              title: "301 Asset Condition Replacement (Rafael Panos, National Grid)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 5,
+              agenda_number: "2.3",
+              title: "E-157/E-157E/E-157W Asset Condition Replacement (Rafael Panos, National Grid)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 6,
+              agenda_number: "2.4",
+              title: "CMP Section 226 Structure Replacements (Devin Carrier, Central Maine Power Company)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 7,
+              agenda_number: "2.5",
+              title: "332 West Farnum to Kent County 345kV Line Rebuild (George Nemeh, Rhode Island Energy)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 8,
+              time: "10:45 – 11:15",
+              agenda_number: "3.0",
+              title: "Transmission Planning Study Assumption Updates (Andrew Kniska, ISO New England)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 9,
+              time: "11:15 – 11:45",
+              agenda_number: "4.0",
+              title: "2026 Economic Study - Benchmark Scenario Assumptions (Kim Quach, ISO New England)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 10,
+              time: "11:45 – 12:15",
+              agenda_number: "5.0",
+              title: "2025 LTTP RFP - Follow-Up to RFP Objective Analysis (Steven Judd, ISO New England)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 11,
+              time: "12:15",
+              agenda_number: "6.0",
+              title: "Closing Remarks/Adjourn",
+              type: "procedural",
               materials: [],
               summary: "",
               maine_relevance: "",

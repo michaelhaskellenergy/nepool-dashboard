@@ -575,6 +575,24 @@ window.SUMMARIES_DATA = {
       "2026-05-21": [],
       "2026-07-07": [
         {
+          "title": "2026-07-07-09 MC A00 - Actions Letter",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a00_mc_2026_07_09_actions_letter.pdf",
+          "ext": "pdf",
+          "summary": "The Markets Committee took two actions at its July 2026 meeting: approving minutes from the June 2026 MC and joint MC/RC meetings, and recommending that the Participants Committee support manual conforming changes related to FERC Order No. 2222 (distributed energy resource aggregation) and the Storage as a Transmission-Only Asset (SATOA) project. Both motions passed by voice vote with no opposition.",
+          "item_type": "Actions",
+          "maine_relevance": "low",
+          "maine_relevance_reason": "These are procedural actions approving minutes and recommending manual updates for Order 2222 and SATOA compliance, with no Maine-specific provisions or direct rate impacts identified.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "tariff",
+            "compliance",
+            "ancillary-services",
+            "energy-markets",
+            "demand-response",
+            "transmission-planning"
+          ]
+        },
+        {
           "title": "2026-07-07-09 MC A00 - Agenda",
           "url": "https://www.iso-ne.com/static-assets/documents/100036/a00_mc_2026_7_7-9_agenda.docx",
           "ext": "docx",
@@ -674,6 +692,466 @@ window.SUMMARIES_DATA = {
             "ancillary-services",
             "interconnection",
             "settlement"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A02 - Manuals - Order No. 2222 Conforming Changes - Manual 28 Revision 68",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a02_2026_07_07-09_mc_redlines_manual_28_revision_68.docx",
+          "ext": "docx",
+          "summary": "This document is Revision 68 of ISO New England Manual M-28 (Market Rule 1 Accounting), updated to incorporate Order No. 2222 conforming changes. It describes the accounting and settlement procedures for energy, reserve, capacity, and ancillary services markets, including day-ahead, real-time, bilateral transactions, external transactions, resettlement processes, and the settlement power system model. The revision reflects FERC Order No. 2222 compliance changes related to distributed energy resource participation.",
+          "item_type": "Presentation",
+          "maine_relevance": "low",
+          "maine_relevance_reason": "This is a region-wide market accounting manual update with no Maine-specific provisions; it applies uniformly to all ISO-NE market participants including CMP and Versant, but contains no Maine-specific data or impacts.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "energy-markets",
+            "ancillary-services",
+            "settlement",
+            "metering",
+            "tariff",
+            "demand-response",
+            "capacity-markets",
+            "compliance",
+            "interconnection"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A02 - Manuals - Order No. 2222 Conforming Changes - Manual RPA - Revision 22",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a02_2026_07_07-09_mc_redlines_manual_rpa_revision_22_rev_1.docx",
+          "ext": "docx",
+          "summary": "This document is a revision to ISO New England's Manual for Registration and Performance Auditing (M-RPA, Revision 22), updated to conform with FERC Order No. 2222, which enables distributed energy resource aggregations to participate in wholesale markets. It details procedures for registering various asset types including Load Assets, Generator Assets, Demand Assets, storage resources, and new distributed energy resource aggregations, along with associated roles, responsibilities, and auditing requirements.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "Order No. 2222 conforming changes affect how distributed energy resources and demand aggregations register and participate in ISO-NE markets, which has operational implications for Maine utilities CMP and Versant as Host Participants and Load Asset owners in their service territories.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "demand-response",
+            "interconnection",
+            "tariff",
+            "metering",
+            "clean-energy",
+            "settlement",
+            "ancillary-services",
+            "capacity-markets",
+            "energy-markets"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A02 - Manuals - Order No. 2222 Conforming Changes and SATOA Conforming Changes - Motions Letter",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a02_mc_2026_07-07-09_motions_letter_manual_conforming_changes.docx",
+          "ext": "docx",
+          "summary": "The Markets Committee is voting on a motion to recommend that the Participants Committee approve revisions to NEPOOL Manuals M-11, M-28, and M-RPA to conform to FERC Order No. 2222 (distributed energy resource aggregation) and revisions to M-28 and M-RPA to conform to the Storage as a Transmission-Only Asset (SATOA) project. The motion requires a 60% supermajority vote for passage. These are manual-level conforming changes to implement previously approved rule changes.",
+          "item_type": "Vote",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "Order No. 2222 DER aggregation rules and SATOA storage classification affect how distributed and storage resources in Maine can participate in ISO-NE markets, which could influence CMP and Versant customers and Maine clean energy development.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "energy-markets",
+            "tariff",
+            "compliance",
+            "demand-response",
+            "clean-energy",
+            "ancillary-services",
+            "interconnection"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A02 - Manuals - Order No. 2222 Conforming Changes and SATOA Conforming Changes - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a02_2026_07_07-09_mc_order_2222_satoa_manual_conforming_changes_presentation.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE proposes conforming changes to Manuals M-11, M-28, and M-RPA to implement Storage as a Transmission-Only Asset (SATOA) revisions effective September 1, 2026, and FERC Order No. 2222 Distributed Energy Resource Aggregation (DERA) integration effective November 1, 2026. The changes update market operations, accounting, and registration procedures, including new DERA participation models (DRDERA and SODERA). The Markets Committee is asked to vote on these manual revisions at the July 2026 meeting, with a Participants Committee vote scheduled for August 2026.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "Order No. 2222 DERA integration and SATOA rules affect how distributed energy resources and storage assets interconnected in Maine can participate in ISO-NE markets, with metering responsibilities potentially touching CMP and Versant as Host Utilities.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "demand-response",
+            "clean-energy",
+            "tariff",
+            "interconnection",
+            "metering",
+            "settlement",
+            "ancillary-services",
+            "energy-markets",
+            "transmission-planning"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A02 - Manuals - Order No. 2222 Conforming Changes and SATOA Conforming Changes - Voting Memo",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a02_2026_07_07-09_mc_order_2222_satoa_manual_conforming_changes_voting_memo.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE is requesting a Markets Committee vote on manual conforming changes to M-11, M-28, and M-RPA to align with two policy implementations: Storage as a Transmission-Only Asset (SATOA), effective September 1, 2026, and FERC Order No. 2222 integration of Distributed Energy Resource Aggregations (DERAs), effective November 1, 2026. These updates ensure market operations, accounting, and registration manuals reflect the approved Tariff and Transmission Operating Agreement changes.",
+          "item_type": "Vote",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "Order No. 2222 DERA participation and SATOA rules affect how Maine distributed energy resources and storage assets can participate in ISO-NE markets, with potential impacts to CMP and Versant customers and Maine clean energy development.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "energy-markets",
+            "tariff",
+            "clean-energy",
+            "demand-response",
+            "ancillary-services",
+            "interconnection",
+            "settlement",
+            "distributed-energy-resources"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A02 - SATOA Conforming Changes - Manual 28 - Revision 67",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a02_2026_07_07-09_mc_redlines_manual_28_revision_67.docx",
+          "ext": "docx",
+          "summary": "This document is Revision 67 of ISO-NE Manual M-28, which governs the accounting procedures for Market Rule 1 settlements, including day-ahead and real-time energy markets, reserves, external transactions, resettlement processes, and meter data error corrections. The revision appears to be conforming changes related to the Shortage and Takeout Obligation Accounting (SATOA) initiative. The manual describes how charges and credits are calculated and allocated among market participants in the ISO-NE wholesale electricity markets.",
+          "item_type": "Presentation",
+          "maine_relevance": "low",
+          "maine_relevance_reason": "This is a technical accounting manual revision with no Maine-specific provisions; it applies uniformly to all ISO-NE market participants including Maine utilities, but contains no Maine-specific impacts or data.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "energy-markets",
+            "settlement",
+            "ancillary-services",
+            "metering",
+            "tariff",
+            "demand-response",
+            "cost-allocation"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A02 - SATOA Conforming Changes - Manual RPA - Revision 21",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a02_2026_07_07-09_mc_redlines_manual_rpa_revision_21.docx",
+          "ext": "docx",
+          "summary": "This document is Revision 21 of ISO-NE's Manual for Registration and Performance Auditing (M-RPA), updated as conforming changes related to the Storage Asset Transaction Offer Approach (SATOA). It details procedures for registering and auditing assets and resources that participate in ISO-NE wholesale markets, including load assets, generator assets, demand assets, and storage facilities. The revisions appear to incorporate SATOA-related definitional and procedural updates throughout the manual.",
+          "item_type": "Presentation",
+          "maine_relevance": "low",
+          "maine_relevance_reason": "This is a procedural/administrative manual update with no Maine-specific provisions; it applies uniformly to all ISO-NE market participants including CMP and Versant, but contains no Maine-specific impacts or data.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "tariff",
+            "settlement",
+            "metering",
+            "demand-response",
+            "ancillary-services",
+            "interconnection",
+            "energy-markets",
+            "capacity-markets"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A03- CAR-SA: Follow Up Medley - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a03_2026_07_07-09_mc_rc_car-sa_follow_up_medley_2.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE staff presented a series of follow-up clarifications on the CAR-SA (Capacity Auction Reforms: Seasonal/Accreditation) initiative, covering topics including ambient air offer MW calculations, seasonal offer construction and mitigation, imports, capacity Internal Bilateral Transactions (IBTs), balancing ratio, RAA modeling, transition deactivation, and capacity zone formation. The presentation refined prior formulas and explained how mitigation, accreditation values, and offer construction would work under the new seasonal capacity procurement framework targeting a Q2 2027 effective date. No votes were taken; this was an informational follow-up to close out open stakeholder questions.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "CAR-SA reforms will restructure how capacity is procured and priced across ISO-NE, directly affecting capacity costs borne by Maine load-serving entities including CMP and Versant, and potentially affecting Maine generators' accreditation and offer strategies, though Maine is not specifically mentioned in this document.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "accreditation",
+            "seasonal-capacity",
+            "offer-construction",
+            "mitigation",
+            "imports",
+            "capacity-zones",
+            "resource-adequacy",
+            "tariff",
+            "ancillary-services"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A03a - CAR-SA: Proposal Overview - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a03a_2026_07_07-09_mc_rc_car-sa_summary_presentation.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE presents an overview of the Capacity Auction Reforms: Seasonal/Accreditation (CAR-SA) proposal, which restructures the capacity market by introducing seasonal (summer/winter) auctions, new resource accreditation methodology tied to marginal reliability impact, and a novel winter gas constraint to address New England's gas infrastructure limitations. The proposal builds on the previously FERC-approved CAR-PD reforms and targets a Q2 2027 effective date. Key changes include improved resource adequacy modeling, alignment of capacity accreditation with expected reliability contributions, and price signals to incentivize firm fuel arrangements.",
+          "item_type": "Presentation",
+          "maine_relevance": "high",
+          "maine_relevance_reason": "CAR-SA's seasonal auction structure, winter gas constraint, and accreditation reforms will directly affect capacity revenues and costs for Maine generators and the capacity cost obligations of Maine utilities CMP and Versant, particularly given Maine's heavy reliance on gas generation and pipeline constraints in winter.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "accreditation",
+            "seasonal-auctions",
+            "winter-gas-constraint",
+            "resource-adequacy",
+            "tariff",
+            "clean-energy",
+            "cost-allocation",
+            "ancillary-services",
+            "interconnection"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A03b - CAR-SA: Transition Mechanism, cont. - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a03b_2026_07_07-09_mc_rc_car-sa_transition_mechanism_cont.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE presents continued details on the proposed Capacity Auction Reforms – Seasonal/Accreditation (CAR-SA) transition mechanism, which provides a three-year glide path (CCP 2028-29 through 2030-31) from the current QC-based annual capacity accreditation to the new seasonal MRI-based accreditation framework. The mechanism uses weighted averages of estimated QC and MRIC values, shifting weight toward MRIC each year, with full CAR-SA implementation in year three. The presentation addresses stakeholder questions raised at the June MC regarding transition objectives, accreditation mechanics, and impacts on demand curve parameters.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "CAR-SA reforms will affect capacity market costs and revenues region-wide, with direct implications for Maine ratepayers through capacity charges paid by CMP and Versant customers, and for Maine generators' accreditation values under the new seasonal framework.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "capacity-auction-reforms",
+            "accreditation",
+            "seasonal-markets",
+            "market-design",
+            "cost-allocation",
+            "clean-energy",
+            "transition-mechanism"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A03c - CAR-SA: Updated Activity Schedule - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a03c_2026_07_07-09_mc_rc_car-sa_updated_activity_schedule.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE presented an updated activity schedule for the Capacity Auction with Seasonality (CAR-SA) reform, which targets a Q2 2027 effective date and introduces seasonal capacity procurement, accreditation reforms, and a winter gas constraint. The presentation details the sequencing and timing of key processes—including deactivations, resource adequacy assessments, seller/buyer-side market power reviews, and seasonal and monthly auctions—for three seasons: Winter 2028-2029, Summer 2029, and a truncated Summer 2028. Updates since the May Markets Committee presentation include clarified sourcing, public vs. private information distinctions, and added process steps for load forecasting and capacity zone trigger determinations.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "CAR-SA is a fundamental restructuring of the capacity market that will affect capacity costs and procurement for all New England load-serving entities, including CMP and Versant, and the winter gas constraint has particular relevance to Maine's resource mix and winter reliability.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "seasonal-auctions",
+            "accreditation",
+            "resource-adequacy",
+            "cost-allocation",
+            "ancillary-services",
+            "tariff",
+            "compliance",
+            "demand-curve",
+            "interconnection"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A03d - CAR-SA: Storage and Energy-Limited Resource Modeling and Accreditation Design Updates Cont. - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a03d_2026_07-09_mc_rc_car-sa_storage_energy_limited_resource_modeling_update_followup.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE presented a continuation of CAR-SA methodology for accrediting energy-limited and storage resources, introducing a heuristic adjustment to rMRI values that corrects for a MARS model limitation where storage resources cannot charge other storage resources during constrained hours. The adjustment formula scales unadjusted rMRI values upward, with worked numerical examples showing modest increases (e.g., a 10-hour storage resource winter rMRI rising from 0.41 to 0.487), and estimated class-level impacts showing winter rMRI for energy storage rising from 20.9% to 24.8% with corresponding MRIC changes. The proposed effective date is Q2 2027.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "Changes to storage and energy-limited resource accreditation methodology affect capacity market outcomes and accreditation values regionwide, which directly influences capacity clearing prices and costs borne by Maine ratepayers through CMP and Versant load obligations.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "ancillary-services",
+            "clean-energy",
+            "energy-markets",
+            "tariff",
+            "regional-planning"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A03e - CAR-SA: Resource Accreditation Modeling Cont. - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a03e_2026_07_07-09_mc_rc_car-sa_resource_accreditation_modeling_cont.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE's Markets Committee received a continuation of the Capacity Auction Reforms: Seasonal/Accreditation (CAR-SA) Resource Accreditation Modeling Impact Analysis, including ISO's high-level assessment of FirstLight's alternative load-weighting methodology and final near-term base case results. The ISO found that FirstLight's approach underweights high-load conditions and results in a lower net Installed Capacity Requirement (ICR) compared to the ISO's methodology, while producing similar accreditation values for energy-limited and storage resources. The presentation also examined storage accreditation behavior under low system-risk conditions as part of ongoing CAR design development targeting a Q2 2027 effective date.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "CAR-SA reforms will directly affect capacity accreditation and auction revenues for all New England resources including those serving Maine load through CMP and Versant, with potential rate impacts, but no Maine-specific analysis is presented.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "resource-accreditation",
+            "seasonal-accreditation",
+            "load-forecasting",
+            "energy-storage",
+            "ancillary-services",
+            "regional-planning",
+            "tariff"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A03f - CAR-SA: FirstLight Power - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a03f_2026_07-09_mc_rc_car-sa_firstlight_power_presentation.pdf",
+          "ext": "pdf",
+          "summary": "FirstLight Power presents analysis of interconnected design choices in the CAR-SA (Capacity Accreditation Reform - Seasonal Auctions) framework, arguing that the current 50/50 seasonal risk split, weather year weighting methodology, and seasonal Net CONE allocation approach interact in ways that distort capacity market price signals—particularly by overstating winter risk relative to summer and potentially failing to incentivize new resource entry when the system is short in only one season. FirstLight contends these compounding design flaws could result in volatile clearing prices, misaligned payment rates, and insufficient market entry signals. The presentation urges ISO-NE and stakeholders to evaluate these structural issues holistically before finalizing the CAR-SA design.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "CAR-SA capacity market design reforms will directly affect capacity costs and revenues for all New England resources and load-serving entities including Maine's utilities CMP and Versant, but this presentation contains no Maine-specific data or references.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "accreditation",
+            "seasonal-auctions",
+            "car-sa",
+            "demand-curve",
+            "net-cone",
+            "cost-allocation",
+            "clean-energy",
+            "energy-markets"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A03g - CAR-SA: Flatiron Feedback, cont. - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a03g_2026_07-09_mc_rc_car-sa_flatiron_presentation.pdf",
+          "ext": "pdf",
+          "summary": "Flatiron Energy presents continued feedback on ISO-NE's proposed resource accreditation modeling (CAR-SA) for the capacity market, arguing that the 'at criteria' system conditions used in the GE MARs software misrepresent actual expected conditions by adding 5GW of load beyond forecasts and over-weighting extreme weather years, leading to distorted accreditation values. Flatiron proposes using 'as expected' system conditions (forecasted load without ALCC scaling) to better reflect prompt market reliability contributions. The presentation also examines what accreditation should look like when few or no simulated MRI hours occur, noting that most observed Capacity Scarcity Conditions have been transient/contingency events.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "Resource accreditation methodology directly affects capacity market clearing prices and the mix of resources that receive capacity payments, which impacts Maine ratepayer costs through CMP and Versant's retail rates.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "resource-accreditation",
+            "car-sa",
+            "energy-markets",
+            "load-forecasting",
+            "ancillary-services",
+            "clean-energy"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A03h - CAR-SA: AEU, cont. - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a03h_2026_07-09_mc_rc_car-sa_aeu_presentation.pdf",
+          "ext": "pdf",
+          "summary": "Advanced Energy United presents three conceptual amendments to ISO-NE's proposed Capacity Accreditation Reform for Seasonal Accreditation (CAR-SA): (1) replace peak-day weather year weighting with multi-day cold-snap event metrics, (2) model intertie imports using hourly profiles rather than a flat capacity block, and (3) reclassify storage resources as EL3 until modeling limitations are resolved. The group argues ISO's current proposal systematically understates the capacity value of energy storage and demand response by overstating winter cold-snap frequency and understating off-peak charging opportunities.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "CAR-SA capacity accreditation reforms will affect the capacity market revenues and investment signals for all resources in ISO-NE, including Maine-based storage and clean energy projects, and will influence ratepayer costs through capacity market outcomes affecting CMP and Versant customers.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "capacity-accreditation",
+            "energy-storage",
+            "clean-energy",
+            "demand-response",
+            "regional-planning",
+            "ancillary-services",
+            "load-forecasting"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A03i - CAR-SA: Market Clearing Impact Analysis - Preliminary Results, cont. - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a03i_2026_07_07-09_mc_rc_car-sa_mc_ia_preliminary_results_cont.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE economists presented updated baseline and sensitivity results for the Capacity Auction Reforms – Seasonal/Accreditation (CAR-SA) proposal, including detailed methodology for Seasonal Payment Rates (SPRs) designed to preserve annual cost recovery equivalent to current Net CONE framework. The analysis covers three offer price scenarios (Lower, Medium, Higher) and multiple sensitivities including LOLE risk splits and gas availability assumptions, with a proposed effective date of Q2 2027. The presentation is directional in nature and not intended as a forecast of actual capacity market outcomes.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "CAR-SA restructures how capacity resources are compensated seasonally across all of New England, which will affect capacity costs paid by Maine load-serving entities like CMP and Versant and alter investment signals for Maine generators, but no Maine-specific data or entities are explicitly mentioned.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "seasonal-accreditation",
+            "cost-allocation",
+            "clean-energy",
+            "tariff",
+            "regional-planning",
+            "ancillary-services"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A03j - CAR-SA: Qualification - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a03j_2026_07_07-09_mc_qualification_cont_presentation.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE presented conforming changes to the resource qualification material change process under CAR-SA (Capacity Accreditation Reform – Seasonal/Accreditation), which builds on CAR-PD to introduce seasonality and seasonal accreditation concepts. The key change is that the historical data period for Maximum Capability and Dependable Capability will restart after a material change, replacing the prior Annual Qualified Capacity threshold with a Seasonal Maximum Capability threshold. The overall material change framework remains largely unchanged from CAR-PD, with minor procedural adjustments to deadlines.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "CAR-SA capacity market reforms will affect how all capacity resources in ISO-NE, including those in Maine owned or contracted by CMP and Versant customers, are qualified and accredited, impacting capacity costs for Maine ratepayers.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "accreditation",
+            "resource-qualification",
+            "tariff",
+            "seasonal-accreditation",
+            "CAR-SA",
+            "compliance"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A03k - CAR-SA: Tariff Redlines - Auditing - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a03k_2026_07_07-09_mc_sectioniii.1.5-7_auditing_presentation.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE presented initial tariff redlines implementing Capacity Auction Reforms – Seasonal Accreditation (CAR-SA) changes to resource auditing and capability rules, with a proposed effective date of Q2 2027. The changes sunset existing Claimed Capability Audits and Seasonal DR Audits after August 31, 2027, replacing them with new Global Maximum Capability, Seasonal Maximum Capability, and Dependable Maximum Capability values based on demonstrated historical performance under seasonally specific conditions. These tariff revisions are necessary to administer the upcoming Seasonal Capacity Auctions with MRI-based accreditation.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "CAR-SA tariff changes will affect how all capacity resources in ISO-NE, including those owned or procured by Maine utilities CMP and Versant, are audited and accredited, potentially impacting capacity costs for Maine ratepayers.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "tariff",
+            "seasonal-accreditation",
+            "resource-auditing",
+            "demand-response",
+            "compliance",
+            "ancillary-services"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A03k - CAR-SA: Tariff Redlines - Auditing - Section III.1.5-7 Redlines",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a03k_2026_07_07-09_mc_auditing_revisions_section_iii.1.5_iii.1.7_iii.15.7.1.5.3-5_iii.f_redlines.docx",
+          "ext": "docx",
+          "summary": "This document presents tariff redline language for Sections III.1.5 through III.1.7 of the NEPOOL Tariff, covering detailed requirements for Claimed Capability Audits (Establish, Seasonal, and ISO-Initiated) for Generator Assets and Demand Response Resources, including audit procedures, temperature normalization, timing requirements, and consequences for non-compliance. The revisions appear to be part of the Capacity Accreditation Reform – Seasonal Auditing (CAR-SA) initiative. The Markets Committee is reviewing these tariff changes for potential approval.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "These audit and accreditation rules apply to all Generator Assets in New England, including those in Maine operated by CMP and Versant customers, affecting how capacity values and obligations are set for Maine generators participating in ISO-NE markets.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "tariff",
+            "resource-auditing",
+            "claimed-capability",
+            "demand-response",
+            "compliance",
+            "ancillary-services",
+            "clean-energy"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A03k - CAR-SA: Tariff Redlines - Qualification - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a03k_2026_07_07-09_mc_sectioniii.15.2_qualification_presentation.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE presented initial draft tariff redlines for the Capacity Auction Reforms – Seasonal Accreditation (CAR-SA) initiative, focusing on changes to resource qualification processes under Tariff Section III.15.2 and related sections. The revisions reflect the transition from annual to seasonal capacity auctions and the adoption of MRI-based accreditation, including modifications to qualification data submission requirements, material change provisions, and treatment of forced outages. This is part of a multi-year stakeholder process with a proposed effective date of Q2 2027.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "CAR-SA restructures how capacity resources are accredited and qualified across ISO-NE, which will affect capacity costs and revenues for Maine utilities CMP and Versant and their ratepayers, though no Maine-specific data is presented.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "tariff",
+            "seasonal-accreditation",
+            "car-sa",
+            "resource-qualification",
+            "compliance",
+            "ancillary-services"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A03k - CAR-SA: Tariff Redlines - Qualification- Section III.15.2 Redlines",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a03k_2026_07_07-09_mc_qualification_revisions_section_iii.15.2_redlines.docx",
+          "ext": "docx",
+          "summary": "This document presents tariff redline language for Section III.15.2 of the ISO-NE tariff, detailing the qualification requirements for capacity resources seeking to participate in Capacity Auctions under the Capacity Auction Reform (CAR) initiative. It covers data submission requirements, demonstration deadlines, and rules for various resource types including generating, import, demand, and distributed energy capacity resources. The redlines reflect proposed changes to the Forward Capacity Market's qualification process as part of the broader CAR-SA tariff filing.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "Capacity market qualification rules directly affect Maine generators and load-serving entities like CMP and Versant, as they govern which resources can participate in capacity auctions and how capacity obligations are established, impacting Maine ratepayer costs.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "tariff",
+            "qualification",
+            "clean-energy",
+            "interconnection",
+            "demand-response",
+            "import-capacity",
+            "compliance"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A03l - CAR-SA: Winter Gas Constraint, cont. - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a03l_2026_07_07-09_mc_rc_car-sa_winter_gas_constraint_cont..pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE presents detailed design elements for the proposed Non-firm Gas Capacity Demand Curve under the Capacity Auction Reforms Seasonal/Accreditation (CAR-SA) framework, covering gas contract requirements, CSO bilateral transaction mechanics under the gas constraint, import gas resource participation, and locational pricing examples. The presentation responds to stakeholder feedback from June, dropping the gas marketer affidavit requirement and clarifying how LNG contracts can partially firm resources. This is a continuation of CAR-SA design work targeting a Q2 2027 effective date.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "CAR-SA capacity market reforms directly affect compensation and resource adequacy obligations for all ISO-NE load and resources, including Maine utilities CMP and Versant and their ratepayers who bear capacity costs, though no Maine-specific data is presented.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "clean-energy",
+            "ancillary-services",
+            "tariff",
+            "regional-planning",
+            "cost-allocation",
+            "energy-markets"
           ]
         }
       ]
@@ -1576,8 +2054,506 @@ window.SUMMARIES_DATA = {
           ]
         }
       ],
-      "2026-06-25": [],
-      "2026-07-07": []
+      "2026-06-25": [
+        {
+          "title": "2026-06-25 RC A01.1 MC/RC May 12-14, 2026 Meeting Minutes",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/2026_05_12_14_draft_joint_mc_rc_meeting_minutes.docx",
+          "ext": "docx",
+          "summary": "This document contains minutes from the joint NEPOOL Markets and Reliability Committees meeting held May 12-14, 2026, covering multiple agenda items related to Capacity Auction Reforms (CAR-SA) including seasonal accreditation design, resource qualification processes, non-firm gas capacity demand curves, and related market design changes. The discussions focused on implementation timelines, resource eligibility thresholds, gas constraint modeling, and transition mechanics for the Summer 2028 inaugural seasonal auction.",
+          "item_type": "Minutes",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "Capacity auction reforms and seasonal accreditation changes directly affect Maine generators and load-serving entities like CMP and Versant through changes to resource qualification, capacity pricing, and winter gas constraint modeling that influence regional capacity costs borne by Maine ratepayers.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "seasonal-accreditation",
+            "capacity-auction-reforms",
+            "resource-qualification",
+            "ancillary-services",
+            "tariff",
+            "load-forecasting",
+            "energy-markets",
+            "compliance",
+            "demand-response"
+          ]
+        },
+        {
+          "title": "2026-06-25 RC A01.1 MC/RC May 21, 2026 Meeting Minutes",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/2026_05_21_draft_joint_mc_rc_meeting_minutes.docx",
+          "ext": "docx",
+          "summary": "These are the joint MC/RC meeting minutes from May 21, 2026, covering three main agenda items: DECR modeling and accreditation (including that no DECRs cleared in FCA 18), seasonal tie benefits methodology, and capacity zone formation in a seasonal construct. All three items are ongoing discussions with votes deferred to future meetings.",
+          "item_type": "Minutes",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "Both Central Maine Power (CMP) and Versant Power participated as Transmission sector members, and the capacity zone formation and seasonal tie benefits discussions directly affect Maine's capacity market obligations and costs.",
+          "maine_mentions": [
+            "Central Maine Power Company | Transmission | Jamie Pierre (MC), Bruce Jagolinzer (RC)",
+            "Versant Power | Transmission | Jeffrey Fenn* (RC)"
+          ],
+          "topic_tags": [
+            "capacity-markets",
+            "capacity-zone-formation",
+            "transmission-planning",
+            "demand-response",
+            "ancillary-services",
+            "clean-energy",
+            "regional-planning",
+            "interconnection"
+          ]
+        },
+        {
+          "title": "2026-06-25 RC A01.1 RC May 21, 2026 Meeting Minutes",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/052126_draft_rc_meeting_minutes.docx",
+          "ext": "docx",
+          "summary": "The May 21, 2026 Reliability Committee meeting approved minutes, consent agenda items, several Proposed Plan Applications for transmission upgrades, a QRR designation for the NECEC Tie Line, and multiple Transmission Cost Allocations (TCAs). Notably, TCAs for Versant Power's Chester SVC Control and Valve Upgrade ($12.7M) and a suite of seven CMP/MEPCO structure replacement projects across Maine ($64.115M total) were reviewed and recommended for Pool-Supported PTF cost recovery.",
+          "item_type": "Minutes",
+          "maine_relevance": "high",
+          "maine_relevance_reason": "The meeting includes direct votes recommending regional cost recovery for both Versant Power ($12.7M Chester SVC upgrade) and CMP/MEPCO ($64.115M in Maine 345 kV structure replacements), meaning Maine-related transmission costs will be socialized across the NEPOOL region.",
+          "maine_mentions": [
+            "CMP-23-G56 – Greenville CSG LLC, 166 Moosehead Lake Road Solar – Withdrawal (Consent Agenda)",
+            "Versant Power Chester SVC Control and Valve Upgrade Project TCA – $12.7M recommended for Pool-Supported PTF cost recovery",
+            "Central Maine Power & MEPCO Structure Replacement Project TCAs – seven TCAs for structure replacement throughout Maine on 345 kV lines, $64.115M total Pool Supported PTF costs",
+            "181 wood structures replaced across seven 345 kV lines in Maine",
+            "CMP-26-TCA-01 through CMP-26-TCA-06 submitted by Central Maine Power"
+          ],
+          "topic_tags": [
+            "transmission-planning",
+            "cost-allocation",
+            "tariff",
+            "maine-specific",
+            "interconnection",
+            "clean-energy",
+            "regional-planning"
+          ]
+        },
+        {
+          "title": "2026-06-25 RC A05.1 Planning Procedures 5-1 and 5-3",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a05_01_pp5_1_pp5_3.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE is proposing updates to Planning Procedures 5-1 and 5-3 to enhance the Proposed Plan Application (PPA) process, including cleaner forms, process clarifications, and a new PPA form specifically for large load facilities (≥20 MW). The large load addition addresses increasing industry concern about reliability impacts of data centers and other large loads interconnecting with the transmission system, responding to NERC Level 2 and Level 3 alerts. Redlines will be presented at the July 2026 RC meeting with a targeted September 2026 implementation.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "Maine transmission owners (CMP and Versant) are subject to these PPA procedures when proposing transmission or load changes, and the new large load PPA requirements could affect Maine-based data center or industrial load interconnection requests.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "transmission-planning",
+            "interconnection",
+            "load-forecasting",
+            "regional-planning",
+            "tariff",
+            "compliance"
+          ]
+        },
+        {
+          "title": "2026-06-25 RC Actions Letter",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/062526_rc_actions_letter.pdf",
+          "ext": "pdf",
+          "summary": "The Reliability Committee approved minutes from three prior meetings and voted to recommend ISO-NE approval of three project revisions: the Hartland Solar Facility (QP 1100) with multiple Central Maine Power PPAs, a battery project revision (QP 1320) involving Flatiron Energy and New England Power, and a Milford Power Plant AVR control upgrade. All motions passed unanimously with no opposed votes or abstentions.",
+          "item_type": "Actions",
+          "maine_relevance": "high",
+          "maine_relevance_reason": "The Hartland Solar Facility project revision (QP 1100) directly involves Central Maine Power as the transmission owner submitting multiple PPAs, making this directly relevant to CMP's transmission system and Maine ratepayers.",
+          "maine_mentions": [
+            "Central Maine Power (CMP) — PPAs CMP-25-G01-Rev1, CMP-25-T02-Rev1, CMP-25-T03-Rev1, CMP-25-T04-Rev1, CMP-25-T05-Rev1",
+            "Hartland Solar Facility — located in Hartland, Maine (Queue Position 1100)"
+          ],
+          "topic_tags": [
+            "interconnection",
+            "transmission-planning",
+            "clean-energy",
+            "solar",
+            "battery-storage",
+            "maine-specific"
+          ]
+        },
+        {
+          "title": "2026-06-25 RC PPA I.3.9 Letters - Generation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/june_rc_generation_i_3_9_letter.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE's Director of Transmission Services issued a letter confirming that ten Proposed Plan Applications (PPAs) reviewed at the June 2026 Reliability Committee meeting were found to have no significant adverse effect on system reliability. The approved PPAs include five CMP-related applications for the Hartland Solar Facility project revision (Queue Position 1100), along with battery storage, solar, and power plant control upgrade projects from other applicants. ISO-NE determined these projects can proceed under Section I.3.9 of the ISO Tariff.",
+          "item_type": "Informational",
+          "maine_relevance": "high",
+          "maine_relevance_reason": "Five of the ten approved PPAs are CMP-filed applications (CMP-25-G01-Rev1 through CMP-25-T05-Rev1) related to the Hartland Solar Facility in Maine, directly involving Maine's primary transmission utility.",
+          "maine_mentions": [
+            "CMP-25-G01-Rev1",
+            "CMP-25-T02-Rev1",
+            "CMP-25-T03-Rev1",
+            "CMP-25-T04-Rev1",
+            "CMP-25-T05-Rev1",
+            "Hartland Solar Facility",
+            "Queue Position 1100"
+          ],
+          "topic_tags": [
+            "transmission-planning",
+            "interconnection",
+            "clean-energy",
+            "tariff",
+            "maine-specific",
+            "reliability"
+          ]
+        },
+        {
+          "title": "2026-06-25 RC PPA I.3.9 Letters - Transmission",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/june_rc_transmission_i_3_9_letter.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE's Reliability Committee reviewed six Proposed Plan Applications (PPAs) for substation equipment replacements across New England and determined none will have a significant adverse effect on transmission reliability. The approved projects include transformer and circuit breaker replacements at substations in Maine (Jackman), New Hampshire, Rhode Island, and Vermont. These approvals were issued pursuant to Section I.3.9 of the ISO Tariff.",
+          "item_type": "Actions",
+          "maine_relevance": "high",
+          "maine_relevance_reason": "One of the six approved PPAs is the Jackman 115 kV Substation TB61 Transformer Replacement Project (ES-26-T31), located in Maine and likely associated with CMP or its transmission infrastructure.",
+          "maine_mentions": [
+            "ES-26-T31 – Jackman 115 kV Substation TB61 Transformer Replacement Project"
+          ],
+          "topic_tags": [
+            "transmission-planning",
+            "reliability",
+            "tariff",
+            "substation-equipment",
+            "maine-specific"
+          ]
+        }
+      ],
+      "2026-07-07": [
+        {
+          "title": "2026-07-07-09 MC A01.a.ii - Draft June 9-11, 2026 Joint Markets and Reliability Committees Meeting Minutes",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a01aii_mc_2026_07-07-09_mc_rc_joint_meeting_minutes_draft_2026_06_09-11.docx",
+          "ext": "docx",
+          "summary": "These are draft minutes from the June 9-11, 2026 Joint Markets and Reliability Committee meeting covering CAR-SA (Capacity Auction Reforms - Seasonal Accreditation) topics including a proposed transition mechanism for resource accreditation, load modeling methodology using optimized weather-year subsets, and proposed accreditation updates for storage and energy-limited resources. Stakeholders raised concerns about transition complexity, equity across resource types, and multi-day event modeling adequacy.",
+          "item_type": "Minutes",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "CAR-SA reforms will directly affect capacity market revenues and costs for all New England load and resources including Maine utilities and ratepayers, though no Maine-specific data or entities are explicitly mentioned in this portion of the minutes.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "seasonal-accreditation",
+            "car-sa",
+            "resource-accreditation",
+            "storage",
+            "energy-limited-resources",
+            "load-forecasting",
+            "demand-curves",
+            "transition-mechanism",
+            "ancillary-services"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A03- CAR-SA: Follow Up Medley - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a03_2026_07_07-09_mc_rc_car-sa_follow_up_medley_2.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE staff presented a detailed follow-up on the Capacity Auction Reforms: Seasonal/Accreditation (CAR-SA) project, addressing open stakeholder questions on topics including ambient air offer MW calculations, seasonal offer construction and mitigation, imports, capacity IBTs, balancing ratio, RAA modeling, transition deactivation PBT, and capacity zone formation. The presentation clarified formula revisions for ambient air MW quantities and explained why monthly reconfiguration auctions will not be subject to mitigation. CAR-SA is proposed to take effect Q2 2027 and aims to procure capacity more cost-effectively through seasonal auctions and improved accreditation aligned with resource adequacy criteria.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "CAR-SA's seasonal capacity procurement reforms and accreditation changes will affect how Maine generators (including thermal and renewable resources served by CMP and Versant territory) are valued and compensated, with potential ratepayer cost implications through capacity zone formation and cost allocation.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "accreditation",
+            "seasonal-auctions",
+            "cost-allocation",
+            "capacity-zone-formation",
+            "ancillary-services",
+            "tariff",
+            "compliance",
+            "interconnection",
+            "regional-planning"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A03a - CAR-SA: Proposal Overview - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a03a_2026_07_07-09_mc_rc_car-sa_summary_presentation.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE presented an overview of the Capacity Auction Reforms: Seasonal/Accreditation (CAR-SA) proposal, which introduces seasonal (summer/winter) capacity procurement, accreditation reforms aligning resource compensation with reliability contributions, modeling improvements for intermittent and storage resources, and a novel winter gas constraint targeting non-firm gas reliability risks. The proposal is targeted for a FERC filing by end of 2026 with an effective date of Q2 2027. Key design elements include updated demand curves, pay-for-performance changes, cost allocation revisions, and a transition mechanism.",
+          "item_type": "Presentation",
+          "maine_relevance": "high",
+          "maine_relevance_reason": "CAR-SA restructures how capacity is procured, accredited, and priced across all of ISO-NE, directly affecting capacity costs paid by Maine utilities CMP and Versant and the competitiveness of Maine-based generation resources, particularly given Maine's wind and gas resource mix and winter gas infrastructure constraints.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "accreditation",
+            "seasonal-procurement",
+            "winter-gas-constraint",
+            "resource-adequacy",
+            "clean-energy",
+            "cost-allocation",
+            "pay-for-performance",
+            "transmission-planning",
+            "tariff",
+            "compliance"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A03b - CAR-SA: Transition Mechanism, cont. - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a03b_2026_07_07-09_mc_rc_car-sa_transition_mechanism_cont.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE presented a continuation of the CAR-SA (Capacity Auction Reforms – Seasonal/Accreditation) transition mechanism discussion, detailing a three-year glide path from the current annual Qualified Capacity (QC)-based methodology to the proposed seasonal Marginal Reliability Impact Capacity (MRIC)-based accreditation framework, with full implementation targeted for CCP 2030-31. The presentation included numerical examples and formulas showing how weighted-average accredited capacity will be calculated during transition years, with weights shifting from 2/3 QC in Year 1 to full MRIC in Year 3. The transition is intended to soften year-over-year changes in accreditation values, dampen potential market cost volatility, and allow ISO-NE and stakeholders to gain operational experience with the new design.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "CAR-SA capacity market reforms directly affect capacity revenues and costs for all New England resources and load-serving entities including CMP and Versant, though Maine is not specifically mentioned in this document.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "accreditation",
+            "seasonal-capacity",
+            "market-design",
+            "tariff",
+            "cost-allocation",
+            "clean-energy",
+            "ancillary-services"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A03c - CAR-SA: Updated Activity Schedule - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a03c_2026_07_07-09_mc_rc_car-sa_updated_activity_schedule.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE presented an updated activity schedule for the Capacity Auction Reform with Seasonal Auctions (CAR-SA), a market design initiative with a proposed effective date of Q2 2027 that introduces seasonal capacity procurement, accreditation reforms, and a winter gas constraint. The presentation details the sequence and timing of key processes—including deactivations, resource adequacy assessments, seller-side market power review, and seasonal/monthly auctions—for the Winter 2028-2029 and Summer 2029 steady-state seasons. Updates since the May Markets Committee meeting include clarified source labeling, added load forecast timing, and capacity zone trigger determination processes.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "CAR-SA's seasonal capacity procurement and winter gas constraint reforms will affect capacity prices and resource obligations for Maine load-serving entities like CMP and Versant, and the timeline governs when Maine resources and LSEs must act, but no Maine-specific data or entities are mentioned directly.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "seasonal-auctions",
+            "accreditation",
+            "tariff",
+            "compliance",
+            "ancillary-services",
+            "regional-planning",
+            "cost-allocation",
+            "interconnection"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A03d - CAR-SA: Storage and Energy-Limited Resource Modeling and Accreditation Design Updates Cont. - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a03d_2026_07-09_mc_rc_car-sa_storage_energy_limited_resource_modeling_update_followup.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE presents a continuation of CAR-SA accreditation methodology updates for energy-limited and storage resources, introducing a heuristic post-processing adjustment to rMRI values that corrects a MARS modeling limitation where storage resources cannot charge from other storage resources during constrained hours. The adjustment formula scales unadjusted rMRI values upward so that very long-duration resources with 0% forced outage rates receive an rMRI of 1, with numerical examples showing modest increases (e.g., a 10-hour storage resource moves from 0.41 to 0.487 winter rMRI). Estimated class-level impacts show winter rMRI for energy storage rising from 20.9% to 24.8% and for oil/dual-fuel energy-limited resources from 67.2% to 81.0%, with corresponding MRIC changes of 26.7 MW and 9.8 MW respectively.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "Changes to storage and energy-limited resource accreditation methodology under CAR-SA will affect capacity market clearing prices and the accreditation of any such resources in Maine, with downstream impacts on capacity costs paid by CMP and Versant customers.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "accreditation",
+            "storage",
+            "energy-limited-resources",
+            "clean-energy",
+            "ancillary-services",
+            "regional-planning"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A03e - CAR-SA: Resource Accreditation Modeling Cont. - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a03e_2026_07_07-09_mc_rc_car-sa_resource_accreditation_modeling_cont.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE presented additional analysis on the Capacity Auction Reforms – Seasonal/Accreditation (CAR-SA) resource accreditation modeling impact analysis, including a high-level assessment of FirstLight's alternative weather-year load weighting approach and final results for the Near-Term Base Case. The ISO found that its own load weighting methodology closely matches results using the full 70-year dataset, while FirstLight's approach understates high-load conditions and results in a lower net Installed Capacity Requirement (ICR) by approximately 280 MW. The presentation also examined storage accreditation behavior under low system risk conditions.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "CAR-SA reforms will directly affect how Maine generators (including hydro and storage resources like those operated by FirstLight, which has facilities in Maine) are accredited and compensated in the capacity market, impacting both supply-side revenues and ratepayer costs for CMP and Versant customers.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "resource-accreditation",
+            "clean-energy",
+            "energy-markets",
+            "load-forecasting",
+            "ancillary-services",
+            "seasonal-capacity",
+            "storage",
+            "demand-response"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A03f - CAR-SA: FirstLight Power - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a03f_2026_07-09_mc_rc_car-sa_firstlight_power_presentation.pdf",
+          "ext": "pdf",
+          "summary": "FirstLight Power presents analysis of interconnected CAR-SA (Capacity Accreditation Reform with Seasonal Auctions) design choices, arguing that administrative decisions on seasonal risk splits, weather year weighting, and Net CONE allocation interact to potentially distort capacity price signals—particularly by overstating winter risk and understating summer risk, and potentially failing to incentivize new market entry when the system is short in only one season. The presentation raises concerns that the current 50/50 seasonal risk split and weather year weighting combine to drive artificially long modeled winter events, shifting compensation toward winter in ways not reflective of actual system risk. FirstLight advocates for revisiting these structural design choices before CAR-SA is finalized.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "CAR-SA capacity market redesign will directly affect capacity revenues for Maine generators and capacity costs borne by Maine load-serving entities like CMP and Versant, though Maine is not explicitly mentioned in this document.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "car-sa",
+            "seasonal-auctions",
+            "accreditation",
+            "net-cone",
+            "demand-curve",
+            "cost-allocation",
+            "clean-energy",
+            "market-design",
+            "price-signals"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A03g - CAR-SA: Flatiron Feedback, cont. - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a03g_2026_07-09_mc_rc_car-sa_flatiron_presentation.pdf",
+          "ext": "pdf",
+          "summary": "Flatiron Energy presents continued feedback on ISO-NE's proposed resource accreditation modeling framework (CAR-SA), arguing that three key modeling assumptions—inflated load additions, reliance on extreme weather years, and 'daisy-chaining' storage events—cause simulated Marginal Risk Intervals (MRI) to misrepresent expected system conditions. Flatiron proposes using 'as expected' system conditions (forecasted load without the ALCC scaling adjustment) rather than ISO-NE's 'at criteria' approach, contending this better reflects a resource's actual prompt reliability contribution. The presentation raises concerns that the current approach will lead to over- or under-accreditation of resources, distorting investment signals and resulting in ratepayers paying for a resource mix optimized for conditions that may never materialize.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "Resource accreditation methodology directly affects capacity market clearing prices and the resource mix procured, which flow through to capacity costs borne by Maine ratepayers via CMP and Versant, though Maine or its utilities are not explicitly mentioned.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "resource-accreditation",
+            "clean-energy",
+            "load-forecasting",
+            "energy-markets",
+            "ancillary-services",
+            "demand-response"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A03h - CAR-SA: AEU, cont. - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a03h_2026_07-09_mc_rc_car-sa_aeu_presentation.pdf",
+          "ext": "pdf",
+          "summary": "Advanced Energy United presented conceptual amendments to ISO-NE's Capacity Accreditation Reform for Seasonal Accreditation (CAR-SA) proposal, arguing that ISO's methodology understates the reliability value of battery energy storage and demand response. The three amendments address: (1) weather year weighting using multi-day cold-snap metrics rather than peak-day distributions, (2) modeling intertie imports with hourly profiles rather than flat capacity blocks, and (3) reclassifying storage as EL3 energy-limited resources until modeling limitations are corrected. AEU argues that without these changes, capacity market investment signals will be distorted away from flexible resources, harming resource adequacy, clean energy goals, and affordability.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "CAR-SA accreditation reforms will directly affect capacity market revenues and investment signals for storage and demand response resources that serve Maine load, and Hydro-Québec intertie modeling discussed here is highly relevant to Maine's import-dependent grid position.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "clean-energy",
+            "ancillary-services",
+            "energy-markets",
+            "regional-planning",
+            "load-forecasting",
+            "tariff",
+            "interconnection"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A03i - CAR-SA: Market Clearing Impact Analysis - Preliminary Results, cont. - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a03i_2026_07_07-09_mc_rc_car-sa_mc_ia_preliminary_results_cont.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE economists presented updated baseline and sensitivity results for the Capacity Auction Reforms: Seasonal/Accreditation (CAR-SA) Market Clearing Impact Analysis, covering seasonal payment rates, demand curve scaling, and sensitivities including LOLE risk splits and gas availability scenarios. The analysis is directional, comparing current capacity market rules to the proposed CAR-SA design with a proposed effective date of Q2 2027. Results include resource-specific offer price scenarios (Lower, Medium, Higher) and are not intended as predictions of future market outcomes.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "CAR-SA redesigns the capacity market that Maine load-serving entities like CMP and Versant pay into, so changes to clearing prices, seasonal payment rates, and demand curves directly affect Maine ratepayer capacity costs.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "seasonal-accreditation",
+            "cost-allocation",
+            "clean-energy",
+            "demand-response",
+            "regional-planning",
+            "ancillary-services"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A03j - CAR-SA: Qualification - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a03j_2026_07_07-09_mc_qualification_cont_presentation.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE presented the resource qualification material change process under CAR-SA (the seasonal accreditation reform), explaining conforming changes from the existing CAR-PD framework. Key updates include aligning the material change definition to reference 'Seasonal Maximum Capability' instead of 'Annual Qualified Capacity,' adjusting how historical data periods reset after a material change, and clarifying how EFORd calculations handle asset changes. The framework is largely unchanged from CAR-PD, with targeted revisions to reflect seasonal accreditation concepts.",
+          "item_type": "Presentation",
+          "maine_relevance": "low",
+          "maine_relevance_reason": "This presentation covers a region-wide capacity market administrative process with no Maine-specific data, utilities, or geographic focus mentioned.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "resource-qualification",
+            "accreditation",
+            "tariff",
+            "CAR-SA",
+            "seasonal-capacity"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A03k - CAR-SA: Tariff Redlines - Auditing - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a03k_2026_07_07-09_mc_sectioniii.1.5-7_auditing_presentation.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE presented initial tariff redlines for Capacity Auction Reforms – Seasonal Accreditation (CAR-SA) related to resource auditing and capability values, with an effective date of Q2 2027. The changes replace existing Claimed Capability Audits and Seasonal DR Audits (sunsetting after August 31, 2027) with new Global Maximum Capability, Seasonal Maximum Capability, and Seasonal Dependable Capability frameworks tied to observed performance data. New provisions address dual-fuel assets, newly commercial assets, dispatchable and non-dispatchable resources, and temperature-based seasonal conditions.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "CAR-SA auditing and accreditation rule changes affect all capacity resources region-wide, including those owned or procured by Maine utilities CMP and Versant, and will influence how Maine generators and demand response resources are valued in seasonal capacity auctions.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "tariff",
+            "seasonal-accreditation",
+            "demand-response",
+            "ancillary-services",
+            "compliance",
+            "clean-energy"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A03k - CAR-SA: Tariff Redlines - Auditing - Section III.1.5-7 Redlines",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a03k_2026_07_07-09_mc_auditing_revisions_section_iii.1.5_iii.1.7_iii.15.7.1.5.3-5_iii.f_redlines.docx",
+          "ext": "docx",
+          "summary": "This document presents tariff redline language for ISO-NE's Tariff Section III.1.5 through III.1.7, covering detailed rules for Resource Auditing including Claimed Capability Audits, Seasonal Claimed Capability Audits, and Demand Response Audits. The redlines appear to be part of the Capacity Accreditation Reform – Seasonal Accreditation (CAR-SA) initiative, establishing procedures for how generator assets and demand response resources demonstrate and verify their capability for capacity market purposes.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "Capacity accreditation auditing rules affect all generators and demand response resources in ISO-NE including those in Maine, with direct implications for how Maine resources qualify for and receive capacity market revenues that ultimately affect ratepayer costs.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "tariff",
+            "ancillary-services",
+            "demand-response",
+            "clean-energy",
+            "compliance",
+            "regional-planning"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A03k - CAR-SA: Tariff Redlines - Qualification - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a03k_2026_07_07-09_mc_sectioniii.15.2_qualification_presentation.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE presented initial draft Tariff redlines for the Capacity Auction Reforms – Seasonal Accreditation (CAR-SA) resource qualification process at the July 2026 joint Markets and Reliability Committee meeting. The proposed changes modify Tariff Section III.15.2 and related sections to accommodate twice-seasonal qualification cycles, MRI-based accreditation replacing Seasonal Qualified Capacity Values, and updated requirements for various resource types including imports, demand resources, and hybrid resources. A proposed effective date of Q2 2027 is targeted, with a stakeholder vote and FERC filing still ahead.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "CAR-SA redesigns the capacity market qualification and accreditation framework that directly affects how Maine generators and load-serving entities like CMP and Versant participate in and pay for capacity, but no Maine-specific data or entities are mentioned.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "tariff",
+            "seasonal-accreditation",
+            "resource-qualification",
+            "compliance",
+            "clean-energy",
+            "interconnection",
+            "demand-response"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A03k - CAR-SA: Tariff Redlines - Qualification- Section III.15.2 Redlines",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a03k_2026_07_07-09_mc_qualification_revisions_section_iii.15.2_redlines.docx",
+          "ext": "docx",
+          "summary": "This document presents tariff redline changes to Section III.15.2 of the NEPOOL Tariff governing Capacity Resource Qualification for the Capacity Auction (CA), replacing the Forward Capacity Auction (FCA) framework. The redlines detail qualification data submission requirements, demonstration requirements, and eligibility rules for Generating, Import, Demand, and Distributed Energy Capacity Resources. Key changes include updated references from FCA to CA terminology and reorganization of self-supply designation and final capacity value publication processes.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "Capacity market qualification rules directly affect Maine generators and load-serving entities like CMP and Versant that procure capacity obligations, though no Maine-specific provisions are included in this section.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "tariff",
+            "qualification",
+            "demand-response",
+            "interconnection",
+            "clean-energy",
+            "import-capacity"
+          ]
+        },
+        {
+          "title": "2026-07-07-09 MC A03l - CAR-SA: Winter Gas Constraint, cont. - Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a03l_2026_07_07-09_mc_rc_car-sa_winter_gas_constraint_cont..pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE presents detailed design updates for the Non-firm Gas Capacity Demand Curve under the Capacity Auction Reforms: Seasonal/Accreditation (CAR-SA) proposal, covering gas contract requirements, CSO bilateral transaction rules under the gas constraint, import resource participation, and locational pricing examples. Key updates include dropping the gas marketer affidavit requirement, clarifying that Operational Flow Orders will not be reflected in modeling, and providing numerical examples of how the non-firm gas limit interacts with CSO bilateral transactions and export/import constraints. The proposed effective date is Q2 2027.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "CAR-SA capacity market reforms directly affect how gas-dependent resources in Maine are compensated and accredited, impacting capacity costs borne by CMP and Versant ratepayers, though Maine is not explicitly mentioned in this document.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "clean-energy",
+            "ancillary-services",
+            "tariff",
+            "regional-planning",
+            "cost-allocation",
+            "energy-markets"
+          ]
+        }
+      ]
     },
     "tc": {
       "2026-03-18": [
@@ -2272,8 +3248,539 @@ window.SUMMARIES_DATA = {
           ]
         }
       ],
-      "2026-06-24": [],
-      "2026-07-16": []
+      "2026-06-24": [
+        {
+          "title": "2026-06-24 TC A00 Agenda - Rev. 2",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a00_2026_06_24_tc_agenda.docx",
+          "ext": "docx",
+          "summary": "The June 24, 2026 NEPOOL Transmission Committee agenda covers several significant items including capacity auction reforms related to seasonal accreditation, updates on Schedule 9 Regional Network Service rates and Schedule 1 rates, continued review and vote on the Asset Condition Reviewer proposal with TOA and Tariff redlines, and a vote on a Maine Office of Public Advocate amendment to the TOA and Tariff related to the AC Reviewer proposal. The agenda also includes a review of a FERC show-cause order issued June 18, 2026 (Docket No. EL26-72) directed at ISO-NE and the Participating Transmission Owners.",
+          "item_type": "Procedural",
+          "maine_relevance": "high",
+          "maine_relevance_reason": "The agenda includes a dedicated agenda item (4.2) for a Maine Office of Public Advocate amendment to the TOA and Tariff, indicating direct Maine stakeholder involvement in a transmission governance matter; Schedule 9 RNS rate changes also directly affect CMP and Versant as Maine PTOs.",
+          "maine_mentions": [
+            "MAINE OFFICE OF PUBLIC ADVOCATE (ME OPA) AMENDMENT",
+            "ME OPA: Drew Landry",
+            "ME OPA's proposed amendment to the TOA and Tariff related to the ISO's AC Reviewer proposal"
+          ],
+          "topic_tags": [
+            "transmission-planning",
+            "tariff",
+            "capacity-markets",
+            "asset-condition-reviewer",
+            "maine-specific",
+            "cost-allocation",
+            "compliance",
+            "ancillary-services"
+          ]
+        },
+        {
+          "title": "2026-06-24 TC A00 Motions Letter - Rev. 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a00_2026_06_24_tc_motions_letter.docx",
+          "ext": "docx",
+          "summary": "The NEPOOL Transmission Committee considers motions to approve May 2026 meeting minutes and two substantive items: (1) recommending support for ISO-NE's proposal to establish itself as the Asset Condition Reviewer with a new OATT Attachment R governing review of transmission owners' asset condition practices, and (2) recommending support for a Maine Office of Public Advocate amendment to narrow the definition of Asset Condition Projects within that same proposal.",
+          "item_type": "Actions",
+          "maine_relevance": "high",
+          "maine_relevance_reason": "The Maine Office of Public Advocate has submitted a formal amendment to the ISO's Asset Condition Reviewer proposal that directly affects how transmission asset condition projects are defined, with cost and oversight implications for Maine's transmission owners CMP and Versant.",
+          "maine_mentions": [
+            "Maine Office of Public Advocate (ME OPA)",
+            "ME OPA's proposed revisions to narrow the scope of the Asset Condition Project (ACP) definition"
+          ],
+          "topic_tags": [
+            "transmission-planning",
+            "asset-condition-review",
+            "tariff",
+            "cost-allocation",
+            "maine-specific",
+            "transmission-owners",
+            "oatt",
+            "toa"
+          ]
+        },
+        {
+          "title": "2026-06-24 TC A01.1 May 28, 2026 TC Meeting Minutes",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a01.1_2026_05_28_tc_meeting_minutes.docx",
+          "ext": "docx",
+          "summary": "The May 28, 2026 Transmission Committee meeting focused primarily on the Asset Condition (AC) Reviewer proposal, including discussion of revised TOA and OATT tariff language, threshold criteria for triggering AC review, and stakeholder amendments from multiple consumer advocates. The Maine Office of the Public Advocate (ME OPA) presented two amendments regarding the definition and function of Asset Condition Projects, expressing concern about open-ended 'minimizing risk' language and TO discretion over project details.",
+          "item_type": "Minutes",
+          "maine_relevance": "high",
+          "maine_relevance_reason": "The Maine Office of the Public Advocate actively participated by presenting two formal amendments to the Asset Condition Reviewer tariff proposal, directly representing Maine ratepayer interests in transmission cost oversight.",
+          "maine_mentions": [
+            "Maine Office of the Public Advocate (ME OPA)",
+            "Mr. Andrew Landry (ME OPA) presented two amendments on behalf of the ME OPA",
+            "Amendment A revises the definition of ACPs in the TOA and Attachment R",
+            "Amendment B revised the function of the ACPs as it appears in the TOA and Attachment R",
+            "The ME OPA worries the term 'minimizing risk' is open-ended",
+            "The ME OPA plans to take back suggestions to further refine the language in its proposal"
+          ],
+          "topic_tags": [
+            "transmission-planning",
+            "cost-allocation",
+            "tariff",
+            "asset-condition-reviewer",
+            "transmission-owners",
+            "compliance",
+            "regional-planning",
+            "consumer-advocacy"
+          ]
+        },
+        {
+          "title": "2026-06-24 TC A02 CAR-SA Deactivations - Section II Redlines",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a02_tc_mc_deactivations_redlines_section_ii.i.docx",
+          "ext": "docx",
+          "summary": "This document presents redlined tariff language for a new Deactivation Notification Process (Section II.52–II.55) governing how generators seeking to permanently remove capacity from ISO-NE markets must provide advance notification, undergo reliability review, and potentially accept delayed deactivation with associated compensation mechanisms. The changes establish a formal process effective for Capacity Commitment Periods beginning June 1, 2028 and later, replacing the prior de-list bid framework for retirements. Key provisions cover notification deadlines, reliability reviews, cost-of-service compensation for delayed deactivations, and reactivation rights.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "These tariff rules govern how all New England generators—including those in Maine—retire or deactivate from the capacity market, affecting resource adequacy and potentially the costs borne by Maine ratepayers through CMP and Versant if local reliability needs require delayed deactivations.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "tariff",
+            "deactivation",
+            "resource-adequacy",
+            "compliance",
+            "cost-allocation",
+            "ancillary-services",
+            "regional-planning"
+          ]
+        },
+        {
+          "title": "2026-06-24 TC A02 CAR-SA: Initial Deactivations Redlines Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a02_tc_mc_deactivations_redlines_presentation.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE presented initial tariff redlines for the Capacity Auction Reforms – Seasonal Accreditation (CAR-SA) deactivation process to the Joint Transmission and Markets Committee. The revisions conform existing deactivation market rules—including cost workbook submissions, conduct tests, portfolio benefit tests, and Proxy Capacity Offer structures—to the forthcoming seasonal capacity auction framework incorporating Marginal Reliability Impact Capacity. These changes are expected to take effect Q2 2027 and precede broader CAR-SA tariff revisions still under development.",
+          "item_type": "Presentation",
+          "maine_relevance": "low",
+          "maine_relevance_reason": "This presentation addresses region-wide capacity market structural reforms to deactivation rules with no Maine-specific data, utilities, or impacts discussed.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "tariff",
+            "deactivations",
+            "seasonal-accreditation",
+            "market-design",
+            "compliance",
+            "ancillary-services"
+          ]
+        },
+        {
+          "title": "2026-06-24 TC A03 PTO AC Notification of RNS Rates",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a03_tc_notice_effective_shedule_1_and_9_rates.pdf",
+          "ext": "pdf",
+          "summary": "The PTO Administrative Committee has updated the Schedule 9 Regional Network Service (RNS) formula rate effective January 1, 2027 and the Schedule 1 Service rate effective June 1, 2026, reflecting 2025 actuals and forecasted data with true-up adjustments. Two RNS rate scenarios are presented ($170.97 and $183.59 per kW-year) depending on a pending FERC order expected June 29, 2026 regarding the base ROE (9.57% vs. 11.39%). An informational presentation to NEPOOL stakeholders is planned for the July 16, 2026 Joint Reliability and Transmission Committee meeting.",
+          "item_type": "Informational",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "RNS and Schedule 1 transmission rates directly affect what CMP and Versant pay for regional network service, which ultimately flows through to Maine ratepayers via transmission cost recovery.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "transmission-planning",
+            "tariff",
+            "cost-allocation",
+            "regional-planning",
+            "settlement",
+            "compliance"
+          ]
+        },
+        {
+          "title": "2026-06-24 TC A03 PTO AC Notification of RNS Rates - Supplemental",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a03_tc_notice_effective_schedule_1_and_9_rates_supplemental.pdf",
+          "ext": "pdf",
+          "summary": "The PTO Administrative Committee notified stakeholders that the 2026 Schedule 9 Regional Network Service (RNS) formula rate has been updated to reflect a revised Return on Equity per FERC Opinion No. 594, issued March 19, 2026. The updated RNS rate decreased from $183.75/kW-year to $177.63/kW-year, a reduction of approximately $6.13/kW-year. A supplemental annual update will be filed with FERC by July 31, 2026, and an informational presentation is planned for the July 16, 2026 Joint Reliability and Transmission Committee meeting.",
+          "item_type": "Informational",
+          "maine_relevance": "high",
+          "maine_relevance_reason": "RNS rates are a significant component of transmission costs paid by all New England load-serving entities including CMP and Versant, and the ~$6.13/kW-year reduction directly affects Maine ratepayer costs.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "transmission-planning",
+            "tariff",
+            "cost-allocation",
+            "regional-planning",
+            "settlement"
+          ]
+        },
+        {
+          "title": "2026-06-24 TC A04 Asset Condition Reviewer - Attachment R Redlines - Rev. 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a04.1_tc_acr_attachment_r_redlines.docx",
+          "ext": "docx",
+          "summary": "This document presents redlined draft revisions to Attachment R of the ISO-NE Open Access Transmission Tariff, which establishes the Asset Condition Review Process governing how ISO-NE, as the Asset Condition Reviewer, evaluates Participating Transmission Owners' (PTOs') asset monitoring practices, Asset Condition Projects (ACPs), and ACP Programs for existing transmission infrastructure. The process is advisory in nature and applies to PTF projects meeting a $25 million threshold, with ISO-NE reviewing project need, alternatives, and preferred solutions before reporting to the Planning Advisory Committee. The revisions appear to clarify roles, thresholds, exclusions for CIP-014 security projects, and the relationship between a new Process Guide and the tariff language itself.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "CMP and Versant are PTOs subject to this Asset Condition Review Process, meaning this tariff language directly governs how their major transmission asset replacement and refurbishment projects (≥$25M PTF cost) are reviewed and reported, which can affect cost recovery and ratepayer impacts in Maine.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "transmission-planning",
+            "tariff",
+            "cost-allocation",
+            "regional-planning",
+            "compliance",
+            "ancillary-services"
+          ]
+        },
+        {
+          "title": "2026-06-24 TC A04 Asset Condition Reviewer - Memo Summarizing ISO's Position on Stakeholder Amendments",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a04_tc_acr_amendment_positions_memo.pdf",
+          "ext": "pdf",
+          "summary": "ISO New England summarizes its position on four stakeholder amendments to the proposed Asset Condition (AC) Reviewer role in the TOA and OATT, ahead of a vote at the June 24, 2026 Transmission Committee meeting. The ISO has accepted or incorporated revised versions of all four amendments, including two filed by the Maine Office of the Public Advocate (ME OPA) addressing the definition of Asset Condition Projects and the content of AC Reviewer reports. The AC Reviewer role is intended to provide independent oversight of transmission owners' asset condition projects, effective January 1, 2027.",
+          "item_type": "Vote",
+          "maine_relevance": "high",
+          "maine_relevance_reason": "The Maine Office of the Public Advocate filed two amendments to the AC Reviewer proposal, both of which were accepted and incorporated by ISO-NE, directly shaping the tariff language governing oversight of asset condition projects that affect Maine transmission owners CMP and Versant.",
+          "maine_mentions": [
+            "Maine Office of the Public Advocate (ME OPA)",
+            "ME OPA – Amendment A: revises definition of ACP to add 'in accordance with Good Utility Practice'",
+            "ME OPA – Amendment B: adds detail to AC Reviewer reports and requires PTO written explanation",
+            "a02.2b_tc_acr_amendment_me_opa.pdf",
+            "a04_tc_acr_amendment_me_opa_revised.pdf"
+          ],
+          "topic_tags": [
+            "transmission-planning",
+            "tariff",
+            "cost-allocation",
+            "asset-condition",
+            "compliance",
+            "regional-planning"
+          ]
+        },
+        {
+          "title": "2026-06-24 TC A04 Asset Condition Reviewer - TOA Redlines - Rev. 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a04.1_tc_acr_toa_redlines.docx",
+          "ext": "docx",
+          "summary": "This document presents redlined revisions (Rev. 1) to the Transmission Operating Agreement (TOA), the foundational agreement between ISO-NE and the Participating Transmission Owners (PTOs) that grants the ISO operational authority over the region's transmission facilities. The revisions appear to be associated with an Asset Condition Reviewer role or process, as indicated by the document title. The TOA governs key relationships including planning, maintenance, cost recovery, and operating authority across all New England PTOs.",
+          "item_type": "Presentation",
+          "maine_relevance": "high",
+          "maine_relevance_reason": "Central Maine Power Company (CMP) and Bangor Hydro-Electric Company (predecessor to Versant) are explicitly named as Initial Participating Transmission Owners in the TOA, meaning any changes to this agreement directly affect Maine utilities' rights, obligations, and cost recovery under ISO-NE.",
+          "maine_mentions": [
+            "Bangor Hydro-Electric Company (named as an Initial Participating Transmission Owner)",
+            "Central Maine Power Company (named as an Initial Participating Transmission Owner)",
+            "Schedule 3.11(f): List of MEPCO Operating Documents (Maine Electric Power Company, a Maine transmission entity)"
+          ],
+          "topic_tags": [
+            "transmission-planning",
+            "tariff",
+            "cost-allocation",
+            "regional-planning",
+            "interconnection",
+            "compliance",
+            "maine-specific"
+          ]
+        },
+        {
+          "title": "2026-06-24 TC A04 Asset Condition Reviewer - Voting Memo",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a04_tc_asset_condition_reviewer_voting_memo.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE is requesting a NEPOOL Transmission Committee vote to establish ISO-NE as the regional Asset Condition (AC) Reviewer through new Tariff and TOA revisions, creating an advisory oversight role for Asset Condition Projects proposed by Transmission Owners. The proposal includes three main functions: reporting on TO asset monitoring practices, individual and program project reviews, and annual regional reporting to the PAC. The proposed effective date is January 1, 2027.",
+          "item_type": "Vote",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "CMP and Versant, as Transmission Owners in Maine, would be subject to the new AC Reviewer oversight of their Asset Condition Projects, affecting how they develop and justify transmission infrastructure investments.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "transmission-planning",
+            "asset-condition",
+            "tariff",
+            "transmission-owners",
+            "cost-allocation",
+            "regional-planning",
+            "compliance"
+          ]
+        },
+        {
+          "title": "2026-06-24 TC A04 Asset Condition Reviewer Presentation - Rev. 1",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a04.1_tc_acr_presentation.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE presented incremental revisions to the proposed Asset Condition (AC) Reviewer framework, including updates to the TOA and Tariff (Attachment R) that respond to stakeholder amendments, including those from the Maine Office of the Public Advocate (ME OPA). Key changes include enhanced reporting requirements, an updated ACP definition incorporating 'Good Utility Practice,' and a refined ACP Program review threshold that adds a $100M backstop trigger in addition to the previously proposed criteria.",
+          "item_type": "Presentation",
+          "maine_relevance": "high",
+          "maine_relevance_reason": "The ME OPA's Amendment A (updating the ACP definition) and Amendment B (enhancing reporting requirements) were explicitly incorporated into the revised Tariff language, meaning Maine's advocacy directly shaped the framework that will govern oversight of transmission projects affecting Maine ratepayers through CMP and Versant.",
+          "maine_mentions": [
+            "ME OPA's Amendment B as presented at the May TC referenced in Reporting Enhancements section",
+            "ME OPA's Amendment A as presented at the May TC and revised for the June TC referenced in Updates to ACP Definition section"
+          ],
+          "topic_tags": [
+            "transmission-planning",
+            "asset-condition-reviewer",
+            "tariff",
+            "cost-allocation",
+            "regional-planning",
+            "compliance",
+            "maine-specific"
+          ]
+        },
+        {
+          "title": "2026-06-24 TC A04 Maine Office of the Public Advocate (ME OPA) Amendment",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a04.2_tc_me_ope_acr_amendment.pdf",
+          "ext": "pdf",
+          "summary": "The Maine Office of the Public Advocate (ME OPA) has submitted a proposed amendment (version 3) to the definition of 'Asset Condition Project' (ACP) in the draft Transmission Operating Agreement and Attachment P. The amendment refines the ACP definition by removing language referencing 'damaged or destroyed' facilities and 'physical damage to or deterioration,' replacing it with broader language focused on minimizing risk of asset failure based on asset condition, end-of-life milestones, or obsolescence. The change aims to more precisely scope what qualifies as an ACP and thus affects how such projects are categorized and potentially cost-allocated.",
+          "item_type": "Vote",
+          "maine_relevance": "high",
+          "maine_relevance_reason": "This amendment was filed by the Maine Office of the Public Advocate and directly affects how Asset Condition Projects are defined, which has cost-allocation implications for Maine ratepayers served by CMP and Versant under the Transmission Operating Agreement.",
+          "maine_mentions": [
+            "Maine Office of the Public Advocate",
+            "ME OPA",
+            "Maine OPA"
+          ],
+          "topic_tags": [
+            "transmission-planning",
+            "cost-allocation",
+            "tariff",
+            "asset-condition",
+            "transmission-operating-agreement",
+            "maine-specific",
+            "attachment-p"
+          ]
+        },
+        {
+          "title": "2026-06-24 TC A05 FERC Show Cause Order to ISO-NE & PTOs (Docket No. EL26-72)",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a05_tc_nepool_presentation_show_cause_order.pdf",
+          "ext": "pdf",
+          "summary": "FERC issued a Section 206 show cause order (Docket No. EL26-72) finding ISO-NE's Tariff preliminarily unjust and unreasonable due to the absence of large load integration provisions, covering five categories of deficiencies including transmission service procedures, cost transparency, co-location arrangements, new flexible load services, and generator interconnection. ISO-NE and PTOs must respond by August 17 or request abeyance by August 3 to develop a Section 205 Tariff filing by November 16. An informational report on resource adequacy to serve large loads is due July 20.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "Large load integration rules and associated cost allocation reforms would directly affect Maine transmission customers (CMP and Versant) and Maine ratepayers if data centers or other large loads interconnect in the ISO-NE region, potentially shifting network upgrade costs across the system.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "transmission-planning",
+            "cost-allocation",
+            "interconnection",
+            "tariff",
+            "large-load",
+            "co-location",
+            "compliance",
+            "capacity-markets",
+            "cost-transparency",
+            "ferc-order"
+          ]
+        },
+        {
+          "title": "2026-06-24 TC A05 NEPOOL Counsel Memo Summarizing FERC Show Cause Order to ISO-NE & PTOs (Docket No. EL26-72)",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/nepool_counsel_memo_ne_show_cause_order_large_load.pdf",
+          "ext": "pdf",
+          "summary": "FERC issued a Section 206 show cause order to ISO-NE and the Participating Transmission Owners on June 18, 2026, preliminarily finding the existing Tariff unjust and unreasonable because it lacks rules for integrating large loads (50 MW+ at >69 kV) and co-located loads onto the transmission system. ISO-NE and the PTOs have 60 days to show cause or propose Tariff changes across five reform categories, including application procedures, cost transparency, co-location rates, new transmission services, and generator interconnection rules. NEPOOL Counsel's memo summarizes the Order's background, definitions, required actions, and procedural deadlines for the Transmission Committee.",
+          "item_type": "Informational",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "CMP and Versant are Participating Transmission Owners subject to this proceeding and could face cost-allocation and tariff obligations related to large load and co-location reforms, though Maine has not yet seen the large-scale data center demand growth driving the order.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "transmission-planning",
+            "tariff",
+            "compliance",
+            "interconnection",
+            "cost-allocation",
+            "large-load",
+            "co-location",
+            "regional-planning",
+            "ancillary-services"
+          ]
+        },
+        {
+          "title": "2026-06-24 TC Actions Letter",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/2026_06_24_tc_actions_letter.pdf",
+          "ext": "pdf",
+          "summary": "The Transmission Committee approved minutes from its May 28, 2026 meeting and voted to recommend the Participants Committee support ISO-NE's proposed tariff revisions establishing ISO-NE as the Asset Condition (AC) Reviewer, including a new Attachment R to the OATT creating an independent review process for Participating Transmission Owners' asset condition practices across New England. Both motions passed with no opposition. The AC Reviewer proposal involves changes to both the Transmission Operating Agreement and the OATT.",
+          "item_type": "Actions",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "The Asset Condition Reviewer framework would apply to all Participating Transmission Owners including CMP and Versant, subjecting their asset condition practices and programs to ISO-NE independent review, which could affect capital planning and cost recovery.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "transmission-planning",
+            "tariff",
+            "compliance",
+            "regional-planning",
+            "asset-condition"
+          ]
+        }
+      ],
+      "2026-07-16": [
+        {
+          "title": "2026-07-16 TC A00 Agenda",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a00_2026_07_16_tc_agenda.docx",
+          "ext": "docx",
+          "summary": "The NEPOOL Transmission Committee will meet on July 16, 2026 to review Regional Network Service (RNS) rate notifications and five-year forecasts through 2031, discuss Surplus Interconnection Service gap analysis and recommendations, and address the FERC Show Cause Order (EL26-72) on large and co-located loads including an abeyance request and resource adequacy informational report. The meeting also includes approval of June 24, 2026 meeting minutes.",
+          "item_type": "Procedural",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "RNS rate notifications and five-year forecasts directly affect transmission costs allocated to Maine utilities CMP and Versant as PTOs, and the large load/co-located load Show Cause Order has broader implications for interconnection and resource adequacy across the region including Maine.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "transmission-planning",
+            "cost-allocation",
+            "tariff",
+            "interconnection",
+            "ancillary-services",
+            "regional-planning",
+            "capacity-markets",
+            "compliance"
+          ]
+        },
+        {
+          "title": "2026-07-16 TC A00 Motions Letter",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a00_2026_07_16_tc_motions_letter.docx",
+          "ext": "docx",
+          "summary": "The Transmission Committee is asked to approve minutes from two meetings held on June 24, 2026: a joint TC/MC/RC meeting and a standalone TC meeting. This is a standard procedural vote requiring a 66.67% supermajority.",
+          "item_type": "Vote",
+          "maine_relevance": "low",
+          "maine_relevance_reason": "This is a routine minutes approval motion with no substantive policy or cost content that would directly affect Maine ratepayers or utilities.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "procedural",
+            "minutes"
+          ]
+        },
+        {
+          "title": "2026-07-16 TC A01.1 June 24, 2026 Joint TC/MC/RC Meeting Minutes",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a01.1_2026_06_24_tc_mc_rc_meeting_minutes.docx",
+          "ext": "docx",
+          "summary": "These are minutes from the June 24, 2026 Joint Transmission, Markets, and Reliability Committees meeting, covering a single substantive agenda item on Capacity Auction Reforms – Seasonal/Accreditation (CAR-SA), where ISO-NE presented initial OATT tariff redlines to align deactivation processes under a seasonal framework. No questions or comments were raised, and a future vote is anticipated. The meeting was brief with no other substantive business discussed.",
+          "item_type": "Minutes",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "Both Central Maine Power (CMP) and Versant Power participated as Transmission sector members, and the Maine Public Advocate Office attended, indicating Maine stakeholder engagement with the CAR-SA capacity auction reform process that will affect Maine ratepayers.",
+          "maine_mentions": [
+            "Central Maine Power Company – Transmission sector, represented by Bruce Jagolinzer (RC) and Jason Rauch (TC)",
+            "Versant Power – Transmission sector, represented by Jeffrey Fenn",
+            "State of Maine - Maine Public Advocate Office – End User sector, represented by Andrew Landry"
+          ],
+          "topic_tags": [
+            "capacity-markets",
+            "tariff",
+            "seasonal-accreditation",
+            "deactivation",
+            "car-sa",
+            "compliance",
+            "minutes"
+          ]
+        },
+        {
+          "title": "2026-07-16 TC A01.1 June 24, 2026 TC Meeting Minutes",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a01.1_2026_06_24_tc_meeting_minutes.docx",
+          "ext": "docx",
+          "summary": "The June 24, 2026 Transmission Committee meeting approved prior meeting minutes, received updates on Schedule 9 and Schedule 1 Regional Network Service rate changes (including a decrease resulting from FERC Opinion No. 594 on ROE), voted to recommend Participants Committee approval of ISO-NE as the Asset Condition Reviewer with new TOA and OATT revisions, and received a summary of a FERC show cause order regarding large and co-located loads.",
+          "item_type": "Minutes",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "Central Maine Power (CMP) participated as a Transmission Sector member, and the RNS rate changes and new Asset Condition Reviewer process directly affect Maine's transmission owners and ultimately Maine ratepayers through transmission cost allocation.",
+          "maine_mentions": [
+            "Central Maine Power Company | Transmission | Jason Rauch"
+          ],
+          "topic_tags": [
+            "transmission-planning",
+            "tariff",
+            "cost-allocation",
+            "ancillary-services",
+            "compliance",
+            "regional-planning",
+            "asset-condition"
+          ]
+        },
+        {
+          "title": "2026-07-16 TC A02.1 PTO AC Notification of RNS Rates",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a02.1_tc_rns_rate_presentation.pdf",
+          "ext": "pdf",
+          "summary": "The PTO AC Rates Working Group presented the Regional Network Service (RNS) transmission rate updates for January 1, 2026 (Supplemental) and January 1, 2027 at the RC/TC Joint NEPOOL Meeting. The 2026 Supplemental rate decreases from $183.75 to $177.63/kW-yr due to FERC Opinion No. 594 lowering the base ROE from 10.57% to 9.57%, while the 2027 rate is set at $183.60/kW-yr reflecting increased capital additions, a higher ROE of 11.39%, and a higher 2025 12CP load. Both CMP and Versant Power are explicitly listed as PTOs with their individual Annual Transmission Revenue Requirements.",
+          "item_type": "Presentation",
+          "maine_relevance": "high",
+          "maine_relevance_reason": "CMP and Versant Power are both named PTOs whose individual ATRRs and RNS rate impacts are detailed in the tables, directly affecting Maine ratepayer transmission costs.",
+          "maine_mentions": [
+            "Central Maine Power Company: 2026 ATRR $220.9M, Supplemental $215.5M, change -$5.4M, rate impact -$0.30/kW-yr",
+            "Maine Electric Power Company: 2026 ATRR $17.4M, Supplemental $15.7M, change -$1.7M, rate impact -$0.10/kW-yr",
+            "Versant Power: 2026 ATRR $36.7M, Supplemental $35.4M, change -$1.3M, rate impact -$0.08/kW-yr"
+          ],
+          "topic_tags": [
+            "transmission-planning",
+            "tariff",
+            "cost-allocation",
+            "regional-network-service",
+            "rns-rates",
+            "formula-rates",
+            "roe",
+            "revenue-requirements",
+            "maine-specific"
+          ]
+        },
+        {
+          "title": "2026-07-16 TC A02.2 Five-Year Forecast of RNS Rates",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a02.2_tc_rns_rate_forecast.pdf",
+          "ext": "pdf",
+          "summary": "The Participating Transmission Owners Administrative Committee (PTO AC) presented a five-year forecast of Regional Network Service (RNS) rates for 2027–2031, showing rates rising from $184/kW-yr in 2027 to $237/kW-yr in 2031, driven by increasing regional transmission capital investments. The forecast includes PTO-level investment breakdowns, with CMP projecting $57.5M in 2026 and $66.3M in 2027 regional investments, while Versant Power shows $0 in 2026 and $3.6M in 2027. These increasing RNS rates will be socialized across all load-serving entities in New England, directly affecting Maine ratepayer costs.",
+          "item_type": "Presentation",
+          "maine_relevance": "high",
+          "maine_relevance_reason": "CMP and Versant Power are explicitly listed with their forecasted regional transmission investment figures, and rising RNS rates directly increase transmission costs borne by Maine ratepayers through CMP and Versant.",
+          "maine_mentions": [
+            "Central Maine Power Company — $57.5M forecasted 2026 regional investments",
+            "Central Maine Power Company — $66.3M forecasted 2027 regional investments",
+            "Maine Electric Power Company — $17.4M forecasted 2026 regional investments",
+            "Maine Electric Power Company — $21.5M forecasted 2027 regional investments",
+            "Versant Power — $0 forecasted 2026 regional investments",
+            "Versant Power — $3.6M forecasted 2027 regional investments"
+          ],
+          "topic_tags": [
+            "transmission-planning",
+            "cost-allocation",
+            "tariff",
+            "regional-planning",
+            "maine-specific",
+            "forecast"
+          ]
+        },
+        {
+          "title": "2026-07-16 TC A03 Surplus Interconnection Service Gap Analysis Presentation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a03_tc_surplus_gap_analysis_presentation.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE presented findings from a gap analysis of Surplus Interconnection Service rules, identifying five gaps in existing interconnection procedures related to streamlined processes, market participation information, CNRIS sharing limits, study timelines, and public posting requirements. The ISO proposes two main solutions: a new expedited interconnection process for co-locations and repowerings that avoid network upgrades, and modifications to existing Surplus Interconnection Service rules including updates to the Unused Capability definition to align with CAR-SA capacity market reforms. The presentation also covers market participation models for surplus resources, referencing prior ISO guidance on co-located resources.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "Surplus interconnection and expedited co-location/repowering rules are relevant to Maine's active renewable energy development pipeline, including projects connecting through CMP and Versant territory, though Maine is not explicitly mentioned.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "interconnection",
+            "surplus-interconnection",
+            "capacity-markets",
+            "clean-energy",
+            "transmission-planning",
+            "tariff",
+            "co-location",
+            "ancillary-services",
+            "regional-planning"
+          ]
+        },
+        {
+          "title": "2026-07-16 TC A04.1 New England Large & Co-Located Loads Show Cause Order (EL26-72) Compliance: Abeyance Request & Section 205 Filing",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a04.1_tc_large_loads_show_cause_order_abeyance_request_205_filing.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE and Participating Transmission Owners plan to file a joint 90-day abeyance request by August 3, 2026 in response to a FERC Section 206 Show Cause Order (EL26-72) finding ISO-NE's tariff lacks adequate provisions for large and co-located load integration. If granted, the abeyance would allow a stakeholder process to develop a Section 205 tariff filing due November 16, 2026, addressing five reform categories: efficient study processes, cost transparency, co-location rules, flexible load service, and generation studies. Stakeholder votes are scheduled through November 2026 across the Transmission, Markets, and Participants Committees.",
+          "item_type": "Presentation",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "New tariff rules for large and co-located loads (e.g., data centers) could affect transmission cost allocation and network upgrade costs that flow through to Maine ratepayers via CMP and Versant as Participating Transmission Owners.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "transmission-planning",
+            "tariff",
+            "cost-allocation",
+            "interconnection",
+            "co-located-load",
+            "large-load",
+            "compliance",
+            "ferc-order",
+            "regional-planning"
+          ]
+        },
+        {
+          "title": "2026-07-16 TC A04.2 New England Large & Co-Located Loads Show Cause Order (EL26-72) Compliance: Informational Report on Resource Adequacy",
+          "url": "https://www.iso-ne.com/static-assets/documents/100037/a04.2_tc_ferc_informational_report_resource_adequacy_large_loads.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE submitted an informational report to FERC in response to the June 2026 Show Cause Order (EL26-72) regarding resource adequacy for large and co-located loads, outlining that New England has not yet experienced significant large-load growth (e.g., data centers) but is preparing through existing competitive market mechanisms. The report describes ongoing market reform projects—including Capacity Auction Reforms, Pay for Performance adjustments, and updated CONE parameters—as the primary tools to maintain the existing generation fleet and incentivize new entry. ISO-NE argues its mature wholesale markets are well-positioned to handle future large-load challenges without departing from competitive market structures.",
+          "item_type": "Informational",
+          "maine_relevance": "medium",
+          "maine_relevance_reason": "While Maine is not explicitly mentioned, this FERC proceeding on resource adequacy for large loads directly affects ISO-NE capacity market rules, cost-of-new-entry parameters, and future capacity prices that determine costs for Maine utilities CMP and Versant and their ratepayers.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "capacity-markets",
+            "resource-adequacy",
+            "large-loads",
+            "load-forecasting",
+            "energy-markets",
+            "tariff",
+            "compliance",
+            "interconnection",
+            "regional-planning",
+            "ancillary-services"
+          ]
+        }
+      ]
     },
     "pac": {
       "2026-03-24": [
@@ -3294,7 +4801,128 @@ window.SUMMARIES_DATA = {
           ]
         }
       ],
-      "2026-06-23": []
+      "2026-06-23": [
+        {
+          "title": "2026-06-23 PAC A00 Agenda",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a00_2026_06_23_pac_agenda.pdf",
+          "ext": "pdf",
+          "summary": "The June 23, 2026 PAC agenda covers transmission owner asset management projects across New England, including line refurbishments and substation upgrades by National Grid and Eversource. It also includes a stakeholder-requested scenario submission for the 2026 Economic Study and a June 2026 update to the RSP Project List and Asset Condition List.",
+          "item_type": "Procedural",
+          "maine_relevance": "low",
+          "maine_relevance_reason": "None of the listed asset management projects involve Maine utilities (CMP or Versant), and no Maine-specific items appear on the agenda.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "transmission-planning",
+            "asset-management",
+            "regional-planning",
+            "economic-study",
+            "rsp"
+          ]
+        },
+        {
+          "title": "2026-06-23 PAC A02.1 NGRID W-23 69 kV Line Asset Condition Refurbishment",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a2.1_w-23_acr_pac_presentation_2026.pdf",
+          "ext": "pdf",
+          "summary": "National Grid presented a ~$29.82M asset condition refurbishment project for the W-23 69 kV transmission line running 8.3 miles between Clinton, MA and Northboro, MA, which is 100% PTF. The project involves replacing 43 deteriorated wood structures with steel poles, replacing wood crossarms at 62 structures with fiberglass crossarms, reconductoring two spans, and replacing damaged insulators, all driven by woodpecker damage, pole deterioration, and insulation flashover observed during inspections.",
+          "item_type": "Presentation",
+          "maine_relevance": "low",
+          "maine_relevance_reason": "This project is entirely located in Massachusetts on National Grid infrastructure with no direct connection to Maine utilities, ratepayers, or transmission infrastructure, though as a 100% PTF project its costs are socialized across the region including Maine.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "transmission-planning",
+            "asset-condition",
+            "cost-allocation",
+            "regional-planning",
+            "tariff"
+          ]
+        },
+        {
+          "title": "2026-06-23 PAC A02.2 ES Canal Station 345 kV Autotransformer Replacements",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a2.2_canal_autotransformers_t120_t126_final.pdf",
+          "ext": "pdf",
+          "summary": "Eversource Energy is presenting two autotransformer replacement projects at the Canal substation in Sandwich, MA, where two aging 400MVA autotransformers (T-120 and T-126, both 50-60 years old) are targeted for replacement due to end-of-life asset condition concerns including oil leaks, dissolved gas analysis trends, and flood zone risk. The projects are being brought to the Planning Advisory Committee for stakeholder informational review as asset condition reliability projects. No votes are described in the available text.",
+          "item_type": "Presentation",
+          "maine_relevance": "low",
+          "maine_relevance_reason": "This project is located entirely within Massachusetts and involves Eversource infrastructure with no direct connection to Maine utilities, ratepayers, or transmission assets, though regional reliability improvements can have indirect system-wide benefits.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "transmission-planning",
+            "asset-condition",
+            "reliability",
+            "regional-planning"
+          ]
+        },
+        {
+          "title": "2026-06-23 PAC A02.3 ES North Cambridge Substation – Cable System Partial Replacement",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a2.3_n_cambridge_june_2026_final.pdf",
+          "ext": "pdf",
+          "summary": "Eversource is presenting a $9.864M project to replace damaged underground cable conduits and control cables at the North Cambridge 345/115 kV substation in Cambridge, MA. The existing duct bank has collapsed in portions, causing battery ground alarms and preventing cable replacement, and the design does not comply with NPCC Directory 4 physical separation requirements. The preferred solution installs new precast concrete cable trench systems, with major construction starting Q3 2026 to align with planned 345 kV outages.",
+          "item_type": "Presentation",
+          "maine_relevance": "low",
+          "maine_relevance_reason": "This project involves a Massachusetts substation with no direct connection to Maine utilities, ratepayers, or transmission infrastructure.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "transmission-planning",
+            "asset-condition",
+            "substation",
+            "compliance",
+            "reliability"
+          ]
+        },
+        {
+          "title": "2026-06-23 PAC A02.4 ES Montville Substation – New 115/69 kV Control Enclosure and Cable Separation",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a2.4_montville_substation_pac_2026_06_final.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE's Planning Advisory Committee reviewed a project at Eversource's Montville Substation in Connecticut to address aging protection and control infrastructure, including outdated cable shielding, lack of System 1/System 2 separation, and obsolete GE and SEL relays. The preferred alternative (Alternative 2) involves constructing a new dedicated 115/69 kV control enclosure and installing new cable trenches at an estimated cost of $74.0 million ($46.3 million PTF, $27.7 million NonPTF). The project is driven by NPCC Directory 4 compliance requirements and asset condition concerns.",
+          "item_type": "Presentation",
+          "maine_relevance": "low",
+          "maine_relevance_reason": "This project is entirely located at Eversource's Montville Substation in Connecticut with no direct connection to Maine utilities, ratepayers, or transmission infrastructure, though PTF cost allocations are shared regionally.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "transmission-planning",
+            "cost-allocation",
+            "tariff",
+            "ancillary-services",
+            "regional-planning",
+            "compliance"
+          ]
+        },
+        {
+          "title": "2026-06-23 PAC A02.5 ES NH Asset Condition Structure Replacements – Lines B172 and C129",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a2.5_nh_b172_c129_acr-june_2026_final.pdf",
+          "ext": "pdf",
+          "summary": "Eversource Energy presented two asset condition structure replacement projects on transmission Lines B172 and C129 in New Hampshire to the Planning Advisory Committee. Both lines were originally constructed in 1952-1953 and consist mainly of aging wood H-frame structures with identified deterioration issues such as rot, splitting, and cracking. The presentation outlines inspection findings, evaluated alternatives, and planned replacements to maintain reliability.",
+          "item_type": "Presentation",
+          "maine_relevance": "low",
+          "maine_relevance_reason": "These projects are located entirely in New Hampshire on Eversource-owned assets, with no direct connection to Maine utilities, Maine ratepayers, or Maine transmission infrastructure.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "transmission-planning",
+            "asset-condition",
+            "regional-planning",
+            "transmission-infrastructure"
+          ]
+        },
+        {
+          "title": "2026-06-23 PAC A03.0 2026 Economic Study - Stakeholder-Requested Scenario Submission",
+          "url": "https://www.iso-ne.com/static-assets/documents/100036/a3.0_2026_economic_study_stakeholded_requested_scenario_submission_final.pdf",
+          "ext": "pdf",
+          "summary": "ISO-NE presented the process and timeline for submitting Stakeholder-Requested Scenarios for the 2026 Economic Study, which models future resource needs, transmission limitations, and emissions profiles. Stakeholders may submit scenario or sensitivity requests by July 24, 2026, with the PAC prioritizing proposals in Q3 2026 and the full study anticipated to conclude by December 2027. The presentation covers eligibility criteria, acceptable and unacceptable request types, and the general study timeline including Benchmark, Policy, and System Efficiency Needs scenarios.",
+          "item_type": "Presentation",
+          "maine_relevance": "low",
+          "maine_relevance_reason": "The presentation describes a region-wide economic study process with no Maine-specific content, though Maine stakeholders (CMP, Versant) could submit scenario requests by the July 24 deadline.",
+          "maine_mentions": [],
+          "topic_tags": [
+            "transmission-planning",
+            "regional-planning",
+            "energy-markets",
+            "clean-energy",
+            "load-forecasting",
+            "interconnection",
+            "forecast"
+          ]
+        }
+      ]
     },
     "lfwg": {
       "2026-03-27": [
