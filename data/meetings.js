@@ -29,9 +29,9 @@ window.MEETINGS_DATA = {
           agenda_items: [
             {
               order: 1,
-              time: "9:30 AM",
-              title: "Approve Draft Minutes of Participants Committee Meetings (April 30 and May 7, 2026)",
-              type: "vote",
+              time: "9:30 a.m.",
+              title: "Call to Order and General Session",
+              type: "procedural",
               materials: [],
               summary: "",
               maine_relevance: "",
@@ -39,7 +39,8 @@ window.MEETINGS_DATA = {
             },
             {
               order: 2,
-              title: "Adopt and Approve All Actions Recommended by Technical Committees on the Consent Agenda",
+              agenda_number: "1",
+              title: "Approve the draft minutes of the Participants Committee meetings held on April 30 and May 7, 2026",
               type: "vote",
               materials: [],
               summary: "",
@@ -48,8 +49,9 @@ window.MEETINGS_DATA = {
             },
             {
               order: 3,
-              title: "Remarks from Vamsi Chadalavada, Chief Executive Officer, ISO New England; Summary of ISO Board and Board Committee Meetings",
-              type: "presentation",
+              agenda_number: "2",
+              title: "Adopt and approve all actions recommended by the Technical Committees set forth on the Consent Agenda",
+              type: "vote",
               materials: [],
               summary: "",
               maine_relevance: "",
@@ -57,7 +59,8 @@ window.MEETINGS_DATA = {
             },
             {
               order: 4,
-              title: "Systems and Market Operations Report (June Report Reflecting May Data)",
+              agenda_number: "3",
+              title: "Receive remarks from Vamsi Chadalavada, Chief Executive Officer, ISO New England, including summary of ISO Board and Board Committee meetings",
               type: "informational",
               materials: [],
               summary: "",
@@ -66,7 +69,8 @@ window.MEETINGS_DATA = {
             },
             {
               order: 5,
-              title: "Report on the ISO's Preliminary 2027 and 2028 Operating and Capital Budgets by Kelly Reyngold, Chief Financial Officer, ISO New England",
+              agenda_number: "4",
+              title: "Receive a Systems and Market Operations Report (June report reflecting May data)",
               type: "informational",
               materials: [],
               summary: "",
@@ -75,8 +79,9 @@ window.MEETINGS_DATA = {
             },
             {
               order: 6,
-              title: "Consider and Take Action on Changes to Tariff Sections IV.A and IV.B Regarding Administration of Calendar Year Rates If Not Authorized by FERC by January 1",
-              type: "vote",
+              agenda_number: "5",
+              title: "Receive a report on the ISO's preliminary 2027 and 2028 Operating and Capital Budgets by Kelly Reyngold, Chief Financial Officer, ISO New England",
+              type: "presentation",
               materials: [],
               summary: "",
               maine_relevance: "",
@@ -84,7 +89,8 @@ window.MEETINGS_DATA = {
             },
             {
               order: 7,
-              title: "Consider and Take Action on Changes to Pay-For-Performance Treatment of External Transactions During Capacity Scarcity Conditions and Settlement Calculations, and Related Revisions to Tariff Sections I, III, the Billing Policy, and the Financial Assurance Policy",
+              agenda_number: "6",
+              title: "Consider and take action on changes to Section IV.A and Section IV.B of the Tariff to clarify how the ISO's Calendar Year Rates will be administered if not authorized by FERC or otherwise effective by January 1",
               type: "vote",
               materials: [],
               summary: "",
@@ -93,7 +99,8 @@ window.MEETINGS_DATA = {
             },
             {
               order: 8,
-              title: "Consider and Take Action on Changes to Cap the PFP Capacity Balancing Ratio at 1.0 and Related Revisions to Tariff Sections I, III, and the FAP",
+              agenda_number: "7",
+              title: "Consider and take action on changes to the Pay-For-Performance (PFP) treatment of external transactions during Capacity Scarcity Conditions and settlement calculations, and related revisions to Tariff Sections I, III, the Billing Policy, and the Financial Assurance Policy (FAP)",
               type: "vote",
               materials: [],
               summary: "",
@@ -102,7 +109,8 @@ window.MEETINGS_DATA = {
             },
             {
               order: 9,
-              title: "Consider and Take Action on the ISO's Proposed Downward Adjustment to the Performance Payment Rate and Related Revisions to Sections III.13.7 and III.15",
+              agenda_number: "8",
+              title: "Consider and take action on changes to cap the PFP Capacity Balancing Ratio at 1.0 and related revisions to Tariff Sections I, III, and the FAP",
               type: "vote",
               materials: [],
               summary: "",
@@ -111,7 +119,18 @@ window.MEETINGS_DATA = {
             },
             {
               order: 10,
-              title: "Consider and Take Action on Day-Ahead Ancillary Services Post-Implementation Market Adjustments in Response to Recommendations by the Internal Market Monitor",
+              agenda_number: "9",
+              title: "Consider and take action on the ISO's proposed downward adjustment to the Performance Payment Rate (PPR) and related revisions to Sections III.13.7 and III.15",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 11,
+              agenda_number: "10",
+              title: "Consider and take action on Day-Ahead Ancillary Services (DAAS) post-implementation market adjustments in response to recommendations by the Internal Market Monitor (IMM)",
               type: "vote",
               materials: [],
               summary: "",
