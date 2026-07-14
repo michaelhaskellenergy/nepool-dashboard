@@ -18,10 +18,13 @@ import urllib.request
 from datetime import date
 from pathlib import Path
 
-MEETINGS_FILE    = Path("data/meetings.js")
-SCRAPED_FILE     = Path("data/scraped_materials.json")
-PDF_CACHE_DIR    = Path("data/pdfs")
-VALIDATOR_SCRIPT = Path("scripts/validate_meetings.py")
+# Anchor all paths to the repo root (parent of scripts/) so the script works
+# no matter what directory it is launched from.
+PROJECT_ROOT     = Path(__file__).resolve().parent.parent
+MEETINGS_FILE    = PROJECT_ROOT / "data" / "meetings.js"
+SCRAPED_FILE     = PROJECT_ROOT / "data" / "scraped_materials.json"
+PDF_CACHE_DIR    = PROJECT_ROOT / "data" / "pdfs"
+VALIDATOR_SCRIPT = PROJECT_ROOT / "scripts" / "validate_meetings.py"
 
 MAX_AGENDA_CHARS = 8_000
 today = date.today()

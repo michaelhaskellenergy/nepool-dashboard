@@ -26,10 +26,13 @@ import urllib.request
 from datetime import date, timedelta
 from pathlib import Path
 
-MEETINGS_FILE = Path("data/meetings.js")
+# Anchor all paths to the repo root (parent of scripts/) so the script works
+# no matter what directory it is launched from.
+PROJECT_ROOT  = Path(__file__).resolve().parent.parent
+MEETINGS_FILE = PROJECT_ROOT / "data" / "meetings.js"
 
-SCRAPED_FILE  = Path("data/scraped_materials.json")
-SUMMARIES_FILE = Path("data/summaries.js")
+SCRAPED_FILE  = PROJECT_ROOT / "data" / "scraped_materials.json"
+SUMMARIES_FILE = PROJECT_ROOT / "data" / "summaries.js"
 
 
 # ── Scraped-data loader (json preferred; js fallback) ─────────────────────────
@@ -54,7 +57,7 @@ def load_scraped_data():
         f"Neither {SCRAPED_FILE} nor {SCRAPED_FILE.with_suffix('.js')} found. "
         "Run scrape_materials.py first."
     )
-PDF_CACHE_DIR  = Path("data/pdfs")
+PDF_CACHE_DIR  = PROJECT_ROOT / "data" / "pdfs"
 
 # Max characters sent to Claude per document (controls cost and avoids token limits)
 MAX_TEXT_CHARS = 12_000

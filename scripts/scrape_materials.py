@@ -24,8 +24,12 @@ from pathlib import Path
 from playwright.async_api import async_playwright
 
 BASE_URL = "https://www.iso-ne.com"
-OUTPUT_FILE = Path("data/scraped_materials.json")
-NEW_MATERIALS_FILE = Path("data/new_materials.json")
+
+# Anchor all paths to the repo root (parent of scripts/) so output lands in the
+# repo no matter what directory the script is launched from.
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+OUTPUT_FILE = PROJECT_ROOT / "data" / "scraped_materials.json"
+NEW_MATERIALS_FILE = PROJECT_ROOT / "data" / "new_materials.json"
 
 COMMITTEES = [
     {"id": "pc",   "name": "Participants Committee",               "url": f"{BASE_URL}/committees/participants/participants-committee"},

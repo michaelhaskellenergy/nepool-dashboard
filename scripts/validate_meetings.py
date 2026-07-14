@@ -16,7 +16,7 @@ import sys
 from datetime import date, datetime
 from pathlib import Path
 
-MEETINGS_FILE = Path("data/meetings.js")
+MEETINGS_FILE = Path(__file__).resolve().parent.parent / "data" / "meetings.js"
 VALID_TYPES   = {"presentation", "vote", "informational", "procedural"}
 VALID_REL     = {"high", "medium", "low", ""}
 today         = date.today()

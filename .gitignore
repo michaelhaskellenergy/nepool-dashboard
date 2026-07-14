@@ -4,3 +4,4 @@ data/scraped_materials.json
 data/new_materials.json
 __pycache__/
 *.pyc
+data/scrape_log.txt
