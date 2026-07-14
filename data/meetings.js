@@ -90,6 +90,40 @@ window.MEETINGS_DATA = {
           ]
         },
         {
+          id: "pc-2026-09-03",
+          date: "2026-09-03",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=160082",
+          location: "TBD",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
+          id: "pc-2026-08-06",
+          date: "2026-08-06",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=160081",
+          location: "Virtual WebEx Meeting",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
           id: "pc-2026-04-09",
           date: "2026-04-09",
           iso_ne_url: "https://www.iso-ne.com/event-details?eventId=160080",
@@ -377,6 +411,59 @@ window.MEETINGS_DATA = {
           date: "2026-04-21",
           iso_ne_url: "",
           location: "",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
+          id: "mc-2026-09-08-10",
+          date: "2026-09-08",
+          date_end: "2026-09-10",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=163989",
+          location: "DoubleTree Hotel, Westborough, MA",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
+          id: "mc-2026-08-11-13",
+          date: "2026-08-11",
+          date_end: "2026-08-13",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=160101",
+          location: "DoubleTree Hotel, Westborough, MA",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
+          id: "mc-2026-07-21",
+          date: "2026-07-21",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=163991",
+          location: "Virtual",
           agenda_items: [
             {
               order: 1,
@@ -867,44 +954,26 @@ window.MEETINGS_DATA = {
       description: "Oversees bulk power system reliability standards, studies, and compliance for New England.",
       meetings: [
         {
+          id: "rc-2026-06-25",
+          date: "2026-06-25",
+          iso_ne_url: "",
+          location: "",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
           id: "rc-2026-06-09-11",
           date: "2026-06-09",
           date_end: "2026-06-11",
-          iso_ne_url: "",
-          location: "",
-          agenda_items: [
-            {
-              order: 1,
-              title: "Agenda pending — check back closer to the meeting date.",
-              type: "presentation",
-              materials: [],
-              summary: "",
-              maine_relevance: "",
-              topic_tags: []
-            }
-          ]
-        },
-        {
-          id: "rc-2026-07-07-09",
-          date: "2026-07-07",
-          date_end: "2026-07-09",
-          iso_ne_url: "",
-          location: "",
-          agenda_items: [
-            {
-              order: 1,
-              title: "Agenda pending — check back closer to the meeting date.",
-              type: "presentation",
-              materials: [],
-              summary: "",
-              maine_relevance: "",
-              topic_tags: []
-            }
-          ]
-        },
-        {
-          id: "rc-2026-06-25",
-          date: "2026-06-25",
           iso_ne_url: "",
           location: "",
           agenda_items: [
@@ -942,6 +1011,58 @@ window.MEETINGS_DATA = {
           date_end: "2026-05-14",
           iso_ne_url: "",
           location: "",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
+          id: "rc-2026-08-18-19",
+          date: "2026-08-18",
+          date_end: "2026-08-19",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=160122",
+          location: "Beauport Hotel, Gloucester, MA",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
+          id: "rc-2026-07-23",
+          date: "2026-07-23",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=160117",
+          location: "DoubleTree Hotel, Westborough, MA",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
+          id: "rc-2026-07-16",
+          date: "2026-07-16",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=161677",
+          location: "DoubleTree Hotel, Westborough, MA",
           agenda_items: [
             {
               order: 1,
@@ -1141,43 +1262,8 @@ window.MEETINGS_DATA = {
       description: "Reviews transmission planning studies, cost allocations, and interconnection queue.",
       meetings: [
         {
-          id: "tc-2026-07-16",
-          date: "2026-07-16",
-          iso_ne_url: "",
-          location: "",
-          agenda_items: [
-            {
-              order: 1,
-              title: "Agenda pending — check back closer to the meeting date.",
-              type: "presentation",
-              materials: [],
-              summary: "",
-              maine_relevance: "",
-              topic_tags: []
-            }
-          ]
-        },
-        {
           id: "tc-2026-06-24",
           date: "2026-06-24",
-          iso_ne_url: "",
-          location: "",
-          agenda_items: [
-            {
-              order: 1,
-              title: "Agenda pending — check back closer to the meeting date.",
-              type: "presentation",
-              materials: [],
-              summary: "",
-              maine_relevance: "",
-              topic_tags: []
-            }
-          ]
-        },
-        {
-          id: "tc-2026-06-09-11",
-          date: "2026-06-09",
-          date_end: "2026-06-11",
           iso_ne_url: "",
           location: "",
           agenda_items: [
@@ -1214,6 +1300,41 @@ window.MEETINGS_DATA = {
           date: "2026-04-21",
           iso_ne_url: "",
           location: "",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
+          id: "tc-2026-08-18-19",
+          date: "2026-08-18",
+          date_end: "2026-08-19",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=160122",
+          location: "Beauport Hotel, Gloucester, MA",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
+          id: "tc-2026-07-16",
+          date: "2026-07-16",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=161677",
+          location: "DoubleTree Hotel, Westborough, MA",
           agenda_items: [
             {
               order: 1,
@@ -1344,23 +1465,6 @@ window.MEETINGS_DATA = {
           ]
         },
         {
-          id: "pac-2026-05-29",
-          date: "2026-05-29",
-          iso_ne_url: "",
-          location: "",
-          agenda_items: [
-            {
-              order: 1,
-              title: "Agenda pending — check back closer to the meeting date.",
-              type: "presentation",
-              materials: [],
-              summary: "",
-              maine_relevance: "",
-              topic_tags: []
-            }
-          ]
-        },
-        {
           id: "pac-2026-05-27",
           date: "2026-05-27",
           iso_ne_url: "",
@@ -1378,10 +1482,10 @@ window.MEETINGS_DATA = {
           ]
         },
         {
-          id: "pac-2026-05-22",
-          date: "2026-05-22",
-          iso_ne_url: "",
-          location: "",
+          id: "pac-2026-08-26",
+          date: "2026-08-26",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=160142",
+          location: "WebEx",
           agenda_items: [
             {
               order: 1,
@@ -1395,10 +1499,10 @@ window.MEETINGS_DATA = {
           ]
         },
         {
-          id: "pac-2026-05-11",
-          date: "2026-05-11",
-          iso_ne_url: "",
-          location: "",
+          id: "pac-2026-07-28",
+          date: "2026-07-28",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=160141",
+          location: "WebEx",
           agenda_items: [
             {
               order: 1,

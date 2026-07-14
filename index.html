@@ -112,6 +112,7 @@
 
   /* ── Agenda items ────────────────────────────────────────────────────────── */
   .agenda-list { padding: 0; }
+  .agenda-pending-note { font-size: 0.82em; color: #888; font-style: italic; }
   .agenda-item { border-bottom: 1px solid #e8eef5; padding: 12px 16px; }
   .agenda-item:last-child { border-bottom: none; }
   .agenda-item-header { display: flex; align-items: flex-start; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
@@ -518,6 +519,13 @@
     return new RegExp('\\b' + esc + '([ .\\-\\(]|$)', 'i').test(summary.title);
   }
 
+  // A placeholder meeting has only the auto-generated stub agenda item
+  // (no agenda_number on any item) — the real agenda hasn't been parsed yet.
+  function isPlaceholderMeeting(meeting) {
+    const items = meeting.agenda_items || [];
+    return items.length > 0 && !items.some(it => it.agenda_number);
+  }
+
   // ── Upcoming meeting ──────────────────────────────────────────────────────
 
   function renderUpcomingMeeting(meeting, committeeId) {
@@ -534,10 +542,16 @@
     const agendaLink = agendaDoc
       ? `<a class="agenda-doc-link" href="${agendaDoc.url}" target="_blank" rel="noopener">&#128196; Agenda</a>`
       : '';
-    const hasItems = meeting.agenda_items && meeting.agenda_items.length;
+    const placeholder = isPlaceholderMeeting(meeting);
+    const hasItems = meeting.agenda_items && meeting.agenda_items.length && !placeholder;
     const agendaBtn = hasItems
       ? `<button class="agenda-toggle-btn" id="abtn-${uid}" data-count="${meeting.agenda_items.length}"
            onclick="toggleAgenda('${uid}')">Agenda (${meeting.agenda_items.length} items)</button>`
+      : '';
+    const pendingNote = placeholder
+      ? `<span class="agenda-pending-note">${agendaDoc
+           ? 'Agenda posted &mdash; itemized view coming soon'
+           : 'Agenda not yet posted by ISO-NE'}</span>`
       : '';
     const showTime = committeeId !== 'pc';
     const agendaBody = hasItems
@@ -555,6 +569,7 @@
           ${agendaLink}
           ${calLink}
           ${agendaBtn}
+          ${pendingNote}
         </div>
         ${agendaBody}
       </div>`;
@@ -585,7 +600,8 @@
 
     // Match each summary to an agenda item by agenda_number; track unmatched ones
     const matched = new Set();
-    const itemsHtml = meeting.agenda_items && meeting.agenda_items.length
+    const placeholder = isPlaceholderMeeting(meeting);
+    const itemsHtml = (meeting.agenda_items && meeting.agenda_items.length && !placeholder)
       ? meeting.agenda_items.map(it => {
           const itemSummaries = allSummaries.filter(s => {
             if (matchSummaryToItem(s, it.agenda_number)) { matched.add(s); return true; }
@@ -593,7 +609,9 @@
           });
           return renderAgendaItem(it, committeeId, meeting.date, showTime, itemSummaries);
         }).join('')
-      : '<div class="no-meetings">No agenda items entered yet.</div>';
+      : `<div class="no-meetings">${placeholder
+           ? 'Itemized agenda unavailable for this meeting' + (agendaDoc ? ' &mdash; see the Agenda link above.' : '.') + ' Posted materials appear below.'
+           : 'No agenda items entered yet.'}</div>`;
 
     // Unmatched summaries (e.g. Actions Letter, meeting minutes) shown at bottom
     const unmatched = allSummaries.filter(s => !matched.has(s));
