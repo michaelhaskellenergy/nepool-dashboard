@@ -651,8 +651,65 @@ window.MEETINGS_DATA = {
           agenda_items: [
             {
               order: 1,
-              title: "Agenda pending — check back closer to the meeting date.",
+              time: "9:00 - 9:05",
+              agenda_number: "1.0",
+              title: "Chair's Opening Remarks",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 2,
+              time: "9:05 - 9:45",
+              agenda_number: "2.0",
+              title: "Winter Quarterly Markets Report",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 3,
+              time: "9:45 - 10:30",
+              agenda_number: "3.0",
+              title: "Capacity Auction Reforms - Seasonal / Accreditation (CAR-SA) Tariff Redlines - Initial redline review regarding auditing in Section III.1.5-7 and qualification in Section III.15.2",
               type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 4,
+              time: "10:30 - 12:30",
+              agenda_number: "3.0",
+              title: "Quarterly Follow-Up Medley - Additional follow-up details from questions raised at prior meetings",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 5,
+              time: "12:30 - 12:35",
+              agenda_number: "4.0",
+              title: "Other Business",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 6,
+              time: "12:35 - 12:45",
+              agenda_number: "5.0",
+              title: "Closing Remarks/Adjourn for the Day",
+              type: "procedural",
               materials: [],
               summary: "",
               maine_relevance: "",
