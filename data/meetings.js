@@ -1195,6 +1195,23 @@ window.MEETINGS_DATA = {
       description: "Oversees bulk power system reliability standards, studies, and compliance for New England.",
       meetings: [
         {
+          id: "rc-2026-09-16",
+          date: "2026-09-16",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=160118",
+          location: "DoubleTree Hotel, Westborough, MA",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
           id: "rc-2026-06-25",
           date: "2026-06-25",
           iso_ne_url: "",
@@ -1290,8 +1307,207 @@ window.MEETINGS_DATA = {
           agenda_items: [
             {
               order: 1,
-              title: "Agenda pending — check back closer to the meeting date.",
+              time: "9:30 - 9:45",
+              agenda_number: "1.0",
+              title: "Chair's Opening Remarks",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 2,
+              agenda_number: "1.1",
+              title: "Meeting Minutes (66.67% Vote) - June 9-11, 2026 Joint MC/RC Meeting; June 24, 2026 Joint MC/RC/TC Meeting; June 25, 2026 RC Meeting",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 3,
+              time: "9:45 - 9:50",
+              agenda_number: "2.0",
+              title: "Reliability Committee Consent Agenda (Notification) - Review and concurrence of Generator and Transmission Applications that require Level 0 or I treatment",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 4,
+              agenda_number: "2.1",
+              title: "Discussion of Any Projects Pulled from the Consent Agenda",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 5,
+              time: "9:50 - 11:45",
+              agenda_number: "3.0",
+              title: "Capacity Auction Reforms - Seasonal/Accreditation (22nd MC/RC Mtg) (Future Vote) - Accreditation Process Flows & DCap Follow-ups and Post-RAA Accreditation",
               type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 6,
+              time: "12:30 - 1:15",
+              agenda_number: "4.0",
+              title: "Transmission Cost Allocations (TCAs)",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 7,
+              agenda_number: "4.1",
+              title: "Eversource Energy South Naugatuck to Devon Rebuild Project TCAs (2nd RC Mtg) (66.67% Vote) - Suite of five TCAs: ES-23-TCA-03, ES-23-TCA-44, ES-24-TCA-08, ES-25-TCA-05, ES-26-TCA-03",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 8,
+              agenda_number: "4.2",
+              title: "Eversource Energy Hurd State Park Area Project TCAs (2nd RC Mtg) (66.67% Vote) - Suite of four TCAs: ES-22-TCA-28, ES-24-TCA-18, ES-26-TCA-06, ES-26-TCA-09",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 9,
+              agenda_number: "4.3",
+              title: "Central Maine Power Section 226 Structure Replacements TCA (1st RC Mtg) (66.67% Vote) - CMP-26-TCA-07",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 10,
+              agenda_number: "4.4",
+              title: "New England Power Belmont Substation Asset Condition Replacements TCA (1st RC Mtg) (66.67% Vote) - NEP-26-TCA-02",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 11,
+              time: "1:15 - 2:00",
+              agenda_number: "5.0",
+              title: "Operating Procedures (OPs)",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 12,
+              agenda_number: "5.1",
+              title: "Order No. 2222 Conforming Changes (1st RC Mtg) (Future Vote) - Discussion on conforming changes to OP-8, OP-14, and OP-23",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 13,
+              agenda_number: "5.2",
+              title: "OP-14 Appendix B - Data Explanation of Terms and Instructions for Data Preparation for ISO Form NX-12D (1st RC Mtg) (Future Vote) - Discussion on revisions to update figure labels and clarify language",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 14,
+              agenda_number: "5.3",
+              title: "Order No. 881 Conforming Changes (1st RC Mtg) (Future Vote) - Discussion on conforming changes to OP-18 and OP-19",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 15,
+              time: "2:00 - 3:25",
+              agenda_number: "6.0",
+              title: "Planning Procedures (PPs)",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 16,
+              agenda_number: "6.1",
+              title: "Planning Procedure 9 - Major Substation Bus Arrangement Requirements and Guidelines (2nd RC Mtg) (66.67% Vote) - Discussion and vote on SATOA conforming changes",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 17,
+              agenda_number: "6.2",
+              title: "Planning Procedures 5-1 and 5-3 (2nd RC Mtg) (Future Vote) - Discussion on proposed revisions to enhance the PPA process",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 18,
+              agenda_number: "6.3",
+              title: "Planning Procedure 5-6 - Interconnection Planning Procedure for Generation and Elective Transmission Upgrades (1st RC Mtg) (Future Vote) - Discussion on Order No. 881 conforming changes and revisions to support the first full Cluster Study",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 19,
+              time: "3:25 - 3:30",
+              agenda_number: "7.0",
+              title: "Other Business",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 20,
+              time: "3:30",
+              agenda_number: "8.0",
+              title: "Closing Remarks/Adjourn for the Day",
+              type: "procedural",
               materials: [],
               summary: "",
               maine_relevance: "",
