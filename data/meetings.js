@@ -2361,8 +2361,157 @@ window.MEETINGS_DATA = {
           agenda_items: [
             {
               order: 1,
-              title: "Agenda pending — check back closer to the meeting date.",
+              time: "9:00 – 9:05",
+              agenda_number: "1.0",
+              title: "Chair's Opening Remarks",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 2,
+              time: "9:05 – 9:45",
+              agenda_number: "2.0",
+              title: "2036 New England Short Circuit Needs Assessment",
               type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 3,
+              time: "9:45 – 11:40",
+              agenda_number: "3.0",
+              title: "Transmission Owner Asset Management",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 4,
+              agenda_number: "3.1",
+              title: "O-15N 69 kV Line Asset Condition Replacement",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 5,
+              agenda_number: "3.2",
+              title: "394/397 345 kV Lines Asset Condition Replacement",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 6,
+              agenda_number: "3.3",
+              title: "Highland Substation Rebuild & Synchronous Condenser Addition Cost Update",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 7,
+              agenda_number: "3.4",
+              title: "345 kV Breaker Replacements: Fitzwilliam (NH), Scovill Rock (CT), Ludlow (MA)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 8,
+              agenda_number: "3.5",
+              title: "Line 191 Optical Ground Wire (OPGW) Replacement Project",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 9,
+              time: "11:40 – 12:00",
+              agenda_number: "4.0",
+              title: "Asset Condition Reviewer Update",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 10,
+              time: "12:30 – 1:30",
+              agenda_number: "5.0",
+              title: "Interim Asset Condition Reviewer",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 11,
+              agenda_number: "5.1",
+              title: "Interim Asset Condition Reviewer – Eversource 1670/1771 Replacement Project",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 12,
+              agenda_number: "5.2",
+              title: "Interim Asset Condition Reviewer – Eversource 325/331/344 Rebuild Project",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 13,
+              time: "1:30 – 1:45",
+              agenda_number: "6.0",
+              title: "TO LSP Public Policy Memos",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 14,
+              time: "1:45 – 4:45",
+              agenda_number: "7.0",
+              title: "2025 LTTP RFP – Preliminary Preferred Solution",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 15,
+              time: "4:45",
+              agenda_number: "8.0",
+              title: "Closing Remarks/Adjourn",
+              type: "procedural",
               materials: [],
               summary: "",
               maine_relevance: "",
