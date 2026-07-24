@@ -1195,6 +1195,23 @@ window.MEETINGS_DATA = {
       description: "Oversees bulk power system reliability standards, studies, and compliance for New England.",
       meetings: [
         {
+          id: "rc-2026-06-24",
+          date: "2026-06-24",
+          iso_ne_url: "",
+          location: "",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
           id: "rc-2026-09-16",
           date: "2026-09-16",
           iso_ne_url: "https://www.iso-ne.com/event-details?eventId=160118",
