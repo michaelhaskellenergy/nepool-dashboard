@@ -298,8 +298,90 @@ window.MEETINGS_DATA = {
           agenda_items: [
             {
               order: 1,
-              title: "Agenda pending — check back closer to the meeting date.",
-              type: "presentation",
+              time: "10:00 AM",
+              agenda_number: "1",
+              title: "Approve the draft minutes of the June 16-18, 2026 Participants Committee Summer Meeting",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 2,
+              agenda_number: "2",
+              title: "Adopt and approve the actions recommended by the Technical Committees set forth on the Consent Agenda",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 3,
+              agenda_number: "2A",
+              title: "Consider, and take action, as appropriate, on revisions to Section IV.A of the Tariff (Self-Funding Tariff) to reflect implementation of the Asset Condition Reviewer process",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 4,
+              agenda_number: "3",
+              title: "Receive summaries of the ISO Board or Board Committee meetings held since the last summaries were circulated",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 5,
+              agenda_number: "4",
+              title: "Receive a Systems and Market Operations Report",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 6,
+              agenda_number: "5",
+              title: "Receive a report on current contested matters before the FERC and the Federal Courts",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 7,
+              agenda_number: "6",
+              title: "Receive reports from Committees, Subcommittees and other working groups: Markets Committee, Reliability Committee, Transmission Committee, Budget & Finance Subcommittee, Membership Subcommittee",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 8,
+              agenda_number: "7",
+              title: "Administrative matters",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 9,
+              agenda_number: "8",
+              title: "Transact such other business as may properly come before the meeting",
+              type: "procedural",
               materials: [],
               summary: "",
               maine_relevance: "",
@@ -2117,6 +2199,23 @@ window.MEETINGS_DATA = {
       description: "Reviews ISO-NE's long-range regional system planning and economic studies.",
       meetings: [
         {
+          id: "pac-2026-09-23",
+          date: "2026-09-23",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=160143",
+          location: "WebEx",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
           id: "pac-2026-06-23",
           date: "2026-06-23",
           iso_ne_url: "",
@@ -2828,6 +2927,23 @@ window.MEETINGS_DATA = {
       tier: "secondary",
       description: "Reviews ISO-NE load forecast methodology and results.",
       meetings: [
+        {
+          id: "lfwg-2026-09-25",
+          date: "2026-09-25",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=160220",
+          location: "WebEx",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
         {
           id: "lfwg-2026-03-27",
           date: "2026-03-27",
