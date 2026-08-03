@@ -21,6 +21,23 @@ window.MEETINGS_DATA = {
       description: "Top-level NEPOOL governance body. Votes on market rule changes and ISO-NE budget.",
       meetings: [
         {
+          id: "pc-2026-10-02",
+          date: "2026-10-02",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=160083",
+          location: "AC Hotel Portsmouth Downtown/Waterfront, Portsmouth, NH",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
           id: "pc-2026-06-16-18",
           date: "2026-06-16",
           date_end: "2026-06-18",
