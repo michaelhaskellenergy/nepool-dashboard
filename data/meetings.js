@@ -2225,6 +2225,23 @@ window.MEETINGS_DATA = {
       description: "Reviews transmission planning studies, cost allocations, and interconnection queue.",
       meetings: [
         {
+          id: "tc-2026-10-14",
+          date: "2026-10-14",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=160132",
+          location: "DoubleTree Hotel, Westborough, MA",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
           id: "tc-2026-08-11-13",
           date: "2026-08-11",
           date_end: "2026-08-13",
