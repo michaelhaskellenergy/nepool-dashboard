@@ -1488,6 +1488,23 @@ window.MEETINGS_DATA = {
       description: "Oversees bulk power system reliability standards, studies, and compliance for New England.",
       meetings: [
         {
+          id: "rc-2026-10-20",
+          date: "2026-10-20",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=160119",
+          location: "DoubleTree Hotel, Westborough, MA",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
           id: "rc-2026-07-07-09",
           date: "2026-07-07",
           date_end: "2026-07-09",
@@ -3098,8 +3115,123 @@ window.MEETINGS_DATA = {
           agenda_items: [
             {
               order: 1,
-              title: "Agenda pending — check back closer to the meeting date.",
+              time: "9:00 – 9:05",
+              agenda_number: "1.0",
+              title: "Chair's Opening Remarks",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 2,
+              time: "9:05 – 12:10",
+              agenda_number: "2.0",
+              title: "Transmission Owner Asset Management",
               type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 3,
+              agenda_number: "2.1",
+              title: "Vernon Station #13 Rebuild/Huntington #3026 – Cost Update",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 4,
+              agenda_number: "2.2",
+              title: "I-135S/J-136S 115 kV Line Asset Condition Refurbishment",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 5,
+              agenda_number: "2.3",
+              title: "E-205E and E-205W 230 kV Line Asset Condition Replacement",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 6,
+              agenda_number: "2.4",
+              title: "Deerfield #4 Substation Asset Replacements",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 7,
+              agenda_number: "2.5",
+              title: "Old Town 115/13.8 kV Substation Rebuild Update",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 8,
+              agenda_number: "2.6",
+              title: "Rhode Island Energy Transmission Relay Upgrade Program",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 9,
+              agenda_number: "2.7",
+              title: "Line 114 Extension – Cost Update on RSP #1730",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 10,
+              agenda_number: "2.8",
+              title: "2027 RNS Rate Overview and Forecast",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 11,
+              time: "12:40 – 1:25",
+              agenda_number: "3.0",
+              title: "2026 Economic Study - Benchmark Scenario Preliminary Results",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 12,
+              time: "1:25",
+              agenda_number: "4.0",
+              title: "Closing Remarks/Adjourn",
+              type: "procedural",
               materials: [],
               summary: "",
               maine_relevance: "",
