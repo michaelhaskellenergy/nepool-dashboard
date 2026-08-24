@@ -298,8 +298,120 @@ window.MEETINGS_DATA = {
           agenda_items: [
             {
               order: 1,
-              title: "Agenda pending — check back closer to the meeting date.",
-              type: "presentation",
+              time: "10:00 AM",
+              agenda_number: "1",
+              title: "Approve the draft minutes of the August 6, 2026 Participants Committee Webex meeting",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 2,
+              agenda_number: "2",
+              title: "Adopt and approve the actions recommended by the Reliability Committee set forth on the Consent Agenda",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 3,
+              agenda_number: "3",
+              title: "Receive summaries of the ISO Board or Board Committee meetings held since the last summaries were circulated",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 4,
+              agenda_number: "4",
+              title: "Receive a System and Market Operations Report (September report reflecting August data)",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 5,
+              agenda_number: "5",
+              title: "Receive a report on proposed budgets",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 6,
+              agenda_number: "5.a",
+              title: "2027 ISO-NE Operating and Capital Budgets",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 7,
+              agenda_number: "5.b",
+              title: "2027 NESCOE budget",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 8,
+              agenda_number: "6",
+              title: "Consider, and take action as appropriate, on revisions to the Financial Assurance Policy addressing the treatment of resettlements associated with FERC Opinion 594 Return on Equity (ROE) refunds",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 9,
+              agenda_number: "7",
+              title: "Receive a report on current contested matters before the FERC and the Federal Courts",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 10,
+              agenda_number: "8",
+              title: "Receive reports from Committees, Subcommittees and other working groups: Markets Committee, Reliability Committee, Transmission Committee, Budget & Finance Subcommittee, Membership Subcommittee, Others",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 11,
+              agenda_number: "9",
+              title: "Administrative matters",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 12,
+              agenda_number: "10",
+              title: "Transact such other business as may properly come before the meeting",
+              type: "procedural",
               materials: [],
               summary: "",
               maine_relevance: "",
@@ -2854,6 +2966,23 @@ window.MEETINGS_DATA = {
       description: "Reviews ISO-NE's long-range regional system planning and economic studies.",
       meetings: [
         {
+          id: "pac-2026-10-22",
+          date: "2026-10-22",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=160144",
+          location: "WebEx",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
           id: "pac-2026-09-23",
           date: "2026-09-23",
           iso_ne_url: "https://www.iso-ne.com/event-details?eventId=160143",
@@ -3697,6 +3826,23 @@ window.MEETINGS_DATA = {
       tier: "secondary",
       description: "Reviews ISO-NE load forecast methodology and results.",
       meetings: [
+        {
+          id: "lfwg-2026-10-23",
+          date: "2026-10-23",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=164841",
+          location: "WebEx",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
         {
           id: "lfwg-2026-09-25",
           date: "2026-09-25",
