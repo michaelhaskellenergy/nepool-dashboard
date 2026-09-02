@@ -1600,6 +1600,241 @@ window.MEETINGS_DATA = {
       description: "Oversees bulk power system reliability standards, studies, and compliance for New England.",
       meetings: [
         {
+          id: "rc-2026-09-08-10",
+          date: "2026-09-08",
+          date_end: "2026-09-10",
+          iso_ne_url: "",
+          location: "",
+          agenda_items: [
+            {
+              order: 1,
+              time: "9:30 - 9:35",
+              agenda_number: "1.0",
+              title: "Chair's Opening Remarks",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 2,
+              time: "9:35 - 9:40",
+              agenda_number: "1.A",
+              title: "Approval of Minutes (66.67% Vote) - Minutes of the i) June 24, 2026 Joint Meeting of the Markets, Reliability, and Transmission Committees, ii) July 21, 2026 Joint Meeting of the Markets and Reliability Committees, iii) August 11-13, 2026 Joint Meeting of the Markets, Reliability and Transmission Committees, iv) August 11-13, 2026 Markets Committee, v) August 18-19, 2026 Joint Meeting of the Markets, Reliability and Transmission Committees",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 3,
+              time: "9:40 - 10:10",
+              agenda_number: "2.0",
+              title: "GIS Working Group - VT RES (allow for a portion of facility output to be qualified for a specific Tier of the RES) and ME Class III RECs (ME PUC) (66.67% Vote)",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 4,
+              time: "10:10 - 11:00",
+              agenda_number: "3.0",
+              title: "Spring 2026 Quarterly Markets Report - Internal Market Monitor reporting of market data from Spring 2026",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 5,
+              time: "11:00 - 12:00",
+              agenda_number: "4.0",
+              title: "Joint Meeting of the Markets, Reliability, and Transmission Committees - CAR-SA Summary: Design Updates",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 6,
+              time: "12:45 - 2:15",
+              agenda_number: "4.0",
+              title: "CAR-SA Transition Mechanism - Continued discussion on a glidepath into the CAR-SA design",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 7,
+              time: "2:15 - 4:15",
+              agenda_number: "4.0",
+              title: "CAR-SA Impact Analysis Follow Ups: Resource Accreditation Modeling and Market Clearing",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 8,
+              time: "4:15 - 5:00",
+              agenda_number: "4.0",
+              title: "CAR-SA Follow Up Medley - Continued discussion on various design elements and stakeholder questions",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 9,
+              time: "9:30 - 10:15",
+              agenda_number: "4.0",
+              title: "CAR-SA Vistra Conceptual Amendment - Discussion on making the transition's firm gas contract requirements permanent",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 10,
+              time: "10:15 - 12:00",
+              agenda_number: "4.0",
+              title: "CAR-SA NEPGA Conceptual Amendments - Exemption of certain forced outages from accreditation EFORd value, COPT Floor using CVC, Limit system-backed imports from obtaining CSO",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 11,
+              time: "1:00 - 1:45",
+              agenda_number: "4.0",
+              title: "CAR-SA MA AGO Conceptual Amendment - Conceptual amendment to adjust the assumed quantity of energy storage for accreditation",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 12,
+              time: "1:45 - 2:45",
+              agenda_number: "4.0",
+              title: "CAR-SA FirstLight Power Conceptual Amendments - Pay-for-Performance Balancing Ratio Under CAR-SA and Conceptual Amendment on Risk Split: Demand Curve and Accreditation",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 13,
+              time: "2:45 - 4:00",
+              agenda_number: "4.0",
+              title: "CAR-SA Constellation Conceptual Amendment - Continued discussion of an alternative Ambient Air MW calculation",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 14,
+              time: "9:30 - 10:30",
+              agenda_number: "4.0",
+              title: "CAR-SA NESCOE Amendments Presentation - MRI-based Net CONE assumptions, Transition Capacity Market Price Cap, Transition Gas Demand Curve",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 15,
+              time: "10:30 - 11:30",
+              agenda_number: "4.0",
+              title: "CAR-SA Flatiron Conceptual Amendments - Adjustments to the storage heuristic and extending the Transition Mechanism from two to three years",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 16,
+              time: "11:30 - 12:00",
+              agenda_number: "4.0",
+              title: "CAR-SA Advanced Energy United Conceptual Amendments - Continued discussion of AEU's concern on intertie modeling and treatment of energy storage as energy limited",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 17,
+              time: "12:45 - 4:40",
+              agenda_number: "4.0",
+              title: "CAR-SA Tariff Review - Initial redline review of Sections I.2.2 and Appendix A (non-deactivation mitigation provisions) as well as review of revised versions of Section III.1, III.12, and III.15",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 18,
+              time: "4:40 - 4:55",
+              agenda_number: "5.0",
+              title: "Other Business - Implementation timing update on megawatt-dependent fuel price adjustments project",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 19,
+              time: "4:55 - 5:00",
+              agenda_number: "6.0",
+              title: "Closing Remarks/Adjourn for the Day",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
+          id: "rc-2026-10-27",
+          date: "2026-10-27",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=165065",
+          location: "Renaissance Hotel, Framingham, MA",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
           id: "rc-2026-10-20",
           date: "2026-10-20",
           iso_ne_url: "https://www.iso-ne.com/event-details?eventId=160119",
@@ -1943,8 +2178,49 @@ window.MEETINGS_DATA = {
           agenda_items: [
             {
               order: 1,
-              title: "Agenda pending — check back closer to the meeting date.",
-              type: "presentation",
+              agenda_number: "2.01",
+              title: "Kearsarge Concord LLC, 755 Walden Street Solar - Level 0 (CEII TOPIC) - 1.5 MW Solar facility in Concord, MA interconnecting via circuit 223-H4 out of Station 223",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 2,
+              agenda_number: "2.02",
+              title: "Kearsarge Concord II LLC, 214Y Main Street Solar - Level 0 (CEII TOPIC) - 4.5 MW Solar facility in Concord, MA interconnecting via circuit 219-H17 out of Station 219",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 3,
+              agenda_number: "2.03",
+              title: "Glenvale - Errol, NH Solar, 173 Upton Road Solar - Level 0 (CEII TOPIC) - 4.95 MW Solar facility in Errol, NH interconnecting via feeder 3525X out of Berlin Substation",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 4,
+              agenda_number: "2.04",
+              title: "Walden Renewables, 330 Eaton Road Solar - Withdrawal of 4.99 MW Solar facility in Swanzey, NH",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 5,
+              agenda_number: "2.05",
+              title: "Green Mountain Power, Otter Creek Warner Solar - Withdrawal of 2.2 MW PV facility in Bennington, VT",
+              type: "vote",
               materials: [],
               summary: "",
               maine_relevance: "",
@@ -2371,6 +2647,241 @@ window.MEETINGS_DATA = {
       tier: "core",
       description: "Reviews transmission planning studies, cost allocations, and interconnection queue.",
       meetings: [
+        {
+          id: "tc-2026-09-08-10",
+          date: "2026-09-08",
+          date_end: "2026-09-10",
+          iso_ne_url: "",
+          location: "",
+          agenda_items: [
+            {
+              order: 1,
+              time: "9:30 - 9:35",
+              agenda_number: "1.0",
+              title: "Chair's Opening Remarks",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 2,
+              time: "9:35 - 9:40",
+              agenda_number: "1.A",
+              title: "Approval of Minutes (66.67% Vote) - Minutes of the i) June 24, 2026 Joint Meeting of the Markets, Reliability, and Transmission Committees, ii) July 21, 2026 Joint Meeting of the Markets and Reliability Committees, iii) August 11-13, 2026 Joint Meeting of the Markets, Reliability and Transmission Committees, iv) August 11-13, 2026 Markets Committee, v) August 18-19, 2026 Joint Meeting of the Markets, Reliability and Transmission Committees",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 3,
+              time: "9:40 - 10:10",
+              agenda_number: "2.0",
+              title: "GIS Working Group - VT RES (allow for a portion of facility output to be qualified for a specific Tier of the RES, 3rd MC Meeting) and ME Class III RECs - ME PUC (2nd MC Meeting) (66.67% Vote)",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 4,
+              time: "10:10 - 11:00",
+              agenda_number: "3.0",
+              title: "Spring 2026 Quarterly Markets Report - Internal Market Monitor reporting of market data from Spring 2026 (Notification)",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 5,
+              time: "11:00 - 12:00",
+              agenda_number: "4.0",
+              title: "Joint Meeting of the Markets, Reliability, and Transmission Committees - CAR-SA Summary: Design Updates - Review of CAR design updates since the overview and summary was presented in July (2nd Mtg)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 6,
+              time: "12:45 - 2:15",
+              agenda_number: "4.0",
+              title: "CAR-SA Transition Mechanism - Continued discussion on a glidepath into the CAR-SA design (4th Mtg)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 7,
+              time: "2:15 - 4:15",
+              agenda_number: "4.0",
+              title: "CAR-SA Impact Analysis Follow Ups: Resource Accreditation Modeling (additional near-term base case details, 9th Mtg) and Market Clearing (additional results of sensitivities, 8th Mtg)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 8,
+              time: "4:15 - 5:00",
+              agenda_number: "4.0",
+              title: "CAR-SA Follow Up Medley - Continued discussion on various design elements and stakeholder questions (5th Mtg)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 9,
+              time: "9:30 - 10:15",
+              agenda_number: "4.0",
+              title: "CAR-SA Vistra Conceptual Amendment - Discussion on making the transition's firm gas contract requirements permanent (1st Mtg)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 10,
+              time: "10:15 - 12:00",
+              agenda_number: "4.0",
+              title: "CAR-SA NEPGA Conceptual Amendments - Exemption of certain forced outages from accreditation EFORd value; COPT Floor using CVC; Limit system-backed imports from obtaining CSO (1st Mtg)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 11,
+              time: "1:00 - 1:45",
+              agenda_number: "4.0",
+              title: "CAR-SA MA AGO Conceptual Amendment - Conceptual amendment to adjust the assumed quantity of energy storage for accreditation (1st Mtg)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 12,
+              time: "1:45 - 2:45",
+              agenda_number: "4.0",
+              title: "CAR-SA FirstLight Power Conceptual Amendments - Pay-for-Performance Balancing Ratio Under CAR-SA; Conceptual Amendment on Risk Split: Demand Curve and Accreditation (2nd Mtg)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 13,
+              time: "2:45 - 4:00",
+              agenda_number: "4.0",
+              title: "CAR-SA Constellation Conceptual Amendment - Continued discussion of an alternative Ambient Air MW calculation (2nd Mtg)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 14,
+              time: "9:30 - 10:30",
+              agenda_number: "4.0",
+              title: "CAR-SA NESCOE Amendments Presentation - MRI-based Net CONE assumptions; Transition Capacity Market Price Cap; Transition Gas Demand Curve (2nd Mtg)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 15,
+              time: "10:30 - 11:30",
+              agenda_number: "4.0",
+              title: "CAR-SA Flatiron Conceptual Amendments - Adjustments to the storage heuristic including using a 16-hour benchmark and extending the heuristic until further model assessments are complete; Extend the Transition Mechanism from two to three years (1st Mtg)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 16,
+              time: "11:30 - 12:00",
+              agenda_number: "4.0",
+              title: "CAR-SA Advanced Energy United Conceptual Amendments - Continued discussion of AEU's concern on intertie modeling and treatment of energy storage as energy limited (4th Mtg)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 17,
+              time: "12:45 - 4:40",
+              agenda_number: "4.0",
+              title: "CAR-SA Tariff Review - Initial redline review of Sections I.2.2 and Appendix A (non-deactivation mitigation provisions) as well as review of revised versions of Section III.1, III.12, and III.15 (4th Mtg)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 18,
+              time: "4:40 - 4:55",
+              agenda_number: "5.0",
+              title: "Other Business - Implementation timing update on megawatt-dependent fuel price adjustments project",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 19,
+              time: "4:55 - 5:00",
+              agenda_number: "6.0",
+              title: "Closing Remarks/Adjourn for the Day",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
+          id: "tc-2026-10-27",
+          date: "2026-10-27",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=165065",
+          location: "Renaissance Hotel, Framingham, MA",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
         {
           id: "tc-2026-10-14",
           date: "2026-10-14",
