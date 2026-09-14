@@ -21,6 +21,23 @@ window.MEETINGS_DATA = {
       description: "Top-level NEPOOL governance body. Votes on market rule changes and ISO-NE budget.",
       meetings: [
         {
+          id: "pc-2026-11-12",
+          date: "2026-11-12",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=160084",
+          location: "Hilton Boston Back Bay (40 Dalton Street, Boston, MA)",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
           id: "pc-2026-10-02",
           date: "2026-10-02",
           iso_ne_url: "https://www.iso-ne.com/event-details?eventId=160083",
@@ -2324,8 +2341,237 @@ window.MEETINGS_DATA = {
           agenda_items: [
             {
               order: 1,
-              title: "Agenda pending — check back closer to the meeting date.",
+              time: "9:30 - 9:45",
+              agenda_number: "1.0",
+              title: "Chair's Opening Remarks",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 2,
+              agenda_number: "1.1",
+              title: "Meeting Minutes - August 11-13, 2026 Joint MC/RC/TC Meeting; August 18-19, 2026 Joint MC/RC/TC Meeting; August 18-19, 2026 RC/TC Meeting",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 3,
+              agenda_number: "1.2",
+              title: "Working Group and Project Updates - Power Supply Planning Committee",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 4,
+              time: "9:45 - 9:50",
+              agenda_number: "2.0",
+              title: "Reliability Committee Consent Agenda - Review and concurrence of Generator and Transmission Applications that require Level 0 or I treatment",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 5,
+              agenda_number: "2.1",
+              title: "Discussion of Any Projects Pulled from the Consent Agenda",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 6,
+              time: "9:50 - 10:00",
+              agenda_number: "3.0",
+              title: "Level II/III Proposed Plan Applications (PPAs) - Present Proposed Plan Applications for Committee action on advisory recommendations for ISO-NE approval",
               type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 7,
+              agenda_number: "3.1",
+              title: "Chicopee Energy Storage 2 LLC, 0 Sheridan Street Battery - Level III (CEII Topic) - CEL-26-G01 Generator application for installation of a 4.99 MW/15.0 MWh battery in Chicopee, MA",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 8,
+              agenda_number: "3.2",
+              title: "BlueSky Utility LLC, 700 South Main Street Solar - Level III (CEII Topic) - ES-26-G19 Generator application for installation of a 4.95 MW Solar PV facility in Sharon, MA",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 9,
+              time: "10:00 - 10:45",
+              agenda_number: "4.0",
+              title: "Transmission Cost Allocations (TCAs) - Present Transmission Cost Allocations for Committee action on advisory recommendations for ISO-NE determination",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 10,
+              agenda_number: "4.1",
+              title: "Eversource Line 1759 Structure Replacements and Shield Wire Replacement Project TCA - ES-25-TCA-16",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 11,
+              agenda_number: "4.2",
+              title: "Eversource Line S153 Asset Condition Project (Great Bay Substation to Ocean Road Substation) Project TCA - ES-26-TCA-01",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 12,
+              agenda_number: "4.3",
+              title: "Eversource Line 1803 Optical Ground Wire (OPGW) Installation Project TCA - ES-26-TCA-02",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 13,
+              agenda_number: "4.4",
+              title: "Eversource Barnstable Substation 958 Breaker Replacements Project TCA - ES-26-TCA-05",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 14,
+              time: "10:45 - 11:30",
+              agenda_number: "5.0",
+              title: "Operating Procedures (OPs)",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 15,
+              agenda_number: "5.1",
+              title: "OP-13 - Standards for Voltage Reduction and Load Shedding Capability - Discussion on NERC EOP-011 and NPCC Directory #2 requirement conforming changes",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 16,
+              agenda_number: "5.2",
+              title: "OP-21 - Operational Surveys, Energy Forecasting & Reporting and Actions During an Energy Emergency - Discussion and vote on proposed changes to clarify data uses and update survey questions",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 17,
+              time: "11:30 - 12:25",
+              agenda_number: "6.0",
+              title: "Planning Procedures (PPs)",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 18,
+              agenda_number: "6.1",
+              title: "Planning Procedure 4 and Attachments - Continued discussion on proposed revisions to cost categories and miscellaneous administrative process improvements",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 19,
+              agenda_number: "6.2",
+              title: "Planning Procedures 5-1 and 5-3 - Discussion and vote on proposed revisions to enhance the PPA process",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 20,
+              agenda_number: "6.3",
+              title: "Planning Procedure 5-6 - Interconnection Planning Procedure for Generation and Elective Transmission Upgrades - Discussion and vote on Order No. 881 conforming changes and revisions to support the first full Cluster Study",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 21,
+              agenda_number: "6.4",
+              title: "Planning Procedure 7 - Procedures for Determining and Implementing Transmission Facility Ratings in New England - Discussion on Order No. 881 conforming changes and revisions",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 22,
+              time: "12:25 - 12:30",
+              agenda_number: "7.0",
+              title: "Other Business",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 23,
+              time: "12:30",
+              agenda_number: "8.0",
+              title: "Closing Remarks/Adjourn for the Day",
+              type: "procedural",
               materials: [],
               summary: "",
               maine_relevance: "",
@@ -3354,8 +3600,75 @@ window.MEETINGS_DATA = {
           agenda_items: [
             {
               order: 1,
-              title: "Agenda pending — check back closer to the meeting date.",
+              time: "9:30 - 9:35",
+              agenda_number: "1.0",
+              title: "Chair's Opening Remarks",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 2,
+              agenda_number: "1.1",
+              title: "Meeting Minutes (66.67% Vote): August 11-13, 2026 Joint MC/RC/TC Meeting Minutes; August 18-19, 2026 Joint TC/RC Meeting Minutes; August 18-19, 2026 Joint MC/RC/TC Meeting Minutes",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 3,
+              time: "9:35 - 12:00",
+              agenda_number: "2.0",
+              title: "Joint Meeting of the Transmission, Markets, & Reliability Committee — New England Large Load Show Cause Order (EL26-72) (3rd TC/MC/RC Meeting) (Future Vote): Continued discussion on definitions, transmission services, study process, and initial review of Tariff redlines; Initial discussion on curtailment and other operational considerations, and initial review of Tariff redlines",
               type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 4,
+              time: "12:30 - 3:00",
+              agenda_number: "2.0",
+              title: "New England Large Load Show Cause Order (EL26-72) (Cont.) (3rd TC/MC/RC Meeting) (Future Vote): Initial discussion on cost recovery; Initial discussion on settlements and other market considerations, and initial review of Tariff redlines",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 5,
+              time: "3:00 - 4:25",
+              agenda_number: "3.0",
+              title: "FERC Order No. 1920, 1920-A, and 1920-B Compliance (1st TC Mtg) (Future Vote): Introductory presentation on compliance with FERC Order No. 1920, 1920-A, and 1920-B regarding Building for the Future Through Electric Regional Transmission Planning and Cost Allocation",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 6,
+              time: "4:25 - 4:30",
+              agenda_number: "4.0",
+              title: "Other Business",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 7,
+              time: "4:30",
+              agenda_number: "5.0",
+              title: "Closing Remarks/Adjourn for the Day",
+              type: "procedural",
               materials: [],
               summary: "",
               maine_relevance: "",
