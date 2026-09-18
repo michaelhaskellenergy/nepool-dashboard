@@ -1869,6 +1869,23 @@ window.MEETINGS_DATA = {
       description: "Oversees bulk power system reliability standards, studies, and compliance for New England.",
       meetings: [
         {
+          id: "rc-2026-11-17",
+          date: "2026-11-17",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=160120",
+          location: "DoubleTree Hotel, Westborough, MA",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
           id: "rc-2026-07-21",
           date: "2026-07-21",
           iso_ne_url: "",
@@ -4117,8 +4134,54 @@ window.MEETINGS_DATA = {
           agenda_items: [
             {
               order: 1,
-              title: "Agenda pending — check back closer to the meeting date.",
+              time: "9:00 – 9:05",
+              agenda_number: "1.0",
+              title: "Chair's Opening Remarks",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 2,
+              time: "9:05 – 9:35",
+              agenda_number: "2.1",
+              title: "Line 1440 Asset Condition Structure Replacement Project (Chris Soderman, Eversource Energy)",
               type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 3,
+              time: "9:35 – 10:05",
+              agenda_number: "3.0",
+              title: "RSP Project List/Asset Condition List Format Changes (Stojan Nikolov, ISO New England)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 4,
+              time: "10:05 – 10:50",
+              agenda_number: "4.0",
+              title: "Third Maine Resource Integration Study (Alex Rost, ISO New England)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 5,
+              time: "10:50",
+              agenda_number: "5.0",
+              title: "Closing Remarks/Adjourn",
+              type: "procedural",
               materials: [],
               summary: "",
               maine_relevance: "",
