@@ -45,8 +45,130 @@ window.MEETINGS_DATA = {
           agenda_items: [
             {
               order: 1,
-              title: "Agenda pending — check back closer to the meeting date.",
-              type: "presentation",
+              time: "10:00 a.m.",
+              agenda_number: "1",
+              title: "Approve the draft minutes of the September 3, 2026 Participants Committee meeting",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 2,
+              agenda_number: "2",
+              title: "Adopt and approve the actions recommended by the Reliability Committee set forth on the Consent Agenda",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 3,
+              agenda_number: "3",
+              title: "Receive summaries of the ISO Board or Board Committee meetings held since the last summaries were circulated",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 4,
+              agenda_number: "4",
+              title: "Receive an ISO Draft 2027 Work Plan Report",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 5,
+              agenda_number: "5",
+              title: "Receive a System and Market Operations Report",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 6,
+              agenda_number: "6",
+              title: "Consider, and take action, as appropriate, on proposed budgets",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 7,
+              agenda_number: "6.a",
+              title: "2027 ISO-NE Operating and Capital Budgets",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 8,
+              agenda_number: "6.b",
+              title: "2027 NESCOE budget",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 9,
+              agenda_number: "7",
+              title: "Consider, and take action, as appropriate, on the membership of the Environmental League of Massachusetts, Inc.",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 10,
+              agenda_number: "8",
+              title: "Receive a report on current contested matters before the FERC and the Federal Courts",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 11,
+              agenda_number: "9",
+              title: "Receive reports from Committees, Subcommittees and other working groups",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 12,
+              agenda_number: "10",
+              title: "Administrative matters",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 13,
+              agenda_number: "11",
+              title: "Transact such other business as may properly come before the meeting",
+              type: "procedural",
               materials: [],
               summary: "",
               maine_relevance: "",
@@ -3197,6 +3319,23 @@ window.MEETINGS_DATA = {
       description: "Reviews transmission planning studies, cost allocations, and interconnection queue.",
       meetings: [
         {
+          id: "tc-2026-11-19",
+          date: "2026-11-19",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=160133",
+          location: "DoubleTree Hotel, Westborough, MA",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
           id: "tc-2026-11-03",
           date: "2026-11-03",
           iso_ne_url: "https://www.iso-ne.com/event-details?eventId=165066",
@@ -4109,6 +4248,23 @@ window.MEETINGS_DATA = {
       tier: "core",
       description: "Reviews ISO-NE's long-range regional system planning and economic studies.",
       meetings: [
+        {
+          id: "pac-2026-11-18",
+          date: "2026-11-18",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=160145",
+          location: "WebEx",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
         {
           id: "pac-2026-10-22",
           date: "2026-10-22",
