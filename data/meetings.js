@@ -887,6 +887,24 @@ window.MEETINGS_DATA = {
       description: "Develops and oversees wholesale electricity market rules for energy, capacity, and ancillary services.",
       meetings: [
         {
+          id: "mc-2026-10-07-08",
+          date: "2026-10-07",
+          date_end: "2026-10-08",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=160106",
+          location: "DoubleTree Hotel, Westborough, MA",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
           id: "mc-2026-08-18-19",
           date: "2026-08-18",
           date_end: "2026-08-19",
@@ -3732,6 +3750,23 @@ window.MEETINGS_DATA = {
       description: "Reviews transmission planning studies, cost allocations, and interconnection queue.",
       meetings: [
         {
+          id: "tc-2026-11-16",
+          date: "2026-11-16",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=165613",
+          location: "Webex",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
           id: "tc-2026-10-06-08",
           date: "2026-10-06",
           date_end: "2026-10-08",
@@ -4868,6 +4903,23 @@ window.MEETINGS_DATA = {
       tier: "core",
       description: "Reviews ISO-NE's long-range regional system planning and economic studies.",
       meetings: [
+        {
+          id: "pac-2026-11-16",
+          date: "2026-11-16",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=165613",
+          location: "Webex",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
         {
           id: "pac-2026-11-18",
           date: "2026-11-18",
