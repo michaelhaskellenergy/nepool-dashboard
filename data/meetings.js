@@ -4250,8 +4250,74 @@ window.MEETINGS_DATA = {
           agenda_items: [
             {
               order: 1,
-              title: "Agenda pending — check back closer to the meeting date.",
+              time: "9:00 - 9:15",
+              agenda_number: "1.0",
+              title: "Chair's Opening Remarks",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 2,
+              agenda_number: "1.1",
+              title: "Meeting Minutes (66.67% Vote) – September 8-10, 2026 Joint MC/RC/TC Meeting Minutes; September 15, 2026 Joint TC/MC/RC Meeting Minutes; September 15, 2026 TC Meeting Minutes",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 3,
+              agenda_number: "1.2",
+              title: "Working Group & Committee Updates – Transitional Withdrawal Penalty Treatment",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 4,
+              time: "9:15 - 11:30",
+              agenda_number: "2.0",
+              title: "FERC Order No. 1920 Compliance – Continued discussion on proposed Future Scenario Planning (FSP) process and other Order No. 1920 compliance changes, as well as responses to stakeholder feedback",
               type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 5,
+              time: "12:00 - 4:55",
+              agenda_number: "3.0",
+              title: "Joint Meeting of the Transmission, Markets, & Reliability Committee – New England Large Load Show Cause Order (EL26-72): Continued review of additional design details, incremental proposal updates, incremental Tariff language, stakeholder amendments, operational requirements, proposed market design and settlement, Tariff redlines, stakeholder presentations, and review of PTO AC's Cost Recovery Agreement (CRA)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 6,
+              time: "4:55 - 5:00",
+              agenda_number: "4.0",
+              title: "Other Business",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 7,
+              time: "5:00",
+              agenda_number: "5.0",
+              title: "Closing Remarks/Adjourn for the Day",
+              type: "procedural",
               materials: [],
               summary: "",
               maine_relevance: "",
@@ -5914,7 +5980,24 @@ window.MEETINGS_DATA = {
       abbr: "DGWG",
       tier: "secondary",
       description: "Addresses policy and interconnection issues related to distributed energy resources.",
-      meetings: []
+      meetings: [
+        {
+          id: "dgwg-2026-12-07",
+          date: "2026-12-07",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=165598",
+          location: "Webex",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },]
     },
     {
       id: "clg",
