@@ -887,6 +887,23 @@ window.MEETINGS_DATA = {
       description: "Develops and oversees wholesale electricity market rules for energy, capacity, and ancillary services.",
       meetings: [
         {
+          id: "mc-2026-12-08",
+          date: "2026-12-08",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=160109",
+          location: "Virtual",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
           id: "mc-2026-10-07-08",
           date: "2026-10-07",
           date_end: "2026-10-08",
