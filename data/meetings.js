@@ -5928,6 +5928,23 @@ window.MEETINGS_DATA = {
       description: "Reviews ISO-NE load forecast methodology and results.",
       meetings: [
         {
+          id: "lfwg-2026-12-11",
+          date: "2026-12-11",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=160222",
+          location: "WebEx",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
           id: "lfwg-2026-10-23",
           date: "2026-10-23",
           iso_ne_url: "https://www.iso-ne.com/event-details?eventId=164841",
