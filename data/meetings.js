@@ -2232,6 +2232,23 @@ window.MEETINGS_DATA = {
       description: "Oversees bulk power system reliability standards, studies, and compliance for New England.",
       meetings: [
         {
+          id: "rc-2026-12-16",
+          date: "2026-12-16",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=160121",
+          location: "DoubleTree Hotel, Westborough, MA",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
           id: "rc-2026-10-06-08",
           date: "2026-10-06",
           date_end: "2026-10-08",
@@ -5277,6 +5294,23 @@ window.MEETINGS_DATA = {
       description: "Reviews ISO-NE's long-range regional system planning and economic studies.",
       meetings: [
         {
+          id: "pac-2026-12-17",
+          date: "2026-12-17",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=160146",
+          location: "WebEx",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
           id: "pac-2026-11-16",
           date: "2026-11-16",
           iso_ne_url: "https://www.iso-ne.com/event-details?eventId=165613",
@@ -5318,8 +5352,54 @@ window.MEETINGS_DATA = {
           agenda_items: [
             {
               order: 1,
-              title: "Agenda pending — check back closer to the meeting date.",
+              time: "9:00 – 9:05",
+              agenda_number: "1.0",
+              title: "Chair's Opening Remarks",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 2,
+              time: "9:05 – 9:30",
+              agenda_number: "2.1",
+              title: "I-135/I-135N/J-136N Asset Condition Refurbishment (Rafael Panos, National Grid)",
               type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 3,
+              time: "9:30 – 9:45",
+              agenda_number: "3.0",
+              title: "RSP Project List and Asset Condition Project List October 2026 Update (Meena Saravanan, ISO New England)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 4,
+              time: "9:45 – 10:15",
+              agenda_number: "4.0",
+              title: "2025 LTTP RFP – Discussion on Lessons Learned (Steven Judd, ISO New England)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 5,
+              time: "10:15",
+              agenda_number: "5.0",
+              title: "Closing Remarks/Adjourn",
+              type: "procedural",
               materials: [],
               summary: "",
               maine_relevance: "",
