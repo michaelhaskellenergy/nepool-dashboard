@@ -6322,8 +6322,76 @@ window.MEETINGS_DATA = {
           agenda_items: [
             {
               order: 1,
-              title: "Agenda pending — check back closer to the meeting date.",
+              time: "9:30 - 9:35",
+              agenda_number: "1.0",
+              title: "Opening Remarks",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 2,
+              time: "9:35 - 10:00",
+              agenda_number: "2.0",
+              title: "Introduction to the 2027 Forecast Cycle",
               type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 3,
+              time: "10:00 - 11:00",
+              agenda_number: "3.0",
+              title: "2027 Load Forecast Methodology Overview",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 4,
+              time: "11:00 - 11:30",
+              agenda_number: "4.0",
+              title: "2026 Forecast Performance",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 5,
+              time: "11:30 - 12:20",
+              agenda_number: "5.0",
+              title: "Electrification Forecast Updates",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 6,
+              time: "12:20 - 12:25",
+              agenda_number: "6.0",
+              title: "Other Topics",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 7,
+              time: "12:25 - 12:30",
+              agenda_number: "7.0",
+              title: "Closing Remarks/Adjourn",
+              type: "procedural",
               materials: [],
               summary: "",
               maine_relevance: "",
