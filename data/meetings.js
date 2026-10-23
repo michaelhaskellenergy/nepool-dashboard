@@ -887,6 +887,58 @@ window.MEETINGS_DATA = {
       description: "Develops and oversees wholesale electricity market rules for energy, capacity, and ancillary services.",
       meetings: [
         {
+          id: "mc-2026-10-27",
+          date: "2026-10-27",
+          iso_ne_url: "",
+          location: "",
+          agenda_items: [
+            {
+              order: 1,
+              time: "9:30 - 9:35",
+              agenda_number: "1.0",
+              title: "Chair's Opening Remarks",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 2,
+              time: "9:35 - 11:55",
+              agenda_number: "2.0",
+              title: "New England Large Load Show Cause Order (EL26-72) (5th TC/MC/RC Meeting) (Future Vote)(WMPP ID:196)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 3,
+              time: "11:55 - 12:00",
+              agenda_number: "3.0",
+              title: "Other Business",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 4,
+              time: "12:00",
+              agenda_number: "4.0",
+              title: "Closing Remarks/Adjourn for the Day",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
           id: "mc-2026-12-08",
           date: "2026-12-08",
           iso_ne_url: "https://www.iso-ne.com/event-details?eventId=160109",
@@ -2749,8 +2801,43 @@ window.MEETINGS_DATA = {
           agenda_items: [
             {
               order: 1,
-              title: "Agenda pending — check back closer to the meeting date.",
+              time: "9:30 - 9:35",
+              agenda_number: "1.0",
+              title: "Chair's Opening Remarks",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 2,
+              time: "9:35 - 11:55",
+              agenda_number: "2.0",
+              title: "New England Large Load Show Cause Order (EL26-72) (5th TC/MC/RC Meeting) (Future Vote)(WMPP ID:196)",
               type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 3,
+              time: "11:55 - 12:00",
+              agenda_number: "3.0",
+              title: "Other Business",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 4,
+              time: "12:00",
+              agenda_number: "4.0",
+              title: "Closing Remarks/Adjourn for the Day",
+              type: "procedural",
               materials: [],
               summary: "",
               maine_relevance: "",
@@ -4574,8 +4661,43 @@ window.MEETINGS_DATA = {
           agenda_items: [
             {
               order: 1,
-              title: "Agenda pending — check back closer to the meeting date.",
+              time: "9:30 - 9:35",
+              agenda_number: "1.0",
+              title: "Chair's Opening Remarks",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 2,
+              time: "9:35 - 11:55",
+              agenda_number: "2.0",
+              title: "New England Large Load Show Cause Order (EL26-72) (5th TC/MC/RC Meeting) (Future Vote)(WMPP ID:196)",
               type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 3,
+              time: "11:55 - 12:00",
+              agenda_number: "3.0",
+              title: "Other Business",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 4,
+              time: "12:00",
+              agenda_number: "4.0",
+              title: "Closing Remarks/Adjourn for the Day",
+              type: "procedural",
               materials: [],
               summary: "",
               maine_relevance: "",
