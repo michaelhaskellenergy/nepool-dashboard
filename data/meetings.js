@@ -45,8 +45,120 @@ window.MEETINGS_DATA = {
           agenda_items: [
             {
               order: 1,
-              title: "Agenda pending — check back closer to the meeting date.",
-              type: "presentation",
+              time: "2:00 PM",
+              agenda_number: "1",
+              title: "Approve the draft minutes of the October 2, 2026 Participants Committee meeting",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 2,
+              agenda_number: "2",
+              title: "Adopt and approve the actions recommended by the Reliability Committee set forth on the Consent Agenda",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 3,
+              agenda_number: "3",
+              title: "ISO Chief Executive Officer Report",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 4,
+              agenda_number: "4",
+              title: "System and Market Operations Report",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 5,
+              agenda_number: "5",
+              title: "Consider and take action on Tariff changes related to the integration of large loads, proposed in response to the FERC's June 18, 2026 New England Large and Co-Located Loads Show Cause Order",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 6,
+              agenda_number: "5.a",
+              title: "Sections I.2.2 (Definitions) and Section II of the Open Access Transmission Tariff (OATT), including new Sections II.56-II.63, new Attachments S-V, and new Schedule 9A; and conforming changes to Sections II.20.2, II.20.3, and II.21.2, and to Schedules 1, 2, 16, 17, 22 and 23",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 7,
+              agenda_number: "5.b",
+              title: "Sections I.2.2 and III.12.1 (Installed Capacity Requirement) of the Tariff",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 8,
+              agenda_number: "5.c",
+              title: "Sections I.2.2 and Section III (Market Rule 1), including Sections III.1.10.5A, III.1.7.19.2.2.2, III.1.8.1, III.2.5, III.2.6.1, and III.15.8.5.2.1",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 9,
+              agenda_number: "6",
+              title: "Report on current contested matters before the FERC and the Federal Courts",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 10,
+              agenda_number: "7",
+              title: "Reports from Committees, Subcommittees and other working groups",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 11,
+              agenda_number: "8",
+              title: "Administrative matters",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 12,
+              agenda_number: "9",
+              title: "Transact such other business as may properly come before the meeting",
+              type: "procedural",
               materials: [],
               summary: "",
               maine_relevance: "",
@@ -886,6 +998,24 @@ window.MEETINGS_DATA = {
       tier: "core",
       description: "Develops and oversees wholesale electricity market rules for energy, capacity, and ancillary services.",
       meetings: [
+        {
+          id: "mc-2026-11-04-05",
+          date: "2026-11-04",
+          date_end: "2026-11-05",
+          iso_ne_url: "",
+          location: "",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
         {
           id: "mc-2026-10-26",
           date: "2026-10-26",
