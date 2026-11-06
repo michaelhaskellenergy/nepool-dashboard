@@ -999,6 +999,23 @@ window.MEETINGS_DATA = {
       description: "Develops and oversees wholesale electricity market rules for energy, capacity, and ancillary services.",
       meetings: [
         {
+          id: "mc-2026-11-06",
+          date: "2026-11-06",
+          iso_ne_url: "",
+          location: "",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
           id: "mc-2026-11-04-05",
           date: "2026-11-04",
           date_end: "2026-11-05",
