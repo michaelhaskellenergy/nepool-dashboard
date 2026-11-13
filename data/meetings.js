@@ -1016,6 +1016,23 @@ window.MEETINGS_DATA = {
       description: "Develops and oversees wholesale electricity market rules for energy, capacity, and ancillary services.",
       meetings: [
         {
+          id: "mc-2027-01-12",
+          date: "2027-01-12",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=165138",
+          location: "TBD",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
           id: "mc-2026-09-15",
           date: "2026-09-15",
           iso_ne_url: "",
@@ -6243,8 +6260,87 @@ window.MEETINGS_DATA = {
           agenda_items: [
             {
               order: 1,
-              title: "Agenda pending — check back closer to the meeting date.",
+              time: "9:00 – 9:05",
+              agenda_number: "1.0",
+              title: "Chair's Opening Remarks",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 2,
+              time: "9:05 – 9:30",
+              agenda_number: "2.1",
+              title: "Line 330 Asset Condition Structure Replacement Project (Chris Soderman, Eversource)",
               type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 3,
+              time: "9:30 – 10:00",
+              agenda_number: "3.1",
+              title: "Interim ACR - VELCO F206 - Structure Replacements Project (Fatou Dieng, ISO New England)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 4,
+              time: "10:00 – 10:30",
+              agenda_number: "4.0",
+              title: "2036 New England Short Circuit Needs Assessment Addendum (Aqeel Ahmed, ISO New England)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 5,
+              time: "10:30 – 10:45",
+              agenda_number: "5.0",
+              title: "2026 Economic Study – Stakeholder Requested Scenario Requests and Selection (Patrick Boughan, ISO New England)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 6,
+              time: "10:45 – 11:30",
+              agenda_number: "6.0",
+              title: "2026 Economic Study – Final Benchmark Scenario Results (Kim Quach, ISO New England)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 7,
+              time: "11:30 – 12:15",
+              agenda_number: "7.0",
+              title: "2026 Economic Study – Policy Scenario Assumptions (Ben Wilson, ISO New England)",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 8,
+              time: "12:15",
+              agenda_number: "8.0",
+              title: "Closing Remarks/Adjourn",
+              type: "procedural",
               materials: [],
               summary: "",
               maine_relevance: "",
