@@ -45,8 +45,170 @@ window.MEETINGS_DATA = {
           agenda_items: [
             {
               order: 1,
-              title: "Agenda pending — check back closer to the meeting date.",
+              time: "10:00 AM",
+              agenda_number: "1",
+              title: "Approve the draft minutes of the November 12, 2026 Participants Committee meeting",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 2,
+              agenda_number: "2",
+              title: "Adopt and approve the actions recommended by the Reliability Committee set forth on the Consent Agenda",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 3,
+              agenda_number: "3",
+              title: "Receive remarks from Chairman Laura V. Swett of the Federal Energy Regulatory Commission",
               type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 4,
+              agenda_number: "4",
+              title: "Receive summaries of the ISO Board and Board Committee meetings held since the last summaries were circulated",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 5,
+              agenda_number: "5",
+              title: "Receive a System and Market Operations Report (December report reflecting November data)",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 6,
+              agenda_number: "6",
+              title: "Receive the 2026 NEPOOL Annual Report",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 7,
+              agenda_number: "7",
+              title: "Elect NEPOOL Participants Committee Officers for 2027",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 8,
+              agenda_number: "8",
+              title: "Adopt a NEPOOL Budget for 2027",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 9,
+              agenda_number: "9",
+              title: "Consider and take action on Billing Policy revisions in response to the FERC's September 10, 2026 Correction Mechanism Compliance Order",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 10,
+              agenda_number: "10.a",
+              title: "Consider and take action on Tariff revisions for CAR-SA proposal: Section I.2.2 (Definitions) and Market Rule 1, including Appendices A and F, as recommended by the Markets Committee at its November 4-5 meeting",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 11,
+              agenda_number: "10.b",
+              title: "Consider and take action on Tariff revisions for CAR-SA proposal: Section I.2.2 and Market Rule 1 Sections III.1.5 and III.12, as unanimously recommended by the Reliability Committee at its November 17 meeting",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 12,
+              agenda_number: "10.c",
+              title: "Consider and take action on Tariff revisions for CAR-SA proposal: Section I.2.2, Sections II.48 through II.55.3, and OATT Attachment K (RSP Process), to be considered by the Transmission Committee at its November 19 meeting",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 13,
+              agenda_number: "10.d",
+              title: "Consider and take action on Tariff revisions for CAR-SA proposal: Section I.2.2, Billing Policy and Financial Assurance Policy, to be considered by the Budget & Finance Subcommittee at its November 20 meeting",
+              type: "vote",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 14,
+              agenda_number: "11",
+              title: "Receive a report on current contested matters before the FERC and the Federal Courts",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 15,
+              agenda_number: "12",
+              title: "Receive reports from Committees, Subcommittees and other working groups: Markets Committee, Reliability Committee, Transmission Committee, Budget & Finance Subcommittee, Membership Subcommittee, Joint Nominating Committee",
+              type: "informational",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 16,
+              agenda_number: "13",
+              title: "Administrative matters",
+              type: "procedural",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            },
+            {
+              order: 17,
+              agenda_number: "14",
+              title: "Transact such other business as may properly come before the meeting",
+              type: "procedural",
               materials: [],
               summary: "",
               maine_relevance: "",
@@ -1015,6 +1177,23 @@ window.MEETINGS_DATA = {
       tier: "core",
       description: "Develops and oversees wholesale electricity market rules for energy, capacity, and ancillary services.",
       meetings: [
+        {
+          id: "mc-2026-11-18",
+          date: "2026-11-18",
+          iso_ne_url: "",
+          location: "",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
         {
           id: "mc-2027-01-12",
           date: "2027-01-12",
