@@ -2886,6 +2886,23 @@ window.MEETINGS_DATA = {
       description: "Oversees bulk power system reliability standards, studies, and compliance for New England.",
       meetings: [
         {
+          id: "rc-2027-01-20",
+          date: "2027-01-20",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=165163",
+          location: "TBD",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
           id: "rc-2026-10-26",
           date: "2026-10-26",
           iso_ne_url: "",
@@ -4961,6 +4978,23 @@ window.MEETINGS_DATA = {
       tier: "core",
       description: "Reviews transmission planning studies, cost allocations, and interconnection queue.",
       meetings: [
+        {
+          id: "tc-2027-01-21",
+          date: "2027-01-21",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=165176",
+          location: "TBD",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
         {
           id: "tc-2026-10-26",
           date: "2026-10-26",
