@@ -6420,6 +6420,23 @@ window.MEETINGS_DATA = {
       description: "Reviews ISO-NE's long-range regional system planning and economic studies.",
       meetings: [
         {
+          id: "pac-2027-01-26",
+          date: "2027-01-26",
+          iso_ne_url: "https://www.iso-ne.com/event-details?eventId=165350",
+          location: "WebEx",
+          agenda_items: [
+            {
+              order: 1,
+              title: "Agenda pending — check back closer to the meeting date.",
+              type: "presentation",
+              materials: [],
+              summary: "",
+              maine_relevance: "",
+              topic_tags: []
+            }
+          ]
+        },
+        {
           id: "pac-2026-12-17",
           date: "2026-12-17",
           iso_ne_url: "https://www.iso-ne.com/event-details?eventId=160146",
